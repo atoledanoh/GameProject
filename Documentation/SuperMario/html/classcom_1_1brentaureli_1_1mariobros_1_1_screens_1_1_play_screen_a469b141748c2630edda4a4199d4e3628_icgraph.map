@@ -1,0 +1,5 @@
+<map id="com.brentaureli.mariobros.Screens.PlayScreen.getMap" name="com.brentaureli.mariobros.Screens.PlayScreen.getMap">
+<area shape="rect" id="node1" title=" " alt="" coords="299,43,487,84"/>
+<area shape="rect" id="node2" href="$classcom_1_1brentaureli_1_1mariobros_1_1_tools_1_1_b2_world_creator.html#a086fecdea37b9856279bd4416940bd34" title=" " alt="" coords="5,5,251,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_tile_objects_1_1_interactive_tile_object.html#a55ca06ec273e758d0adcf2317b28734a" title=" " alt="" coords="28,71,228,127"/>
+</map>

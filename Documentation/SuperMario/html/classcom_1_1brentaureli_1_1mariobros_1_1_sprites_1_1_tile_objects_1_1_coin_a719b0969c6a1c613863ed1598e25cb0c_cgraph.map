@@ -1,0 +1,4 @@
+<map id="com.brentaureli.mariobros.Sprites.TileObjects.Coin.Coin" name="com.brentaureli.mariobros.Sprites.TileObjects.Coin.Coin">
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,197,54"/>
+<area shape="rect" id="node2" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_tile_objects_1_1_interactive_tile_object.html#a511eeaad863956e7d698fcc4574095ea" title=" " alt="" coords="245,5,440,61"/>
+</map>

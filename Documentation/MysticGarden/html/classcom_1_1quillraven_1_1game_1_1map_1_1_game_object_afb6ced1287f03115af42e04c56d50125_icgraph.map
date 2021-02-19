@@ -1,0 +1,7 @@
+<map id="com.quillraven.game.map.GameObject.getBoundaries" name="com.quillraven.game.map.GameObject.getBoundaries">
+<area shape="rect" id="node1" title=" " alt="" coords="984,5,1167,47"/>
+<area shape="rect" id="node2" href="$classcom_1_1quillraven_1_1game_1_1ecs_1_1_e_c_s_engine.html#a522b7634613c3bb3f12f32ccb85dece2" title=" " alt="" coords="749,5,936,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1quillraven_1_1game_1_1map_1_1_map_manager.html#a4b8198570e9807f82d8967b4ab9dc98d" title=" " alt="" coords="483,5,701,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1quillraven_1_1game_1_1_save_state.html#a000cc8e330e7da40e46d73a86f474fd3" title=" " alt="" coords="263,5,435,47"/>
+<area shape="rect" id="node5" href="$classcom_1_1quillraven_1_1game_1_1gamestate_1_1_g_s_game.html#a4696e2f382747628489ee8f1bbabf7d9" title=" " alt="" coords="5,5,215,47"/>
+</map>

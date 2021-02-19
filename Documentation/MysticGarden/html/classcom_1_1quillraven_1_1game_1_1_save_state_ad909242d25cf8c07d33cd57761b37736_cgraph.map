@@ -1,0 +1,9 @@
+<map id="com.quillraven.game.SaveState.updateState" name="com.quillraven.game.SaveState.updateState">
+<area shape="rect" id="node1" title=" " alt="" coords="5,169,177,211"/>
+<area shape="rect" id="node2" href="$classcom_1_1quillraven_1_1game_1_1ecs_1_1_e_c_s_engine.html#aa3f61f34a3eb3ea0667ed0831ceacdf9" title=" " alt="" coords="225,5,453,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1quillraven_1_1game_1_1ecs_1_1system_1_1_game_time_system.html#af9d3027d12035cfc2fd84b896fc5bbde" title=" " alt="" coords="231,71,447,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1quillraven_1_1game_1_1ecs_1_1system_1_1_game_time_system.html#ab1b031f482b2f2cd4abf2c96ce4542dd" title=" " alt="" coords="231,136,447,177"/>
+<area shape="rect" id="node5" href="$classcom_1_1quillraven_1_1game_1_1core_1_1_utils.html#a021b7453b2625356f600f6ed4fd23ea1" title=" " alt="" coords="248,201,431,243"/>
+<area shape="rect" id="node6" href="$classcom_1_1quillraven_1_1game_1_1ecs_1_1system_1_1_game_time_system.html#a743a8cef234b113ffdb4ffb26fb0f414" title=" " alt="" coords="231,267,447,308"/>
+<area shape="rect" id="node7" href="$classcom_1_1quillraven_1_1game_1_1core_1_1_preference_manager.html#acdb8993cc022388e064861d7d8def0fc" title=" " alt="" coords="228,332,451,373"/>
+</map>

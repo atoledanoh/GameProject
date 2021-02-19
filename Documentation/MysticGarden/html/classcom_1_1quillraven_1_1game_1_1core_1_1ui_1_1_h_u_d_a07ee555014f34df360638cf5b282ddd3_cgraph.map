@@ -1,0 +1,6 @@
+<map id="com.quillraven.game.core.ui.HUD.HUD" name="com.quillraven.game.core.ui.HUD.HUD">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,192,112"/>
+<area shape="rect" id="node2" href="$classcom_1_1quillraven_1_1game_1_1core_1_1_utils.html#a72a7a6dc229ec41b41538ff0317bca9c" title=" " alt="" coords="286,5,461,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1quillraven_1_1game_1_1core_1_1_utils.html#a5934a63f7e641e382e3c88f6b2ad3135" title=" " alt="" coords="287,71,460,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1quillraven_1_1game_1_1core_1_1_resource_manager.html#a5967cdd019617d40ca94a95e3b3b521c" title=" " alt="" coords="240,136,507,177"/>
+</map>

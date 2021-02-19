@@ -1,0 +1,253 @@
+\hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state}{}\doxysection{com.\+quillraven.\+game.\+core.\+gamestate.\+Game\+State$<$ T extends Table $>$ Class Template Reference}
+\label{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state}\index{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$@{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$}}
+
+
+Inheritance diagram for com.\+quillraven.\+game.\+core.\+gamestate.\+Game\+State$<$ T extends Table $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+quillraven.\+game.\+core.\+gamestate.\+Game\+State$<$ T extends Table $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{enumcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_e_game_state}{EGame\+State}} \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_ac42be41c9c4452e196a2ce240d916683}{get\+Type}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_a073505f3a5500f051d5e2ea3149ca874}{activate}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_adb9abeb8e151fec466a91fb12b6b304f}{deactivate}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_ac2cb256e09edb9be66b81f9975e91f59}{step}} (final float fixed\+Time\+Step)
+\item 
+void \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_aea38bcee8a7cfe0c5117abcc3776e0ae}{render}} (final float alpha)
+\item 
+void \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_a0557402c87ca82ec00a380a3ff24d779}{resize}} (final int width, final int height)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_aefb2a0e17dac7eff898e1f5cb2aa27d0}{Game\+State}} (final \mbox{\hyperlink{enumcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_e_game_state}{EGame\+State}} type, final \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1ui_1_1_h_u_d}{HUD}} \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_a20d19180787a32184ded9ad70fa0d53c}{hud}})
+\item 
+abstract T \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_aa3bd3e5a47c68f6ba656490e81beac9f}{create\+HUD}} (final \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1ui_1_1_h_u_d}{HUD}} \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_a20d19180787a32184ded9ad70fa0d53c}{hud}}, final \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1ui_1_1_t_t_f_skin}{TTFSkin}} skin)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1ui_1_1_h_u_d}{HUD}} \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_a20d19180787a32184ded9ad70fa0d53c}{hud}}
+\item 
+final T \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_ae8718deb3f216a1ccbd400749efaa83e}{game\+State\+HUD}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_aefb2a0e17dac7eff898e1f5cb2aa27d0}\label{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_aefb2a0e17dac7eff898e1f5cb2aa27d0}} 
+\index{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$@{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$}!GameState@{GameState}}
+\index{GameState@{GameState}!com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$@{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$}}
+\doxysubsubsection{\texorpdfstring{GameState()}{GameState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state}{com.\+quillraven.\+game.\+core.\+gamestate.\+Game\+State}}$<$ T extends Table $>$.\mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state}{Game\+State}} (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{enumcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_e_game_state}{EGame\+State}}$<$ T extends Table $>$}]{type,  }\item[{final \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1ui_1_1_h_u_d}{HUD}}}]{hud }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_aefb2a0e17dac7eff898e1f5cb2aa27d0_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_a073505f3a5500f051d5e2ea3149ca874}\label{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_a073505f3a5500f051d5e2ea3149ca874}} 
+\index{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$@{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$}!activate@{activate}}
+\index{activate@{activate}!com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$@{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$}}
+\doxysubsubsection{\texorpdfstring{activate()}{activate()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state}{com.\+quillraven.\+game.\+core.\+gamestate.\+Game\+State}}$<$ T extends Table $>$.activate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1gamestate_1_1_g_s_victory_a35c98358e7d13f74f51b112f3499b3b2}{com.\+quillraven.\+game.\+gamestate.\+GSVictory}}, \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1gamestate_1_1_g_s_menu_aad90511640313a7ee883a3082683ee8f}{com.\+quillraven.\+game.\+gamestate.\+GSMenu}}, and \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1gamestate_1_1_g_s_game_a4696e2f382747628489ee8f1bbabf7d9}{com.\+quillraven.\+game.\+gamestate.\+GSGame}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_a073505f3a5500f051d5e2ea3149ca874_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_a073505f3a5500f051d5e2ea3149ca874_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_aa3bd3e5a47c68f6ba656490e81beac9f}\label{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_aa3bd3e5a47c68f6ba656490e81beac9f}} 
+\index{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$@{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$}!createHUD@{createHUD}}
+\index{createHUD@{createHUD}!com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$@{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$}}
+\doxysubsubsection{\texorpdfstring{createHUD()}{createHUD()}}
+{\footnotesize\ttfamily abstract T \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state}{com.\+quillraven.\+game.\+core.\+gamestate.\+Game\+State}}$<$ T extends Table $>$.create\+HUD (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1ui_1_1_h_u_d}{HUD}}}]{hud,  }\item[{final \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1ui_1_1_t_t_f_skin}{TTFSkin}}}]{skin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1gamestate_1_1_g_s_victory_ad5bdb2bfaefae0d8ccf59acf8bf7e9bc}{com.\+quillraven.\+game.\+gamestate.\+GSVictory}}, \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1gamestate_1_1_g_s_menu_aeaef24e968bb22f7dbecb4f9506a8143}{com.\+quillraven.\+game.\+gamestate.\+GSMenu}}, \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1gamestate_1_1_g_s_loading_a27a5a1e8e8626194568b8b8451b965ff}{com.\+quillraven.\+game.\+gamestate.\+GSLoading}}, and \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1gamestate_1_1_g_s_game_ab80fc5b8aca554275634d4f394aa4f10}{com.\+quillraven.\+game.\+gamestate.\+GSGame}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_aa3bd3e5a47c68f6ba656490e81beac9f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_adb9abeb8e151fec466a91fb12b6b304f}\label{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_adb9abeb8e151fec466a91fb12b6b304f}} 
+\index{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$@{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$}!deactivate@{deactivate}}
+\index{deactivate@{deactivate}!com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$@{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$}}
+\doxysubsubsection{\texorpdfstring{deactivate()}{deactivate()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state}{com.\+quillraven.\+game.\+core.\+gamestate.\+Game\+State}}$<$ T extends Table $>$.deactivate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1gamestate_1_1_g_s_menu_a64761b91ee262b410ee7d91ef42b65ea}{com.\+quillraven.\+game.\+gamestate.\+GSMenu}}, and \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1gamestate_1_1_g_s_game_a5d33ce31dd4f9cff344d244f65b654d3}{com.\+quillraven.\+game.\+gamestate.\+GSGame}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_adb9abeb8e151fec466a91fb12b6b304f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_adb9abeb8e151fec466a91fb12b6b304f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_ac42be41c9c4452e196a2ce240d916683}\label{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_ac42be41c9c4452e196a2ce240d916683}} 
+\index{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$@{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$}!getType@{getType}}
+\index{getType@{getType}!com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$@{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_e_game_state}{EGame\+State}} \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state}{com.\+quillraven.\+game.\+core.\+gamestate.\+Game\+State}}$<$ T extends Table $>$.get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_ac42be41c9c4452e196a2ce240d916683_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_aea38bcee8a7cfe0c5117abcc3776e0ae}\label{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_aea38bcee8a7cfe0c5117abcc3776e0ae}} 
+\index{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$@{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$}!render@{render}}
+\index{render@{render}!com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$@{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state}{com.\+quillraven.\+game.\+core.\+gamestate.\+Game\+State}}$<$ T extends Table $>$.render (\begin{DoxyParamCaption}\item[{final float}]{alpha }\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1gamestate_1_1_g_s_game_a8f45cd1fd2cf212e68a8e51753deff3c}{com.\+quillraven.\+game.\+gamestate.\+GSGame}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_aea38bcee8a7cfe0c5117abcc3776e0ae_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_aea38bcee8a7cfe0c5117abcc3776e0ae_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_a0557402c87ca82ec00a380a3ff24d779}\label{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_a0557402c87ca82ec00a380a3ff24d779}} 
+\index{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$@{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$}!resize@{resize}}
+\index{resize@{resize}!com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$@{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state}{com.\+quillraven.\+game.\+core.\+gamestate.\+Game\+State}}$<$ T extends Table $>$.resize (\begin{DoxyParamCaption}\item[{final int}]{width,  }\item[{final int}]{height }\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1gamestate_1_1_g_s_game_af9612d75dff81424d01a26a848f7b31b}{com.\+quillraven.\+game.\+gamestate.\+GSGame}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_a0557402c87ca82ec00a380a3ff24d779_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_a0557402c87ca82ec00a380a3ff24d779_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_ac2cb256e09edb9be66b81f9975e91f59}\label{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_ac2cb256e09edb9be66b81f9975e91f59}} 
+\index{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$@{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$}!step@{step}}
+\index{step@{step}!com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$@{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$}}
+\doxysubsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state}{com.\+quillraven.\+game.\+core.\+gamestate.\+Game\+State}}$<$ T extends Table $>$.step (\begin{DoxyParamCaption}\item[{final float}]{fixed\+Time\+Step }\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1gamestate_1_1_g_s_menu_aadd96f02cbc7cebcbfbe791a0da5d75d}{com.\+quillraven.\+game.\+gamestate.\+GSMenu}}, \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1gamestate_1_1_g_s_loading_ae302407262dd451ffe7538fa138fcbcc}{com.\+quillraven.\+game.\+gamestate.\+GSLoading}}, and \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1gamestate_1_1_g_s_game_ad74ec51828b072438c8998bd9fe3c23c}{com.\+quillraven.\+game.\+gamestate.\+GSGame}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_ac2cb256e09edb9be66b81f9975e91f59_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_ac2cb256e09edb9be66b81f9975e91f59_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_ae8718deb3f216a1ccbd400749efaa83e}\label{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_ae8718deb3f216a1ccbd400749efaa83e}} 
+\index{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$@{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$}!gameStateHUD@{gameStateHUD}}
+\index{gameStateHUD@{gameStateHUD}!com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$@{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$}}
+\doxysubsubsection{\texorpdfstring{gameStateHUD}{gameStateHUD}}
+{\footnotesize\ttfamily final T \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state}{com.\+quillraven.\+game.\+core.\+gamestate.\+Game\+State}}$<$ T extends Table $>$.game\+State\+HUD\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_a20d19180787a32184ded9ad70fa0d53c}\label{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state_a20d19180787a32184ded9ad70fa0d53c}} 
+\index{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$@{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$}!hud@{hud}}
+\index{hud@{hud}!com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$@{com.quillraven.game.core.gamestate.GameState$<$ T extends Table $>$}}
+\doxysubsubsection{\texorpdfstring{hud}{hud}}
+{\footnotesize\ttfamily final \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1ui_1_1_h_u_d}{HUD}} \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state}{com.\+quillraven.\+game.\+core.\+gamestate.\+Game\+State}}$<$ T extends Table $>$.hud\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Git\+Hub/\+Mystic\+Garden/core/src/com/quillraven/game/core/gamestate/\mbox{\hyperlink{_game_state_8java}{Game\+State.\+java}}\end{DoxyCompactItemize}

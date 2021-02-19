@@ -1,0 +1,15 @@
+<map id="dev.shou.tilegame.states.GameState.render" name="dev.shou.tilegame.states.GameState.render">
+<area shape="rect" id="node1" title=" " alt="" coords="5,221,176,263"/>
+<area shape="rect" id="node2" href="$classdev_1_1shou_1_1tilegame_1_1maps_1_1_map.html#a662719cce02965a156506c7e9fc20ec2" title=" " alt="" coords="224,229,455,255"/>
+<area shape="rect" id="node3" href="$classdev_1_1shou_1_1tilegame_1_1_handler.html#a0b3ab6cdbdc60d06c2acbfd27b03b1e1" title=" " alt="" coords="521,5,717,47"/>
+<area shape="rect" id="node5" href="$classdev_1_1shou_1_1tilegame_1_1_handler.html#a6a6bc8361486ebfb9790d08a0948bf55" title=" " alt="" coords="521,71,717,112"/>
+<area shape="rect" id="node7" href="$classdev_1_1shou_1_1tilegame_1_1maps_1_1_map.html#a5f01acf45adac8dddea2cf582b00bc64" title=" " alt="" coords="503,137,736,163"/>
+<area shape="rect" id="node8" href="$classdev_1_1shou_1_1tilegame_1_1_handler.html#a70f6d941e7fdbdec0dd07f3f6493ee97" title=" " alt="" coords="521,188,717,229"/>
+<area shape="rect" id="node10" href="$classdev_1_1shou_1_1tilegame_1_1gfx_1_1_game_camera.html#a42b22fdfe4316c2abf65766a264af2d0" title=" " alt="" coords="526,253,713,295"/>
+<area shape="rect" id="node11" href="$classdev_1_1shou_1_1tilegame_1_1gfx_1_1_game_camera.html#ab50304bc49bdeaab93a3281115bf5974" title=" " alt="" coords="526,319,713,360"/>
+<area shape="rect" id="node12" href="$classdev_1_1shou_1_1tilegame_1_1entities_1_1_entity_manager.html#aa2959cd1c39454920d50ecc841ebf88e" title=" " alt="" coords="531,384,707,425"/>
+<area shape="rect" id="node13" href="$classdev_1_1shou_1_1tilegame_1_1tiles_1_1_tile.html#a824e91c8aa0170ab2859e42f495c5d02" title=" " alt="" coords="540,449,699,491"/>
+<area shape="rect" id="node4" href="$classdev_1_1shou_1_1tilegame_1_1_game.html#a0756341a5ecc5265d76f6392bbc61bf8" title=" " alt="" coords="784,5,971,47"/>
+<area shape="rect" id="node6" href="$classdev_1_1shou_1_1tilegame_1_1_game.html#a62a7b62a76855ef3daef7a8f755f8f2f" title=" " alt="" coords="784,71,971,112"/>
+<area shape="rect" id="node9" href="$classdev_1_1shou_1_1tilegame_1_1_game.html#acf53514ff2d0763c957567427629404b" title=" " alt="" coords="784,188,971,229"/>
+</map>

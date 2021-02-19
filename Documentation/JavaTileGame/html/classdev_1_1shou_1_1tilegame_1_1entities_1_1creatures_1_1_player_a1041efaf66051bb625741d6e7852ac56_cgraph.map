@@ -1,0 +1,7 @@
+<map id="dev.shou.tilegame.entities.creatures.Player.render" name="dev.shou.tilegame.entities.creatures.Player.render">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,240,112"/>
+<area shape="rect" id="node2" href="$classdev_1_1shou_1_1tilegame_1_1_handler.html#a0b3ab6cdbdc60d06c2acbfd27b03b1e1" title=" " alt="" coords="288,5,484,47"/>
+<area shape="rect" id="node4" href="$classdev_1_1shou_1_1tilegame_1_1gfx_1_1_game_camera.html#a42b22fdfe4316c2abf65766a264af2d0" title=" " alt="" coords="293,71,479,112"/>
+<area shape="rect" id="node5" href="$classdev_1_1shou_1_1tilegame_1_1gfx_1_1_game_camera.html#ab50304bc49bdeaab93a3281115bf5974" title=" " alt="" coords="293,136,479,177"/>
+<area shape="rect" id="node3" href="$classdev_1_1shou_1_1tilegame_1_1_game.html#a0756341a5ecc5265d76f6392bbc61bf8" title=" " alt="" coords="532,5,719,47"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="com.brentaureli.mariobros.Screens.PlayScreen.getHud" name="com.brentaureli.mariobros.Screens.PlayScreen.getHud">
+<area shape="rect" id="node1" title=" " alt="" coords="691,5,877,47"/>
+<area shape="rect" id="node2" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_mario.html#a99081f62ca2daca016e2dd8cc945457b" title=" " alt="" coords="467,5,643,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1brentaureli_1_1mariobros_1_1_screens_1_1_play_screen.html#a9b062b36e185451c8afb21e6593a45bd" title=" " alt="" coords="235,5,419,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1brentaureli_1_1mariobros_1_1_screens_1_1_play_screen.html#a2b7d96116a4a41c60a0cfab834ba9a45" title=" " alt="" coords="5,5,187,47"/>
+</map>

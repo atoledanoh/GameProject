@@ -1,0 +1,8 @@
+<map id="com.brentaureli.mariobros.Sprites.Mario.isDead" name="com.brentaureli.mariobros.Sprites.Mario.isDead">
+<area shape="rect" id="node1" title=" " alt="" coords="915,41,1091,83"/>
+<area shape="rect" id="node2" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_mario.html#af2c37ef345029d897579078c65a94c5c" title=" " alt="" coords="691,12,867,53"/>
+<area shape="rect" id="node4" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_mario.html#a99081f62ca2daca016e2dd8cc945457b" title=" " alt="" coords="467,71,643,112"/>
+<area shape="rect" id="node3" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_mario.html#a49e7f2ae1c28f99b46db5e328d21d76d" title=" " alt="" coords="467,5,643,47"/>
+<area shape="rect" id="node5" href="$classcom_1_1brentaureli_1_1mariobros_1_1_screens_1_1_play_screen.html#a9b062b36e185451c8afb21e6593a45bd" title=" " alt="" coords="235,71,419,112"/>
+<area shape="rect" id="node6" href="$classcom_1_1brentaureli_1_1mariobros_1_1_screens_1_1_play_screen.html#a2b7d96116a4a41c60a0cfab834ba9a45" title=" " alt="" coords="5,71,187,112"/>
+</map>

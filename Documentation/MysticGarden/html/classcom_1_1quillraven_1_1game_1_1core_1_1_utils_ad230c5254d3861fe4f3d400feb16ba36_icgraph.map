@@ -1,0 +1,8 @@
+<map id="com.quillraven.game.core.Utils.setGameState" name="com.quillraven.game.core.Utils.setGameState">
+<area shape="rect" id="node1" title=" " alt="" coords="263,136,436,177"/>
+<area shape="rect" id="node2" href="$classcom_1_1quillraven_1_1game_1_1gamestate_1_1_g_s_game.html#a2974cc6c374f6b700071acc72825139a" title=" " alt="" coords="5,5,215,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1quillraven_1_1game_1_1gamestate_1_1_g_s_loading.html#a24571a6eacd776e55b860515876f5760" title=" " alt="" coords="5,71,215,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1quillraven_1_1game_1_1gamestate_1_1_g_s_menu.html#a813e1fc1d4aa8f9203c770cc67580070" title=" " alt="" coords="5,136,215,177"/>
+<area shape="rect" id="node5" href="$classcom_1_1quillraven_1_1game_1_1gamestate_1_1_g_s_victory.html#a61f2b3d612204d26466bd260cc73c949" title=" " alt="" coords="5,201,215,243"/>
+<area shape="rect" id="node6" href="$classcom_1_1quillraven_1_1game_1_1gamestate_1_1_g_s_game.html#ace66ef30b66277f8b11bc0e22afa514c" title=" " alt="" coords="5,267,215,308"/>
+</map>

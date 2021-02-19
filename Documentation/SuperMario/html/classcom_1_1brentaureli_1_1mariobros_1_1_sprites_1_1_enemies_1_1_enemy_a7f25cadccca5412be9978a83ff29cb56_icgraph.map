@@ -1,0 +1,5 @@
+<map id="com.brentaureli.mariobros.Sprites.Enemies.Enemy.reverseVelocity" name="com.brentaureli.mariobros.Sprites.Enemies.Enemy.reverseVelocity">
+<area shape="rect" id="node1" title=" " alt="" coords="300,39,555,80"/>
+<area shape="rect" id="node2" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_enemies_1_1_goomba.html#af559fd4cc1bc812ee184e7ab6f38c45c" title=" " alt="" coords="5,5,252,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_enemies_1_1_turtle.html#abf2606bdf6ca2189c729844374b9e45f" title=" " alt="" coords="14,71,243,112"/>
+</map>

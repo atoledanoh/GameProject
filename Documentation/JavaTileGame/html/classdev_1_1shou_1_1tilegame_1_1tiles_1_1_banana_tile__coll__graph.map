@@ -1,0 +1,5 @@
+<map id="dev.shou.tilegame.tiles.BananaTile" name="dev.shou.tilegame.tiles.BananaTile">
+<area shape="rect" id="node1" title=" " alt="" coords="15,247,174,288"/>
+<area shape="rect" id="node2" href="$classdev_1_1shou_1_1tilegame_1_1tiles_1_1_tile.html" title=" " alt="" coords="5,133,184,159"/>
+<area shape="rect" id="node3" title=" " alt="" coords="43,5,147,32"/>
+</map>

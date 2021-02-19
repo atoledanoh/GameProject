@@ -1,0 +1,7 @@
+<map id="dev.shou.tilegame.entities.Entity.checkEntityCollisions" name="dev.shou.tilegame.entities.Entity.checkEntityCollisions">
+<area shape="rect" id="node1" title=" " alt="" coords="5,104,191,145"/>
+<area shape="rect" id="node2" href="$classdev_1_1shou_1_1tilegame_1_1entities_1_1_entity.html#ab0038f6f8a1e4fe84a37b00f80826494" title=" " alt="" coords="261,5,437,47"/>
+<area shape="rect" id="node3" href="$classdev_1_1shou_1_1tilegame_1_1entities_1_1_entity_manager.html#a1db831ef1d985d8f8defe55b00c37034" title=" " alt="" coords="261,71,437,112"/>
+<area shape="rect" id="node4" href="$classdev_1_1shou_1_1tilegame_1_1maps_1_1_map.html#ae9b380d0e268cd521c31d0d126e820d9" title=" " alt="" coords="243,136,456,177"/>
+<area shape="rect" id="node5" href="$classdev_1_1shou_1_1tilegame_1_1_handler.html#ae703fe1b8c8355e522d42753936161a5" title=" " alt="" coords="239,202,460,229"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="com.quillraven.game.core.Utils.getSpriteBatch" name="com.quillraven.game.core.Utils.getSpriteBatch">
+<area shape="rect" id="node1" title=" " alt="" coords="321,39,495,80"/>
+<area shape="rect" id="node2" href="$classcom_1_1quillraven_1_1game_1_1ecs_1_1system_1_1_game_render_system.html#a478efea03b534ccb8eb6bda5020c3f12" title=" " alt="" coords="5,5,273,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1quillraven_1_1game_1_1core_1_1ui_1_1_h_u_d.html#a07ee555014f34df360638cf5b282ddd3" title=" " alt="" coords="46,71,233,112"/>
+</map>

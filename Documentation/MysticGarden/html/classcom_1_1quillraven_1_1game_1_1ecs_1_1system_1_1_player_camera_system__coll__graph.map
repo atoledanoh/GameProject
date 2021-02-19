@@ -1,0 +1,5 @@
+<map id="com.quillraven.game.ecs.system.PlayerCameraSystem" name="com.quillraven.game.ecs.system.PlayerCameraSystem">
+<area shape="rect" id="node1" title=" " alt="" coords="38,95,254,136"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,13,119,39"/>
+<area shape="rect" id="node3" href="$interfacecom_1_1quillraven_1_1game_1_1map_1_1_map_manager_1_1_map_listener.html" title=" " alt="" coords="143,5,317,47"/>
+</map>

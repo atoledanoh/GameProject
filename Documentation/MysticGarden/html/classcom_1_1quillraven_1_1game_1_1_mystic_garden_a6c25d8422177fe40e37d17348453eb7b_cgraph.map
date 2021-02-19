@@ -1,0 +1,8 @@
+<map id="com.quillraven.game.MysticGarden.render" name="com.quillraven.game.MysticGarden.render">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,188,80"/>
+<area shape="rect" id="node2" href="$classcom_1_1quillraven_1_1game_1_1core_1_1_game.html#ad98665dfe49f8834eb1fb1c4fcc17491" title=" " alt="" coords="236,39,409,80"/>
+<area shape="rect" id="node3" href="$classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state.html#aea38bcee8a7cfe0c5117abcc3776e0ae" title=" " alt="" coords="457,5,696,47"/>
+<area shape="rect" id="node5" href="$classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state.html#ac2cb256e09edb9be66b81f9975e91f59" title=" " alt="" coords="457,71,696,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1quillraven_1_1game_1_1core_1_1ui_1_1_h_u_d.html#afa0c57ba786af5819421e04505552e48" title=" " alt="" coords="744,5,931,47"/>
+<area shape="rect" id="node6" href="$classcom_1_1quillraven_1_1game_1_1core_1_1ui_1_1_h_u_d.html#af73722c93e66d75c697be31b7421fede" title=" " alt="" coords="744,71,931,112"/>
+</map>

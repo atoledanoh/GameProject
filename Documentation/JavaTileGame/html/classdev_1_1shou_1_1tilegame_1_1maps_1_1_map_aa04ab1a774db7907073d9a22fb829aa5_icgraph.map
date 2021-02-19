@@ -1,0 +1,7 @@
+<map id="dev.shou.tilegame.maps.Map.getHeight" name="dev.shou.tilegame.maps.Map.getHeight">
+<area shape="rect" id="node1" title=" " alt="" coords="757,39,971,80"/>
+<area shape="rect" id="node2" href="$classdev_1_1shou_1_1tilegame_1_1gfx_1_1_game_camera.html#a69a91b014cf530b77638006551358f16" title=" " alt="" coords="523,39,709,80"/>
+<area shape="rect" id="node3" href="$classdev_1_1shou_1_1tilegame_1_1gfx_1_1_game_camera.html#a2fc31dc13c8eb8c32496aee94387df11" title=" " alt="" coords="288,5,475,47"/>
+<area shape="rect" id="node5" href="$classdev_1_1shou_1_1tilegame_1_1gfx_1_1_game_camera.html#af0d7c00954bbd0da5084dfe525326361" title=" " alt="" coords="288,71,475,112"/>
+<area shape="rect" id="node4" href="$classdev_1_1shou_1_1tilegame_1_1entities_1_1creatures_1_1_player.html#a4a7d4d46a157a1e2dbe409b1eab2b02c" title=" " alt="" coords="5,5,240,47"/>
+</map>

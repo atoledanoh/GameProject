@@ -1,0 +1,5 @@
+<map id="com.quillraven.game.core.ecs.system.ParticleSystem.processEntity" name="com.quillraven.game.core.ecs.system.ParticleSystem.processEntity">
+<area shape="rect" id="node1" title=" " alt="" coords="5,50,251,91"/>
+<area shape="rect" id="node2" href="$enumcom_1_1quillraven_1_1game_1_1core_1_1ecs_1_1component_1_1_particle_effect_component_1_1_particle_effect_type.html#aefc2f948dbcff08796030ced102f527e" title=" " alt="" coords="299,5,595,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1quillraven_1_1game_1_1core_1_1_utils.html#a72a7a6dc229ec41b41538ff0317bca9c" title=" " alt="" coords="359,86,534,127"/>
+</map>

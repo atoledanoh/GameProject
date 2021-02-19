@@ -1,0 +1,5 @@
+<map id="com.quillraven.game.map.MapManager.addMapListener" name="com.quillraven.game.map.MapManager.addMapListener">
+<area shape="rect" id="node1" title=" " alt="" coords="333,39,527,80"/>
+<area shape="rect" id="node2" href="$classcom_1_1quillraven_1_1game_1_1ecs_1_1system_1_1_game_render_system.html#a478efea03b534ccb8eb6bda5020c3f12" title=" " alt="" coords="11,5,279,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1quillraven_1_1game_1_1ecs_1_1system_1_1_player_camera_system.html#a513081d5e5f5c790b649a3cdc3fb1f2f" title=" " alt="" coords="5,71,285,112"/>
+</map>

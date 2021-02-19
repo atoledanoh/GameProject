@@ -1,0 +1,5 @@
+<map id="com.brentaureli.mariobros.Screens.PlayScreen.handleInput" name="com.brentaureli.mariobros.Screens.PlayScreen.handleInput">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,216,80"/>
+<area shape="rect" id="node2" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_mario.html#aa5f148bb30da7f329f628585e00511e1" title=" " alt="" coords="264,5,440,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_mario.html#a3eda723cc15fc1fbe71f3c905b9e6729" title=" " alt="" coords="264,71,440,112"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="com.brentaureli.mariobros.Scenes.Hud.addScore" name="com.brentaureli.mariobros.Scenes.Hud.addScore">
+<area shape="rect" id="node1" title=" " alt="" coords="284,39,460,80"/>
+<area shape="rect" id="node2" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_tile_objects_1_1_brick.html#a663d68fe9c627b674ea9f5db34acc143" title=" " alt="" coords="5,5,236,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_tile_objects_1_1_coin.html#ad2f15fa33bfe7b0dd568804512fc9954" title=" " alt="" coords="7,71,234,112"/>
+</map>

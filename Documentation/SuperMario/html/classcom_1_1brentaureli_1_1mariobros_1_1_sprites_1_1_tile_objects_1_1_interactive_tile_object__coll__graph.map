@@ -1,0 +1,11 @@
+<map id="com.brentaureli.mariobros.Sprites.TileObjects.InteractiveTileObject" name="com.brentaureli.mariobros.Sprites.TileObjects.InteractiveTileObject">
+<area shape="rect" id="node1" title=" " alt="" coords="388,159,583,215"/>
+<area shape="rect" id="node2" title=" " alt="" coords="177,5,233,32"/>
+<area shape="rect" id="node3" href="$classcom_1_1brentaureli_1_1mariobros_1_1_screens_1_1_play_screen.html" title=" " alt="" coords="117,57,293,98"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,64,68,91"/>
+<area shape="rect" id="node5" title=" " alt="" coords="174,123,237,149"/>
+<area shape="rect" id="node6" title=" " alt="" coords="163,173,248,200"/>
+<area shape="rect" id="node7" title=" " alt="" coords="165,224,245,251"/>
+<area shape="rect" id="node8" title=" " alt="" coords="179,275,231,301"/>
+<area shape="rect" id="node9" title=" " alt="" coords="168,325,243,352"/>
+</map>

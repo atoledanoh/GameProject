@@ -1,0 +1,5 @@
+<map id="com.brentaureli.mariobros.Sprites.Mario.getStateTimer" name="com.brentaureli.mariobros.Sprites.Mario.getStateTimer">
+<area shape="rect" id="node1" title=" " alt="" coords="485,5,669,47"/>
+<area shape="rect" id="node2" href="$classcom_1_1brentaureli_1_1mariobros_1_1_screens_1_1_play_screen.html#a9e10d747d4c3f57c46f30626b506c3d0" title=" " alt="" coords="235,5,437,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1brentaureli_1_1mariobros_1_1_screens_1_1_play_screen.html#a2b7d96116a4a41c60a0cfab834ba9a45" title=" " alt="" coords="5,5,187,47"/>
+</map>

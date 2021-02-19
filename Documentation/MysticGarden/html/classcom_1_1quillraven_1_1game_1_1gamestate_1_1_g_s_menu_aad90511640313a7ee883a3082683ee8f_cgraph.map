@@ -1,0 +1,7 @@
+<map id="com.quillraven.game.gamestate.GSMenu.activate" name="com.quillraven.game.gamestate.GSMenu.activate">
+<area shape="rect" id="node1" title=" " alt="" coords="5,104,215,145"/>
+<area shape="rect" id="node2" href="$classcom_1_1quillraven_1_1game_1_1core_1_1_preference_manager.html#a90986af58d0624880cc2330afa578e38" title=" " alt="" coords="263,5,473,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1quillraven_1_1game_1_1core_1_1_utils.html#affa88b816fa1d7d4da926f273232c589" title=" " alt="" coords="281,71,455,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1quillraven_1_1game_1_1core_1_1_utils.html#a021b7453b2625356f600f6ed4fd23ea1" title=" " alt="" coords="277,136,459,177"/>
+<area shape="rect" id="node5" href="$classcom_1_1quillraven_1_1game_1_1core_1_1_audio_manager.html#a280d85f50e7b2edeeedf8ae1d6b0e792" title=" " alt="" coords="281,201,455,243"/>
+</map>

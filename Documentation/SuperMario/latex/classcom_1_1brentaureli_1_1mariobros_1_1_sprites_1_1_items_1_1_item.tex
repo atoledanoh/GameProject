@@ -1,0 +1,185 @@
+\hypertarget{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item}{}\doxysection{com.\+brentaureli.\+mariobros.\+Sprites.\+Items.\+Item Class Reference}
+\label{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item}\index{com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}}
+
+
+Inheritance diagram for com.\+brentaureli.\+mariobros.\+Sprites.\+Items.\+Item\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+brentaureli.\+mariobros.\+Sprites.\+Items.\+Item\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a116ebc6271dd0e854e6c328c42560820}{Item}} (\mbox{\hyperlink{classcom_1_1brentaureli_1_1mariobros_1_1_screens_1_1_play_screen}{Play\+Screen}} \mbox{\hyperlink{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_af00ed54b22e53ca3080b4e332a8ebf8f}{screen}}, float x, float y)
+\item 
+abstract void \mbox{\hyperlink{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_ac30df734deabc74562fcb9de40f3eec6}{define\+Item}} ()
+\item 
+abstract void \mbox{\hyperlink{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_aecb8a3407787074e4da12538754b0bc3}{use}} (\mbox{\hyperlink{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_mario}{Mario}} mario)
+\item 
+void \mbox{\hyperlink{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_aa4958f034a30e62cf3ee2a66819476d1}{update}} (float dt)
+\item 
+void \mbox{\hyperlink{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a6ed281b72453926442b4fd69216aaa03}{draw}} (Batch batch)
+\item 
+void \mbox{\hyperlink{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a885238ba7a90eb6fda00a9134115c3e4}{destroy}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a6da2decd07a95cf0aca4ddcf2965c333}{reverse\+Velocity}} (boolean x, boolean y)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1brentaureli_1_1mariobros_1_1_screens_1_1_play_screen}{Play\+Screen}} \mbox{\hyperlink{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_af00ed54b22e53ca3080b4e332a8ebf8f}{screen}}
+\item 
+World \mbox{\hyperlink{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a74def4bde8571605df243638f63b2f0c}{world}}
+\item 
+Vector2 \mbox{\hyperlink{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_ad26f733dfb6e3244d7c4c557c84e45fe}{velocity}}
+\item 
+boolean \mbox{\hyperlink{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a501809db446d88d2c860fca54a9ee4eb}{to\+Destroy}}
+\item 
+boolean \mbox{\hyperlink{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a8598b807850579cd0cf6ba5ecd6d8cd0}{destroyed}}
+\item 
+Body \mbox{\hyperlink{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a40fab5a0dd4f6a5de2a06ba7882cc56a}{body}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Created by brentaureli on 9/24/15. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a116ebc6271dd0e854e6c328c42560820}\label{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a116ebc6271dd0e854e6c328c42560820}} 
+\index{com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}!Item@{Item}}
+\index{Item@{Item}!com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}}
+\doxysubsubsection{\texorpdfstring{Item()}{Item()}}
+{\footnotesize\ttfamily com.\+brentaureli.\+mariobros.\+Sprites.\+Items.\+Item.\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1brentaureli_1_1mariobros_1_1_screens_1_1_play_screen}{Play\+Screen}}}]{screen,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a116ebc6271dd0e854e6c328c42560820_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_ac30df734deabc74562fcb9de40f3eec6}\label{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_ac30df734deabc74562fcb9de40f3eec6}} 
+\index{com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}!defineItem@{defineItem}}
+\index{defineItem@{defineItem}!com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}}
+\doxysubsubsection{\texorpdfstring{defineItem()}{defineItem()}}
+{\footnotesize\ttfamily abstract void com.\+brentaureli.\+mariobros.\+Sprites.\+Items.\+Item.\+define\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_mushroom_ab40a37c7daa449b3da743cd4a4ceff38}{com.\+brentaureli.\+mariobros.\+Sprites.\+Items.\+Mushroom}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_ac30df734deabc74562fcb9de40f3eec6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a885238ba7a90eb6fda00a9134115c3e4}\label{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a885238ba7a90eb6fda00a9134115c3e4}} 
+\index{com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}!destroy@{destroy}}
+\index{destroy@{destroy}!com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void com.\+brentaureli.\+mariobros.\+Sprites.\+Items.\+Item.\+destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a885238ba7a90eb6fda00a9134115c3e4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a6ed281b72453926442b4fd69216aaa03}\label{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a6ed281b72453926442b4fd69216aaa03}} 
+\index{com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}!draw@{draw}}
+\index{draw@{draw}!com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void com.\+brentaureli.\+mariobros.\+Sprites.\+Items.\+Item.\+draw (\begin{DoxyParamCaption}\item[{Batch}]{batch }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a6da2decd07a95cf0aca4ddcf2965c333}\label{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a6da2decd07a95cf0aca4ddcf2965c333}} 
+\index{com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}!reverseVelocity@{reverseVelocity}}
+\index{reverseVelocity@{reverseVelocity}!com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}}
+\doxysubsubsection{\texorpdfstring{reverseVelocity()}{reverseVelocity()}}
+{\footnotesize\ttfamily void com.\+brentaureli.\+mariobros.\+Sprites.\+Items.\+Item.\+reverse\+Velocity (\begin{DoxyParamCaption}\item[{boolean}]{x,  }\item[{boolean}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_aa4958f034a30e62cf3ee2a66819476d1}\label{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_aa4958f034a30e62cf3ee2a66819476d1}} 
+\index{com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}!update@{update}}
+\index{update@{update}!com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void com.\+brentaureli.\+mariobros.\+Sprites.\+Items.\+Item.\+update (\begin{DoxyParamCaption}\item[{float}]{dt }\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_mushroom_a21f5fd6f8d409861e2fd3b49e0d82ac0}{com.\+brentaureli.\+mariobros.\+Sprites.\+Items.\+Mushroom}}.
+
+\mbox{\Hypertarget{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_aecb8a3407787074e4da12538754b0bc3}\label{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_aecb8a3407787074e4da12538754b0bc3}} 
+\index{com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}!use@{use}}
+\index{use@{use}!com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}}
+\doxysubsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily abstract void com.\+brentaureli.\+mariobros.\+Sprites.\+Items.\+Item.\+use (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_mario}{Mario}}}]{mario }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_mushroom_a757f525cb969335bbe6fa9c5ebbe4abe}{com.\+brentaureli.\+mariobros.\+Sprites.\+Items.\+Mushroom}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a40fab5a0dd4f6a5de2a06ba7882cc56a}\label{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a40fab5a0dd4f6a5de2a06ba7882cc56a}} 
+\index{com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}!body@{body}}
+\index{body@{body}!com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}}
+\doxysubsubsection{\texorpdfstring{body}{body}}
+{\footnotesize\ttfamily Body com.\+brentaureli.\+mariobros.\+Sprites.\+Items.\+Item.\+body\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a8598b807850579cd0cf6ba5ecd6d8cd0}\label{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a8598b807850579cd0cf6ba5ecd6d8cd0}} 
+\index{com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}!destroyed@{destroyed}}
+\index{destroyed@{destroyed}!com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}}
+\doxysubsubsection{\texorpdfstring{destroyed}{destroyed}}
+{\footnotesize\ttfamily boolean com.\+brentaureli.\+mariobros.\+Sprites.\+Items.\+Item.\+destroyed\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_af00ed54b22e53ca3080b4e332a8ebf8f}\label{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_af00ed54b22e53ca3080b4e332a8ebf8f}} 
+\index{com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}!screen@{screen}}
+\index{screen@{screen}!com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}}
+\doxysubsubsection{\texorpdfstring{screen}{screen}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcom_1_1brentaureli_1_1mariobros_1_1_screens_1_1_play_screen}{Play\+Screen}} com.\+brentaureli.\+mariobros.\+Sprites.\+Items.\+Item.\+screen\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a501809db446d88d2c860fca54a9ee4eb}\label{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a501809db446d88d2c860fca54a9ee4eb}} 
+\index{com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}!toDestroy@{toDestroy}}
+\index{toDestroy@{toDestroy}!com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}}
+\doxysubsubsection{\texorpdfstring{toDestroy}{toDestroy}}
+{\footnotesize\ttfamily boolean com.\+brentaureli.\+mariobros.\+Sprites.\+Items.\+Item.\+to\+Destroy\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_ad26f733dfb6e3244d7c4c557c84e45fe}\label{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_ad26f733dfb6e3244d7c4c557c84e45fe}} 
+\index{com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}!velocity@{velocity}}
+\index{velocity@{velocity}!com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}}
+\doxysubsubsection{\texorpdfstring{velocity}{velocity}}
+{\footnotesize\ttfamily Vector2 com.\+brentaureli.\+mariobros.\+Sprites.\+Items.\+Item.\+velocity\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a74def4bde8571605df243638f63b2f0c}\label{classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item_a74def4bde8571605df243638f63b2f0c}} 
+\index{com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}!world@{world}}
+\index{world@{world}!com.brentaureli.mariobros.Sprites.Items.Item@{com.brentaureli.mariobros.Sprites.Items.Item}}
+\doxysubsubsection{\texorpdfstring{world}{world}}
+{\footnotesize\ttfamily World com.\+brentaureli.\+mariobros.\+Sprites.\+Items.\+Item.\+world\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Git\+Hub/\+Super\+Mario/core/src/com/brentaureli/mariobros/\+Sprites/\+Items/\mbox{\hyperlink{_item_8java}{Item.\+java}}\end{DoxyCompactItemize}

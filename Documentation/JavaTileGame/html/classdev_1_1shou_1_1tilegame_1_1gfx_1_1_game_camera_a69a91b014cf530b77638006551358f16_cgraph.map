@@ -1,0 +1,10 @@
+<map id="dev.shou.tilegame.gfx.GameCamera.checkBlankSpace" name="dev.shou.tilegame.gfx.GameCamera.checkBlankSpace">
+<area shape="rect" id="node1" title=" " alt="" coords="5,129,192,171"/>
+<area shape="rect" id="node2" href="$classdev_1_1shou_1_1tilegame_1_1_handler.html#a6a6bc8361486ebfb9790d08a0948bf55" title=" " alt="" coords="253,5,449,47"/>
+<area shape="rect" id="node4" href="$classdev_1_1shou_1_1tilegame_1_1maps_1_1_map.html#aa04ab1a774db7907073d9a22fb829aa5" title=" " alt="" coords="244,71,457,112"/>
+<area shape="rect" id="node5" href="$classdev_1_1shou_1_1tilegame_1_1_handler.html#ae703fe1b8c8355e522d42753936161a5" title=" " alt="" coords="240,137,461,163"/>
+<area shape="rect" id="node6" href="$classdev_1_1shou_1_1tilegame_1_1_handler.html#a70f6d941e7fdbdec0dd07f3f6493ee97" title=" " alt="" coords="253,188,449,229"/>
+<area shape="rect" id="node8" href="$classdev_1_1shou_1_1tilegame_1_1maps_1_1_map.html#aac0b072a8be4d4e538ffa635de19424e" title=" " alt="" coords="244,253,457,295"/>
+<area shape="rect" id="node3" href="$classdev_1_1shou_1_1tilegame_1_1_game.html#a62a7b62a76855ef3daef7a8f755f8f2f" title=" " alt="" coords="509,5,696,47"/>
+<area shape="rect" id="node7" href="$classdev_1_1shou_1_1tilegame_1_1_game.html#acf53514ff2d0763c957567427629404b" title=" " alt="" coords="509,188,696,229"/>
+</map>

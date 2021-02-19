@@ -1,0 +1,8 @@
+<map id="com.quillraven.game.gamestate.GSVictory" name="com.quillraven.game.gamestate.GSVictory">
+<area shape="rect" id="node1" title=" " alt="" coords="836,68,1045,109"/>
+<area shape="rect" id="node2" href="$classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state.html" title=" " alt="" coords="548,68,787,109"/>
+<area shape="rect" id="node3" title=" " alt="" coords="65,134,151,161"/>
+<area shape="rect" id="node5" href="$classcom_1_1quillraven_1_1game_1_1core_1_1ui_1_1_h_u_d.html" title=" " alt="" coords="260,75,475,102"/>
+<area shape="rect" id="node4" href="$interfacecom_1_1quillraven_1_1game_1_1core_1_1input_1_1_key_input_listener.html" title=" " alt="" coords="5,5,211,47"/>
+<area shape="rect" id="node6" title=" " alt="" coords="60,75,156,102"/>
+</map>

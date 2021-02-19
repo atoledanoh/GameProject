@@ -1,0 +1,204 @@
+\hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager}{}\doxysection{com.\+quillraven.\+game.\+core.\+input.\+Input\+Manager Class Reference}
+\label{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager}\index{com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}}
+
+
+Inheritance diagram for com.\+quillraven.\+game.\+core.\+input.\+Input\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+quillraven.\+game.\+core.\+input.\+Input\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_adaa3533cf1050f5048cf735df4910060}{Input\+Manager}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_ac74dc974ae654e2f12cacb105a1d8f42}{add\+Key\+Input\+Listener}} (final \mbox{\hyperlink{interfacecom_1_1quillraven_1_1game_1_1core_1_1input_1_1_key_input_listener}{Key\+Input\+Listener}} listener)
+\item 
+void \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_aaed4ec8fe4a4a659916655b4e242c389}{remove\+Key\+Input\+Listener}} (final \mbox{\hyperlink{interfacecom_1_1quillraven_1_1game_1_1core_1_1input_1_1_key_input_listener}{Key\+Input\+Listener}} listener)
+\item 
+void \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_a679883cfd4d4f8f05908b387e924ba23}{notify\+Key\+Down}} (final \mbox{\hyperlink{enumcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_e_key}{EKey}} key)
+\item 
+void \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_a0cface2397a3b44e4091bf641d147933}{notify\+Key\+Up}} (final \mbox{\hyperlink{enumcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_e_key}{EKey}} key)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_aed662b97e9f94a203a23d14f43650ba2}{is\+Key\+Down}} (final \mbox{\hyperlink{enumcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_e_key}{EKey}} key)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_a6ed2bb9e2059a95fc895cef41d51e5dc}{key\+Down}} (final int keycode)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_a09349bad5d382548b22496d0f3072d6c}{key\+Up}} (final int keycode)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_a1a42546ec982069fccb30d23bc28eb50}{key\+Typed}} (final char character)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_aa7bebb2b3afd8ac76213b901521a5c2f}{touch\+Down}} (final int screenX, final int screenY, final int pointer, final int button)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_ab0e86c80acd736b06afb1a55efcaa10d}{touch\+Up}} (final int screenX, final int screenY, final int pointer, final int button)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_acfc4a5fc1cf2637363b2ec52a3c63c0a}{touch\+Dragged}} (final int screenX, final int screenY, final int pointer)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_ad755badadc9aa523feea4b0b60363168}{mouse\+Moved}} (final int screenX, final int screenY)
+\item 
+boolean \mbox{\hyperlink{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_a72e701bb6d9dd814a87f96705df56adb}{scrolled}} (final int amount)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_adaa3533cf1050f5048cf735df4910060}\label{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_adaa3533cf1050f5048cf735df4910060}} 
+\index{com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}!InputManager@{InputManager}}
+\index{InputManager@{InputManager}!com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}}
+\doxysubsubsection{\texorpdfstring{InputManager()}{InputManager()}}
+{\footnotesize\ttfamily com.\+quillraven.\+game.\+core.\+input.\+Input\+Manager.\+Input\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_ac74dc974ae654e2f12cacb105a1d8f42}\label{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_ac74dc974ae654e2f12cacb105a1d8f42}} 
+\index{com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}!addKeyInputListener@{addKeyInputListener}}
+\index{addKeyInputListener@{addKeyInputListener}!com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}}
+\doxysubsubsection{\texorpdfstring{addKeyInputListener()}{addKeyInputListener()}}
+{\footnotesize\ttfamily void com.\+quillraven.\+game.\+core.\+input.\+Input\+Manager.\+add\+Key\+Input\+Listener (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{interfacecom_1_1quillraven_1_1game_1_1core_1_1input_1_1_key_input_listener}{Key\+Input\+Listener}}}]{listener }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_ac74dc974ae654e2f12cacb105a1d8f42_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_aed662b97e9f94a203a23d14f43650ba2}\label{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_aed662b97e9f94a203a23d14f43650ba2}} 
+\index{com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}!isKeyDown@{isKeyDown}}
+\index{isKeyDown@{isKeyDown}!com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}}
+\doxysubsubsection{\texorpdfstring{isKeyDown()}{isKeyDown()}}
+{\footnotesize\ttfamily boolean com.\+quillraven.\+game.\+core.\+input.\+Input\+Manager.\+is\+Key\+Down (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{enumcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_e_key}{EKey}}}]{key }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_aed662b97e9f94a203a23d14f43650ba2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_a6ed2bb9e2059a95fc895cef41d51e5dc}\label{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_a6ed2bb9e2059a95fc895cef41d51e5dc}} 
+\index{com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}!keyDown@{keyDown}}
+\index{keyDown@{keyDown}!com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}}
+\doxysubsubsection{\texorpdfstring{keyDown()}{keyDown()}}
+{\footnotesize\ttfamily boolean com.\+quillraven.\+game.\+core.\+input.\+Input\+Manager.\+key\+Down (\begin{DoxyParamCaption}\item[{final int}]{keycode }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_a6ed2bb9e2059a95fc895cef41d51e5dc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_a1a42546ec982069fccb30d23bc28eb50}\label{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_a1a42546ec982069fccb30d23bc28eb50}} 
+\index{com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}!keyTyped@{keyTyped}}
+\index{keyTyped@{keyTyped}!com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}}
+\doxysubsubsection{\texorpdfstring{keyTyped()}{keyTyped()}}
+{\footnotesize\ttfamily boolean com.\+quillraven.\+game.\+core.\+input.\+Input\+Manager.\+key\+Typed (\begin{DoxyParamCaption}\item[{final char}]{character }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_a09349bad5d382548b22496d0f3072d6c}\label{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_a09349bad5d382548b22496d0f3072d6c}} 
+\index{com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}!keyUp@{keyUp}}
+\index{keyUp@{keyUp}!com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}}
+\doxysubsubsection{\texorpdfstring{keyUp()}{keyUp()}}
+{\footnotesize\ttfamily boolean com.\+quillraven.\+game.\+core.\+input.\+Input\+Manager.\+key\+Up (\begin{DoxyParamCaption}\item[{final int}]{keycode }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_a09349bad5d382548b22496d0f3072d6c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_ad755badadc9aa523feea4b0b60363168}\label{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_ad755badadc9aa523feea4b0b60363168}} 
+\index{com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}!mouseMoved@{mouseMoved}}
+\index{mouseMoved@{mouseMoved}!com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}}
+\doxysubsubsection{\texorpdfstring{mouseMoved()}{mouseMoved()}}
+{\footnotesize\ttfamily boolean com.\+quillraven.\+game.\+core.\+input.\+Input\+Manager.\+mouse\+Moved (\begin{DoxyParamCaption}\item[{final int}]{screenX,  }\item[{final int}]{screenY }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_a679883cfd4d4f8f05908b387e924ba23}\label{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_a679883cfd4d4f8f05908b387e924ba23}} 
+\index{com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}!notifyKeyDown@{notifyKeyDown}}
+\index{notifyKeyDown@{notifyKeyDown}!com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}}
+\doxysubsubsection{\texorpdfstring{notifyKeyDown()}{notifyKeyDown()}}
+{\footnotesize\ttfamily void com.\+quillraven.\+game.\+core.\+input.\+Input\+Manager.\+notify\+Key\+Down (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{enumcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_e_key}{EKey}}}]{key }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_a679883cfd4d4f8f05908b387e924ba23_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_a0cface2397a3b44e4091bf641d147933}\label{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_a0cface2397a3b44e4091bf641d147933}} 
+\index{com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}!notifyKeyUp@{notifyKeyUp}}
+\index{notifyKeyUp@{notifyKeyUp}!com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}}
+\doxysubsubsection{\texorpdfstring{notifyKeyUp()}{notifyKeyUp()}}
+{\footnotesize\ttfamily void com.\+quillraven.\+game.\+core.\+input.\+Input\+Manager.\+notify\+Key\+Up (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{enumcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_e_key}{EKey}}}]{key }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_a0cface2397a3b44e4091bf641d147933_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_aaed4ec8fe4a4a659916655b4e242c389}\label{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_aaed4ec8fe4a4a659916655b4e242c389}} 
+\index{com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}!removeKeyInputListener@{removeKeyInputListener}}
+\index{removeKeyInputListener@{removeKeyInputListener}!com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}}
+\doxysubsubsection{\texorpdfstring{removeKeyInputListener()}{removeKeyInputListener()}}
+{\footnotesize\ttfamily void com.\+quillraven.\+game.\+core.\+input.\+Input\+Manager.\+remove\+Key\+Input\+Listener (\begin{DoxyParamCaption}\item[{final \mbox{\hyperlink{interfacecom_1_1quillraven_1_1game_1_1core_1_1input_1_1_key_input_listener}{Key\+Input\+Listener}}}]{listener }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_aaed4ec8fe4a4a659916655b4e242c389_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_a72e701bb6d9dd814a87f96705df56adb}\label{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_a72e701bb6d9dd814a87f96705df56adb}} 
+\index{com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}!scrolled@{scrolled}}
+\index{scrolled@{scrolled}!com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}}
+\doxysubsubsection{\texorpdfstring{scrolled()}{scrolled()}}
+{\footnotesize\ttfamily boolean com.\+quillraven.\+game.\+core.\+input.\+Input\+Manager.\+scrolled (\begin{DoxyParamCaption}\item[{final int}]{amount }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_aa7bebb2b3afd8ac76213b901521a5c2f}\label{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_aa7bebb2b3afd8ac76213b901521a5c2f}} 
+\index{com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}!touchDown@{touchDown}}
+\index{touchDown@{touchDown}!com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}}
+\doxysubsubsection{\texorpdfstring{touchDown()}{touchDown()}}
+{\footnotesize\ttfamily boolean com.\+quillraven.\+game.\+core.\+input.\+Input\+Manager.\+touch\+Down (\begin{DoxyParamCaption}\item[{final int}]{screenX,  }\item[{final int}]{screenY,  }\item[{final int}]{pointer,  }\item[{final int}]{button }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_acfc4a5fc1cf2637363b2ec52a3c63c0a}\label{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_acfc4a5fc1cf2637363b2ec52a3c63c0a}} 
+\index{com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}!touchDragged@{touchDragged}}
+\index{touchDragged@{touchDragged}!com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}}
+\doxysubsubsection{\texorpdfstring{touchDragged()}{touchDragged()}}
+{\footnotesize\ttfamily boolean com.\+quillraven.\+game.\+core.\+input.\+Input\+Manager.\+touch\+Dragged (\begin{DoxyParamCaption}\item[{final int}]{screenX,  }\item[{final int}]{screenY,  }\item[{final int}]{pointer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_ab0e86c80acd736b06afb1a55efcaa10d}\label{classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager_ab0e86c80acd736b06afb1a55efcaa10d}} 
+\index{com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}!touchUp@{touchUp}}
+\index{touchUp@{touchUp}!com.quillraven.game.core.input.InputManager@{com.quillraven.game.core.input.InputManager}}
+\doxysubsubsection{\texorpdfstring{touchUp()}{touchUp()}}
+{\footnotesize\ttfamily boolean com.\+quillraven.\+game.\+core.\+input.\+Input\+Manager.\+touch\+Up (\begin{DoxyParamCaption}\item[{final int}]{screenX,  }\item[{final int}]{screenY,  }\item[{final int}]{pointer,  }\item[{final int}]{button }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Git\+Hub/\+Mystic\+Garden/core/src/com/quillraven/game/core/input/\mbox{\hyperlink{_input_manager_8java}{Input\+Manager.\+java}}\end{DoxyCompactItemize}

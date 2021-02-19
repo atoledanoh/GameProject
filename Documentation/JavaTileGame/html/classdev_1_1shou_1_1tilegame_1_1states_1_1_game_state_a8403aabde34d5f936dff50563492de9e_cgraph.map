@@ -1,0 +1,6 @@
+<map id="dev.shou.tilegame.states.GameState.tick" name="dev.shou.tilegame.states.GameState.tick">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,176,47"/>
+<area shape="rect" id="node2" href="$classdev_1_1shou_1_1tilegame_1_1maps_1_1_map.html#a7c84f12f3218c77450166f2d681fbd62" title=" " alt="" coords="224,13,440,39"/>
+<area shape="rect" id="node3" href="$classdev_1_1shou_1_1tilegame_1_1entities_1_1_entity_manager.html#abf608f3cea21b6faced1b7d47d2e324d" title=" " alt="" coords="488,5,664,47"/>
+<area shape="rect" id="node4" href="$classdev_1_1shou_1_1tilegame_1_1entities_1_1_entity.html#a4fa70005b2f8d04b26227e9a58570f83" title=" " alt="" coords="712,5,888,47"/>
+</map>
