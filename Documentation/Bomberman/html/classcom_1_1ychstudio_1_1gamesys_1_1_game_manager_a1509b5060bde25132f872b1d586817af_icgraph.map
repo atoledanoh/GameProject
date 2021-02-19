@@ -1,0 +1,8 @@
+<map id="com.ychstudio.gamesys.GameManager.playMusic" name="com.ychstudio.gamesys.GameManager.playMusic">
+<area shape="rect" id="node1" title=" " alt="" coords="476,104,679,145"/>
+<area shape="rect" id="node2" href="$classcom_1_1ychstudio_1_1scenes_1_1_play_screen.html#aa0087efa8bb4a2c2d8b16b55337e6960" title=" " alt="" coords="241,5,423,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1ychstudio_1_1scenes_1_1_game_over_screen.html#a9dfe6b23ba5d3f23d8b6e3765fc2160c" title=" " alt="" coords="236,71,428,112"/>
+<area shape="rect" id="node5" href="$classcom_1_1ychstudio_1_1scenes_1_1_main_menu_screen.html#a73c42636cb7cfe0a34c30bc3c31def71" title=" " alt="" coords="239,136,425,177"/>
+<area shape="rect" id="node6" href="$classcom_1_1ychstudio_1_1scenes_1_1_play_screen.html#ac1d3dacb81727ad1b4a9b8be4268fe19" title=" " alt="" coords="241,201,423,243"/>
+<area shape="rect" id="node3" href="$classcom_1_1ychstudio_1_1scenes_1_1_play_screen.html#afce2caeaa0c905b54d0564efd8d0541b" title=" " alt="" coords="5,5,188,47"/>
+</map>

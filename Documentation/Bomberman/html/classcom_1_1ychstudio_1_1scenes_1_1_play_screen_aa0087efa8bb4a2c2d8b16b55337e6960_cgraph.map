@@ -1,0 +1,8 @@
+<map id="com.ychstudio.scenes.PlayScreen.handleInput" name="com.ychstudio.scenes.PlayScreen.handleInput">
+<area shape="rect" id="node1" title=" " alt="" coords="5,104,188,145"/>
+<area shape="rect" id="node2" href="$classcom_1_1ychstudio_1_1gamesys_1_1_game_manager.html#af849443c40ab595eebc79c3896ffaa43" title=" " alt="" coords="236,5,439,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1ychstudio_1_1gamesys_1_1_game_manager.html#a0e42bd12b8ce7344bd813b5343ca5cc3" title=" " alt="" coords="236,71,439,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1ychstudio_1_1gamesys_1_1_game_manager.html#a1509b5060bde25132f872b1d586817af" title=" " alt="" coords="236,136,439,177"/>
+<area shape="rect" id="node6" href="$classcom_1_1ychstudio_1_1gamesys_1_1_game_manager.html#a6a6867adc24a87a004e4289fed6d0e07" title=" " alt="" coords="236,201,439,243"/>
+<area shape="rect" id="node5" href="$classcom_1_1ychstudio_1_1gamesys_1_1_game_manager.html#acfa5f640f5457cd78d1c16cbac2723d9" title=" " alt="" coords="487,136,689,177"/>
+</map>

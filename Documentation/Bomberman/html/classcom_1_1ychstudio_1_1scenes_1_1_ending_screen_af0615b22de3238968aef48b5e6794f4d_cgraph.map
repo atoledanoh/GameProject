@@ -1,0 +1,5 @@
+<map id="com.ychstudio.scenes.EndingScreen.show" name="com.ychstudio.scenes.EndingScreen.show">
+<area shape="rect" id="node1" title=" " alt="" coords="5,35,203,76"/>
+<area shape="rect" id="node2" href="$classcom_1_1ychstudio_1_1scenes_1_1actors_1_1_anim_image.html#a3e463c6d1dd98372737fd1d4a7e1afa7" title=" " alt="" coords="251,5,448,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1ychstudio_1_1scenes_1_1actors_1_1_anim_image.html#a3954e6c9f81728c4fa3f36f0c62df884" title=" " alt="" coords="496,35,693,76"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="com.ychstudio.listeners.B2DWorldContactListener.beginContact" name="com.ychstudio.listeners.B2DWorldContactListener.beginContact">
+<area shape="rect" id="node1" title=" " alt="" coords="5,214,212,270"/>
+<area shape="rect" id="node2" href="$classcom_1_1ychstudio_1_1components_1_1_player.html#a69ebc572b80a11a73a3500f8c2cdfd5d" title=" " alt="" coords="268,5,455,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1ychstudio_1_1gamesys_1_1_game_manager.html#af849443c40ab595eebc79c3896ffaa43" title=" " alt="" coords="537,188,739,229"/>
+<area shape="rect" id="node4" href="$classcom_1_1ychstudio_1_1gamesys_1_1_game_manager.html#aadc2692ab9248a93728160b1030e534e" title=" " alt="" coords="260,449,463,491"/>
+<area shape="rect" id="node6" href="$classcom_1_1ychstudio_1_1components_1_1_player.html#a2cfeb3a32ff51334d0e978bb13cf8bc7" title=" " alt="" coords="268,123,455,164"/>
+<area shape="rect" id="node8" href="$classcom_1_1ychstudio_1_1components_1_1_player.html#ad1af50aa09cb80e6fcead09fddcabed5" title=" " alt="" coords="268,188,455,229"/>
+<area shape="rect" id="node9" href="$classcom_1_1ychstudio_1_1components_1_1_player.html#aaf97cbfb4cf22add626a7aba6d3f049f" title=" " alt="" coords="268,253,455,295"/>
+<area shape="rect" id="node10" href="$classcom_1_1ychstudio_1_1components_1_1_player.html#a2cb7820f796485a8847221823c1fe78c" title=" " alt="" coords="268,319,455,360"/>
+<area shape="rect" id="node11" href="$classcom_1_1ychstudio_1_1components_1_1_player.html#a319aaa6673208d7f03fb3ddc41e18b5e" title=" " alt="" coords="268,384,455,425"/>
+<area shape="rect" id="node5" href="$classcom_1_1ychstudio_1_1gamesys_1_1_game_manager.html#a6a6867adc24a87a004e4289fed6d0e07" title=" " alt="" coords="537,319,739,360"/>
+<area shape="rect" id="node7" href="$classcom_1_1ychstudio_1_1components_1_1_player.html#a731b4cdf382bb1a6ca727eb9d414349d" title=" " alt="" coords="511,253,765,295"/>
+</map>

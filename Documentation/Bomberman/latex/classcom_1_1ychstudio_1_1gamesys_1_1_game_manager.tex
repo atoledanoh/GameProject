@@ -1,0 +1,482 @@
+\hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager}{}\doxysection{com.\+ychstudio.\+gamesys.\+Game\+Manager Class Reference}
+\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager}\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+
+
+Inheritance diagram for com.\+ychstudio.\+gamesys.\+Game\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+ychstudio.\+gamesys.\+Game\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Asset\+Manager \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_ab0038c62e1507b4a9e7d419c4d56cbe1}{get\+Asset\+Manager}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a6a6867adc24a87a004e4289fed6d0e07}{play\+Sound}} (String sound\+Name)
+\item 
+void \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_af9d95b2417770f988381e0646738f90d}{play\+Sound}} (String sound\+Name, float volume, float pitch, float pan)
+\item 
+void \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a1509b5060bde25132f872b1d586817af}{play\+Music}} (String music\+Name, boolean is\+Looping)
+\item 
+void \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a662247c098af5a4f2d46b6ba2d000722}{play\+Music}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_acfa5f640f5457cd78d1c16cbac2723d9}{stop\+Music}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a0e42bd12b8ce7344bd813b5343ca5cc3}{pause\+Music}} ()
+\item 
+Queue$<$ Entity $>$ \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a523c1512ae64c9bc0fb1fbcf2fc00bcf}{get\+Remote\+Bomb\+Deque}} ()
+\item 
+Vector2 \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a4fd70533205c51f7a1b7b997938c0c93}{get\+Player\+Respawn\+Position}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a288bb3922847de533ad7afca560f9475}{set\+Player\+Respawn\+Position}} (Vector2 position)
+\item 
+void \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_aadc2692ab9248a93728160b1030e534e}{player\+One\+Up}} ()
+\item 
+Vector2 \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_ace386d9879b792697671d1f01a9829d6}{get\+Portal\+Position}} ()
+\item 
+void \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_aec0c8bbd00825bfed5b88342e04c3e4e}{set\+Portal\+Position}} (Vector2 position)
+\item 
+void \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a0924969320040243137ff29302bd3c4e}{dispose}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager}{Game\+Manager}} \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_af849443c40ab595eebc79c3896ffaa43}{get\+Instance}} ()
+\item 
+static void \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a7b447245d155a21ffc050f9fbedc10d0}{reset\+Player\+Abilities}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a83f2c1daf50c97935822c21cb099a02b}{TOTAL\+\_\+\+LEVELS}} = 5
+\item 
+static final float \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a7c235323e57111daa08b74c680cd1bd1}{PPM}} = 16.\+0f
+\item 
+static final short \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a73be1b1dcb4020cc71fa824a4a6ff1d0}{NOTHING\+\_\+\+BIT}} = 0
+\item 
+static final short \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a290e9ede642321304aebe37e50775974}{INDESTRUCTIIBLE\+\_\+\+BIT}} = 1
+\item 
+static final short \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a04f72fb65771c7533533300d5fc0b573}{BREAKABLE\+\_\+\+BIT}} = 1 $<$$<$ 1
+\item 
+static final short \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_aff84e213e4ca5c9226db08b89e7852c2}{PLAYER\+\_\+\+BIT}} = 1 $<$$<$ 2
+\item 
+static final short \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a2e45e771cf730d8bf51f8cbdf4db7f4c}{BOMB\+\_\+\+BIT}} = 1 $<$$<$ 3
+\item 
+static final short \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a13005af743abb73cc27ae5c660b167c4}{EXPLOSION\+\_\+\+BIT}} = 1 $<$$<$ 4
+\item 
+static final short \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a8703b4742c3534e6bdb08f2695418000}{ENEMY\+\_\+\+BIT}} = 1 $<$$<$ 5
+\item 
+static final short \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a36efa9ba8685368fffc6c5a663acac8e}{POWERUP\+\_\+\+BIT}} = 1 $<$$<$ 6
+\item 
+static final short \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_aec3e202e394fa1406efb933e5dbc4e8b}{PORTAL\+\_\+\+BIT}} = 1 $<$$<$ 7
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a19fb4bc584e3e0048200678023202efe}{infinite\+Lives}} = true
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_ab8ff483f5f671e74691d2f27ddf2dfc8}{reset\+Player\+Abilities}} = false
+\item 
+static int \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a6cb3fbb160fdc3e6cc2d35752782eba9}{player\+Bomb\+Capacity}} = 3
+\item 
+static int \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_af346d30d7bb27eed0b3f2d37980cf1fc}{player\+Bomb\+Left}} = 0
+\item 
+static float \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a337edb639df487dcd40291ba62bbc744}{player\+Bomb\+Regerating\+Time}} = 2.\+0f
+\item 
+static float \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a942c897c24df55b4f54bec5b5ca9677f}{player\+Bomb\+Regerating\+Time\+Left}} = 0
+\item 
+static int \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a5880d7e6f2a16bebc27786a3611f58f0}{player\+Max\+Speed}} = 0
+\item 
+static int \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a71857a2428f7056c70ff21df6401f95d}{player\+Bomb\+Power}} = 0
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a9ebd93806b9c5c93fa42e6bbf187c50d}{player\+Kick\+Bomb}} = false
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a049e357786f36396f9b56523db57f076}{player\+Remote\+Bomb}} = false
+\item 
+static int \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a14d58ef2d9ceb68f5782d11f6d1ce64b}{player\+Lives}} = 3
+\item 
+static int \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a112b82678be08369c4f5262ed9f055a3}{enemies\+Left}}
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_ac97c7ee02a29fd76640470ed7c9eb6c6}{level\+Completed}}
+\item 
+static boolean \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_ae0140375f28eaba8edde032ee23ca393}{game\+Over}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a0924969320040243137ff29302bd3c4e}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a0924969320040243137ff29302bd3c4e}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!dispose@{dispose}}
+\index{dispose@{dispose}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{dispose()}{dispose()}}
+{\footnotesize\ttfamily void com.\+ychstudio.\+gamesys.\+Game\+Manager.\+dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_ab0038c62e1507b4a9e7d419c4d56cbe1}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_ab0038c62e1507b4a9e7d419c4d56cbe1}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!getAssetManager@{getAssetManager}}
+\index{getAssetManager@{getAssetManager}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{getAssetManager()}{getAssetManager()}}
+{\footnotesize\ttfamily Asset\+Manager com.\+ychstudio.\+gamesys.\+Game\+Manager.\+get\+Asset\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_ab0038c62e1507b4a9e7d419c4d56cbe1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_af849443c40ab595eebc79c3896ffaa43}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_af849443c40ab595eebc79c3896ffaa43}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager}{Game\+Manager}} com.\+ychstudio.\+gamesys.\+Game\+Manager.\+get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_af849443c40ab595eebc79c3896ffaa43_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a4fd70533205c51f7a1b7b997938c0c93}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a4fd70533205c51f7a1b7b997938c0c93}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!getPlayerRespawnPosition@{getPlayerRespawnPosition}}
+\index{getPlayerRespawnPosition@{getPlayerRespawnPosition}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{getPlayerRespawnPosition()}{getPlayerRespawnPosition()}}
+{\footnotesize\ttfamily Vector2 com.\+ychstudio.\+gamesys.\+Game\+Manager.\+get\+Player\+Respawn\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a4fd70533205c51f7a1b7b997938c0c93_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_ace386d9879b792697671d1f01a9829d6}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_ace386d9879b792697671d1f01a9829d6}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!getPortalPosition@{getPortalPosition}}
+\index{getPortalPosition@{getPortalPosition}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{getPortalPosition()}{getPortalPosition()}}
+{\footnotesize\ttfamily Vector2 com.\+ychstudio.\+gamesys.\+Game\+Manager.\+get\+Portal\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_ace386d9879b792697671d1f01a9829d6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a523c1512ae64c9bc0fb1fbcf2fc00bcf}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a523c1512ae64c9bc0fb1fbcf2fc00bcf}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!getRemoteBombDeque@{getRemoteBombDeque}}
+\index{getRemoteBombDeque@{getRemoteBombDeque}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{getRemoteBombDeque()}{getRemoteBombDeque()}}
+{\footnotesize\ttfamily Queue$<$Entity$>$ com.\+ychstudio.\+gamesys.\+Game\+Manager.\+get\+Remote\+Bomb\+Deque (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a523c1512ae64c9bc0fb1fbcf2fc00bcf_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a0e42bd12b8ce7344bd813b5343ca5cc3}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a0e42bd12b8ce7344bd813b5343ca5cc3}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!pauseMusic@{pauseMusic}}
+\index{pauseMusic@{pauseMusic}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{pauseMusic()}{pauseMusic()}}
+{\footnotesize\ttfamily void com.\+ychstudio.\+gamesys.\+Game\+Manager.\+pause\+Music (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a0e42bd12b8ce7344bd813b5343ca5cc3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_aadc2692ab9248a93728160b1030e534e}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_aadc2692ab9248a93728160b1030e534e}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!playerOneUp@{playerOneUp}}
+\index{playerOneUp@{playerOneUp}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{playerOneUp()}{playerOneUp()}}
+{\footnotesize\ttfamily void com.\+ychstudio.\+gamesys.\+Game\+Manager.\+player\+One\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_aadc2692ab9248a93728160b1030e534e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_aadc2692ab9248a93728160b1030e534e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a662247c098af5a4f2d46b6ba2d000722}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a662247c098af5a4f2d46b6ba2d000722}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!playMusic@{playMusic}}
+\index{playMusic@{playMusic}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{playMusic()}{playMusic()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+ychstudio.\+gamesys.\+Game\+Manager.\+play\+Music (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a1509b5060bde25132f872b1d586817af}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a1509b5060bde25132f872b1d586817af}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!playMusic@{playMusic}}
+\index{playMusic@{playMusic}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{playMusic()}{playMusic()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+ychstudio.\+gamesys.\+Game\+Manager.\+play\+Music (\begin{DoxyParamCaption}\item[{String}]{music\+Name,  }\item[{boolean}]{is\+Looping }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a1509b5060bde25132f872b1d586817af_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a1509b5060bde25132f872b1d586817af_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a6a6867adc24a87a004e4289fed6d0e07}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a6a6867adc24a87a004e4289fed6d0e07}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!playSound@{playSound}}
+\index{playSound@{playSound}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{playSound()}{playSound()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void com.\+ychstudio.\+gamesys.\+Game\+Manager.\+play\+Sound (\begin{DoxyParamCaption}\item[{String}]{sound\+Name }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a6a6867adc24a87a004e4289fed6d0e07_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_af9d95b2417770f988381e0646738f90d}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_af9d95b2417770f988381e0646738f90d}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!playSound@{playSound}}
+\index{playSound@{playSound}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{playSound()}{playSound()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void com.\+ychstudio.\+gamesys.\+Game\+Manager.\+play\+Sound (\begin{DoxyParamCaption}\item[{String}]{sound\+Name,  }\item[{float}]{volume,  }\item[{float}]{pitch,  }\item[{float}]{pan }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a7b447245d155a21ffc050f9fbedc10d0}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a7b447245d155a21ffc050f9fbedc10d0}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!resetPlayerAbilities@{resetPlayerAbilities}}
+\index{resetPlayerAbilities@{resetPlayerAbilities}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{resetPlayerAbilities()}{resetPlayerAbilities()}}
+{\footnotesize\ttfamily static void com.\+ychstudio.\+gamesys.\+Game\+Manager.\+reset\+Player\+Abilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a288bb3922847de533ad7afca560f9475}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a288bb3922847de533ad7afca560f9475}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!setPlayerRespawnPosition@{setPlayerRespawnPosition}}
+\index{setPlayerRespawnPosition@{setPlayerRespawnPosition}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{setPlayerRespawnPosition()}{setPlayerRespawnPosition()}}
+{\footnotesize\ttfamily void com.\+ychstudio.\+gamesys.\+Game\+Manager.\+set\+Player\+Respawn\+Position (\begin{DoxyParamCaption}\item[{Vector2}]{position }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a288bb3922847de533ad7afca560f9475_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_aec0c8bbd00825bfed5b88342e04c3e4e}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_aec0c8bbd00825bfed5b88342e04c3e4e}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!setPortalPosition@{setPortalPosition}}
+\index{setPortalPosition@{setPortalPosition}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{setPortalPosition()}{setPortalPosition()}}
+{\footnotesize\ttfamily void com.\+ychstudio.\+gamesys.\+Game\+Manager.\+set\+Portal\+Position (\begin{DoxyParamCaption}\item[{Vector2}]{position }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_aec0c8bbd00825bfed5b88342e04c3e4e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_acfa5f640f5457cd78d1c16cbac2723d9}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_acfa5f640f5457cd78d1c16cbac2723d9}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!stopMusic@{stopMusic}}
+\index{stopMusic@{stopMusic}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{stopMusic()}{stopMusic()}}
+{\footnotesize\ttfamily void com.\+ychstudio.\+gamesys.\+Game\+Manager.\+stop\+Music (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_acfa5f640f5457cd78d1c16cbac2723d9_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a2e45e771cf730d8bf51f8cbdf4db7f4c}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a2e45e771cf730d8bf51f8cbdf4db7f4c}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!BOMB\_BIT@{BOMB\_BIT}}
+\index{BOMB\_BIT@{BOMB\_BIT}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{BOMB\_BIT}{BOMB\_BIT}}
+{\footnotesize\ttfamily final short com.\+ychstudio.\+gamesys.\+Game\+Manager.\+BOMB\+\_\+\+BIT = 1 $<$$<$ 3\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a04f72fb65771c7533533300d5fc0b573}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a04f72fb65771c7533533300d5fc0b573}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!BREAKABLE\_BIT@{BREAKABLE\_BIT}}
+\index{BREAKABLE\_BIT@{BREAKABLE\_BIT}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{BREAKABLE\_BIT}{BREAKABLE\_BIT}}
+{\footnotesize\ttfamily final short com.\+ychstudio.\+gamesys.\+Game\+Manager.\+BREAKABLE\+\_\+\+BIT = 1 $<$$<$ 1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a112b82678be08369c4f5262ed9f055a3}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a112b82678be08369c4f5262ed9f055a3}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!enemiesLeft@{enemiesLeft}}
+\index{enemiesLeft@{enemiesLeft}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{enemiesLeft}{enemiesLeft}}
+{\footnotesize\ttfamily int com.\+ychstudio.\+gamesys.\+Game\+Manager.\+enemies\+Left\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a8703b4742c3534e6bdb08f2695418000}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a8703b4742c3534e6bdb08f2695418000}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!ENEMY\_BIT@{ENEMY\_BIT}}
+\index{ENEMY\_BIT@{ENEMY\_BIT}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{ENEMY\_BIT}{ENEMY\_BIT}}
+{\footnotesize\ttfamily final short com.\+ychstudio.\+gamesys.\+Game\+Manager.\+ENEMY\+\_\+\+BIT = 1 $<$$<$ 5\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a13005af743abb73cc27ae5c660b167c4}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a13005af743abb73cc27ae5c660b167c4}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!EXPLOSION\_BIT@{EXPLOSION\_BIT}}
+\index{EXPLOSION\_BIT@{EXPLOSION\_BIT}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{EXPLOSION\_BIT}{EXPLOSION\_BIT}}
+{\footnotesize\ttfamily final short com.\+ychstudio.\+gamesys.\+Game\+Manager.\+EXPLOSION\+\_\+\+BIT = 1 $<$$<$ 4\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_ae0140375f28eaba8edde032ee23ca393}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_ae0140375f28eaba8edde032ee23ca393}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!gameOver@{gameOver}}
+\index{gameOver@{gameOver}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{gameOver}{gameOver}}
+{\footnotesize\ttfamily boolean com.\+ychstudio.\+gamesys.\+Game\+Manager.\+game\+Over\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a290e9ede642321304aebe37e50775974}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a290e9ede642321304aebe37e50775974}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!INDESTRUCTIIBLE\_BIT@{INDESTRUCTIIBLE\_BIT}}
+\index{INDESTRUCTIIBLE\_BIT@{INDESTRUCTIIBLE\_BIT}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{INDESTRUCTIIBLE\_BIT}{INDESTRUCTIIBLE\_BIT}}
+{\footnotesize\ttfamily final short com.\+ychstudio.\+gamesys.\+Game\+Manager.\+INDESTRUCTIIBLE\+\_\+\+BIT = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a19fb4bc584e3e0048200678023202efe}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a19fb4bc584e3e0048200678023202efe}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!infiniteLives@{infiniteLives}}
+\index{infiniteLives@{infiniteLives}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{infiniteLives}{infiniteLives}}
+{\footnotesize\ttfamily boolean com.\+ychstudio.\+gamesys.\+Game\+Manager.\+infinite\+Lives = true\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_ac97c7ee02a29fd76640470ed7c9eb6c6}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_ac97c7ee02a29fd76640470ed7c9eb6c6}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!levelCompleted@{levelCompleted}}
+\index{levelCompleted@{levelCompleted}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{levelCompleted}{levelCompleted}}
+{\footnotesize\ttfamily boolean com.\+ychstudio.\+gamesys.\+Game\+Manager.\+level\+Completed\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a73be1b1dcb4020cc71fa824a4a6ff1d0}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a73be1b1dcb4020cc71fa824a4a6ff1d0}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!NOTHING\_BIT@{NOTHING\_BIT}}
+\index{NOTHING\_BIT@{NOTHING\_BIT}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{NOTHING\_BIT}{NOTHING\_BIT}}
+{\footnotesize\ttfamily final short com.\+ychstudio.\+gamesys.\+Game\+Manager.\+NOTHING\+\_\+\+BIT = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_aff84e213e4ca5c9226db08b89e7852c2}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_aff84e213e4ca5c9226db08b89e7852c2}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!PLAYER\_BIT@{PLAYER\_BIT}}
+\index{PLAYER\_BIT@{PLAYER\_BIT}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{PLAYER\_BIT}{PLAYER\_BIT}}
+{\footnotesize\ttfamily final short com.\+ychstudio.\+gamesys.\+Game\+Manager.\+PLAYER\+\_\+\+BIT = 1 $<$$<$ 2\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a6cb3fbb160fdc3e6cc2d35752782eba9}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a6cb3fbb160fdc3e6cc2d35752782eba9}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!playerBombCapacity@{playerBombCapacity}}
+\index{playerBombCapacity@{playerBombCapacity}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{playerBombCapacity}{playerBombCapacity}}
+{\footnotesize\ttfamily int com.\+ychstudio.\+gamesys.\+Game\+Manager.\+player\+Bomb\+Capacity = 3\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_af346d30d7bb27eed0b3f2d37980cf1fc}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_af346d30d7bb27eed0b3f2d37980cf1fc}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!playerBombLeft@{playerBombLeft}}
+\index{playerBombLeft@{playerBombLeft}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{playerBombLeft}{playerBombLeft}}
+{\footnotesize\ttfamily int com.\+ychstudio.\+gamesys.\+Game\+Manager.\+player\+Bomb\+Left = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a71857a2428f7056c70ff21df6401f95d}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a71857a2428f7056c70ff21df6401f95d}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!playerBombPower@{playerBombPower}}
+\index{playerBombPower@{playerBombPower}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{playerBombPower}{playerBombPower}}
+{\footnotesize\ttfamily int com.\+ychstudio.\+gamesys.\+Game\+Manager.\+player\+Bomb\+Power = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a337edb639df487dcd40291ba62bbc744}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a337edb639df487dcd40291ba62bbc744}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!playerBombRegeratingTime@{playerBombRegeratingTime}}
+\index{playerBombRegeratingTime@{playerBombRegeratingTime}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{playerBombRegeratingTime}{playerBombRegeratingTime}}
+{\footnotesize\ttfamily float com.\+ychstudio.\+gamesys.\+Game\+Manager.\+player\+Bomb\+Regerating\+Time = 2.\+0f\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a942c897c24df55b4f54bec5b5ca9677f}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a942c897c24df55b4f54bec5b5ca9677f}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!playerBombRegeratingTimeLeft@{playerBombRegeratingTimeLeft}}
+\index{playerBombRegeratingTimeLeft@{playerBombRegeratingTimeLeft}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{playerBombRegeratingTimeLeft}{playerBombRegeratingTimeLeft}}
+{\footnotesize\ttfamily float com.\+ychstudio.\+gamesys.\+Game\+Manager.\+player\+Bomb\+Regerating\+Time\+Left = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a9ebd93806b9c5c93fa42e6bbf187c50d}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a9ebd93806b9c5c93fa42e6bbf187c50d}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!playerKickBomb@{playerKickBomb}}
+\index{playerKickBomb@{playerKickBomb}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{playerKickBomb}{playerKickBomb}}
+{\footnotesize\ttfamily boolean com.\+ychstudio.\+gamesys.\+Game\+Manager.\+player\+Kick\+Bomb = false\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a14d58ef2d9ceb68f5782d11f6d1ce64b}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a14d58ef2d9ceb68f5782d11f6d1ce64b}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!playerLives@{playerLives}}
+\index{playerLives@{playerLives}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{playerLives}{playerLives}}
+{\footnotesize\ttfamily int com.\+ychstudio.\+gamesys.\+Game\+Manager.\+player\+Lives = 3\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a5880d7e6f2a16bebc27786a3611f58f0}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a5880d7e6f2a16bebc27786a3611f58f0}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!playerMaxSpeed@{playerMaxSpeed}}
+\index{playerMaxSpeed@{playerMaxSpeed}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{playerMaxSpeed}{playerMaxSpeed}}
+{\footnotesize\ttfamily int com.\+ychstudio.\+gamesys.\+Game\+Manager.\+player\+Max\+Speed = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a049e357786f36396f9b56523db57f076}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a049e357786f36396f9b56523db57f076}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!playerRemoteBomb@{playerRemoteBomb}}
+\index{playerRemoteBomb@{playerRemoteBomb}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{playerRemoteBomb}{playerRemoteBomb}}
+{\footnotesize\ttfamily boolean com.\+ychstudio.\+gamesys.\+Game\+Manager.\+player\+Remote\+Bomb = false\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_aec3e202e394fa1406efb933e5dbc4e8b}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_aec3e202e394fa1406efb933e5dbc4e8b}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!PORTAL\_BIT@{PORTAL\_BIT}}
+\index{PORTAL\_BIT@{PORTAL\_BIT}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{PORTAL\_BIT}{PORTAL\_BIT}}
+{\footnotesize\ttfamily final short com.\+ychstudio.\+gamesys.\+Game\+Manager.\+PORTAL\+\_\+\+BIT = 1 $<$$<$ 7\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a36efa9ba8685368fffc6c5a663acac8e}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a36efa9ba8685368fffc6c5a663acac8e}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!POWERUP\_BIT@{POWERUP\_BIT}}
+\index{POWERUP\_BIT@{POWERUP\_BIT}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{POWERUP\_BIT}{POWERUP\_BIT}}
+{\footnotesize\ttfamily final short com.\+ychstudio.\+gamesys.\+Game\+Manager.\+POWERUP\+\_\+\+BIT = 1 $<$$<$ 6\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a7c235323e57111daa08b74c680cd1bd1}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a7c235323e57111daa08b74c680cd1bd1}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!PPM@{PPM}}
+\index{PPM@{PPM}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{PPM}{PPM}}
+{\footnotesize\ttfamily final float com.\+ychstudio.\+gamesys.\+Game\+Manager.\+PPM = 16.\+0f\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_ab8ff483f5f671e74691d2f27ddf2dfc8}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_ab8ff483f5f671e74691d2f27ddf2dfc8}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!resetPlayerAbilities@{resetPlayerAbilities}}
+\index{resetPlayerAbilities@{resetPlayerAbilities}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{resetPlayerAbilities}{resetPlayerAbilities}}
+{\footnotesize\ttfamily boolean com.\+ychstudio.\+gamesys.\+Game\+Manager.\+reset\+Player\+Abilities = false\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a83f2c1daf50c97935822c21cb099a02b}\label{classcom_1_1ychstudio_1_1gamesys_1_1_game_manager_a83f2c1daf50c97935822c21cb099a02b}} 
+\index{com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}!TOTAL\_LEVELS@{TOTAL\_LEVELS}}
+\index{TOTAL\_LEVELS@{TOTAL\_LEVELS}!com.ychstudio.gamesys.GameManager@{com.ychstudio.gamesys.GameManager}}
+\doxysubsubsection{\texorpdfstring{TOTAL\_LEVELS}{TOTAL\_LEVELS}}
+{\footnotesize\ttfamily final int com.\+ychstudio.\+gamesys.\+Game\+Manager.\+TOTAL\+\_\+\+LEVELS = 5\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Git\+Hub/\+Bomberman\+\_\+lib\+Gdx/core/src/com/ychstudio/gamesys/\mbox{\hyperlink{_game_manager_8java}{Game\+Manager.\+java}}\end{DoxyCompactItemize}

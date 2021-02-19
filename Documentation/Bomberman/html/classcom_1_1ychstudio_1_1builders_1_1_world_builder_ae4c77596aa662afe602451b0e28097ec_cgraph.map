@@ -1,0 +1,22 @@
+<map id="com.ychstudio.builders.WorldBuilder.build" name="com.ychstudio.builders.WorldBuilder.build">
+<area shape="rect" id="node1" title=" " alt="" coords="5,300,200,341"/>
+<area shape="rect" id="node2" href="$classcom_1_1ychstudio_1_1builders_1_1_map_loader.html#aec4d316542c2280aa2cbbf4adf5dc6d1" title=" " alt="" coords="248,201,433,243"/>
+<area shape="rect" id="node3" href="$classcom_1_1ychstudio_1_1builders_1_1_map_loader.html#aacdfbf1c389cd6d38b94d9ba69bbd21b" title=" " alt="" coords="248,267,433,308"/>
+<area shape="rect" id="node4" href="$classcom_1_1ychstudio_1_1builders_1_1_map_loader.html#a52dd1a3a50791126343902386f97a45b" title=" " alt="" coords="248,332,433,373"/>
+<area shape="rect" id="node5" href="$classcom_1_1ychstudio_1_1builders_1_1_map_loader.html#a616c635dc9329d1d9890593a3a0844ce" title=" " alt="" coords="248,397,433,439"/>
+<area shape="rect" id="node6" href="$classcom_1_1ychstudio_1_1builders_1_1_actor_builder.html#a3b4c34b88da74e53ecc6906bdfc912d1" title=" " alt="" coords="501,5,692,47"/>
+<area shape="rect" id="node8" href="$classcom_1_1ychstudio_1_1builders_1_1_actor_builder.html#a940d449e247c6d75797260f618f4b0cf" title=" " alt="" coords="501,71,692,112"/>
+<area shape="rect" id="node9" href="$classcom_1_1ychstudio_1_1builders_1_1_actor_builder.html#a83f41e7443b28c2c3c782f44ab28fc71" title=" " alt="" coords="501,136,692,177"/>
+<area shape="rect" id="node10" href="$classcom_1_1ychstudio_1_1builders_1_1_actor_builder.html#a0873d820ed546143f0f9434ce16bfe28" title=" " alt="" coords="501,201,692,243"/>
+<area shape="rect" id="node11" href="$classcom_1_1ychstudio_1_1builders_1_1_actor_builder.html#a009a7c68902d785661a9bbdc0d0e6331" title=" " alt="" coords="501,267,692,308"/>
+<area shape="rect" id="node12" href="$classcom_1_1ychstudio_1_1builders_1_1_actor_builder.html#ad0881b1895cdb1cc83264cf368bf95d7" title=" " alt="" coords="501,332,692,373"/>
+<area shape="rect" id="node13" href="$classcom_1_1ychstudio_1_1builders_1_1_actor_builder.html#abfe0013df4b1ac93737efd175b1f5815" title=" " alt="" coords="501,397,692,439"/>
+<area shape="rect" id="node14" href="$classcom_1_1ychstudio_1_1builders_1_1_actor_builder.html#a0e36ab677e5da207135e4833a1e9fce7" title=" " alt="" coords="501,463,692,504"/>
+<area shape="rect" id="node15" href="$classcom_1_1ychstudio_1_1builders_1_1_actor_builder.html#a4a2992f61a73fc93fec96f67b2bd0a9a" title=" " alt="" coords="501,528,692,569"/>
+<area shape="rect" id="node16" href="$classcom_1_1ychstudio_1_1gamesys_1_1_game_manager.html#af849443c40ab595eebc79c3896ffaa43" title=" " alt="" coords="760,587,963,628"/>
+<area shape="rect" id="node17" href="$classcom_1_1ychstudio_1_1builders_1_1_actor_builder.html#a0a2d07b4478761ef07c78ebc41d6fd6c" title=" " alt="" coords="501,645,692,687"/>
+<area shape="rect" id="node19" href="$classcom_1_1ychstudio_1_1gamesys_1_1_game_manager.html#a288bb3922847de533ad7afca560f9475" title=" " alt="" coords="481,711,712,752"/>
+<area shape="rect" id="node20" href="$classcom_1_1ychstudio_1_1gamesys_1_1_game_manager.html#aec0c8bbd00825bfed5b88342e04c3e4e" title=" " alt="" coords="495,776,698,817"/>
+<area shape="rect" id="node7" href="$classcom_1_1ychstudio_1_1components_1_1_renderer.html#afcdd78029f7b14609df90fbabb36943b" title=" " alt="" coords="768,267,955,308"/>
+<area shape="rect" id="node18" href="$classcom_1_1ychstudio_1_1gamesys_1_1_game_manager.html#ab0038c62e1507b4a9e7d419c4d56cbe1" title=" " alt="" coords="760,652,963,693"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="com.ychstudio.builders.ActorBuilder.createWall" name="com.ychstudio.builders.ActorBuilder.createWall">
+<area shape="rect" id="node1" title=" " alt="" coords="712,5,903,47"/>
+<area shape="rect" id="node2" href="$classcom_1_1ychstudio_1_1builders_1_1_map_loader.html#a616c635dc9329d1d9890593a3a0844ce" title=" " alt="" coords="479,5,664,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1ychstudio_1_1builders_1_1_world_builder.html#ae4c77596aa662afe602451b0e28097ec" title=" " alt="" coords="236,5,431,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1ychstudio_1_1scenes_1_1_play_screen.html#ac1d3dacb81727ad1b4a9b8be4268fe19" title=" " alt="" coords="5,5,188,47"/>
+</map>
