@@ -1,0 +1,23 @@
+{
+  "com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle": {
+    "small": {
+      "font": "font_16"
+    },
+    "normal": {
+      "font": "font_20"
+    },
+    "big": {
+      "font": "font_26"
+    },
+    "huge": {
+      "font": "font_32"
+    }
+  },
+  "com.badlogic.gdx.scenes.scene2d.ui.ProgressBar$ProgressBarStyle": {
+    "default": {
+      "background": "knobAfter",
+      "knob": "knob",
+      "knobBefore": "knobBefore"
+    }
+  }
+}

@@ -11,7 +11,9 @@ import com.badlogic.gdx.graphics.profiling.GLProfiler;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.badlogic.gdx.physics.box2d.*;
+import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.utils.ScreenUtils;
+import ui.GameUI;
 
 import static com.atoledano.producegame.ProduceGame.*;
 
@@ -44,24 +46,6 @@ public class GameScreen extends AbstractScreen {
         bodyDef = new BodyDef();
         fixtureDef = new FixtureDef();
 
-//        //create player
-//        bodyDef.position.set(4.5f, 3);
-//        bodyDef.gravityScale = 1;
-//        bodyDef.type = BodyDef.BodyType.DynamicBody;
-//        player = world.createBody(bodyDef);
-//        player.setUserData("PLAYER");
-//
-//        fixtureDef.isSensor = false;
-//        fixtureDef.restitution = 0;
-//        fixtureDef.friction = 0.2f;
-//        fixtureDef.filter.categoryBits = PLAYER_BIT;
-//        fixtureDef.filter.maskBits = -1;
-//        PolygonShape polygonShape = new PolygonShape();
-//        polygonShape.setAsBox(0.5f, 0.5f);
-//        fixtureDef.shape = polygonShape;
-//        player.createFixture(fixtureDef);
-//        polygonShape.dispose();
-
         //getting maps ready
         final TiledMap tiledMap = assetManager.get("map/map.tmx", TiledMap.class);
         mapRenderer.setMap(tiledMap);
@@ -71,10 +55,16 @@ public class GameScreen extends AbstractScreen {
         spawnPlayer();
     }
 
+    @Override
+    protected Table getScreenUI(final ProduceGame context) {
+        return new GameUI(context);
+    }
+
     private void spawnPlayer() {
         resetBodyAndFixtureDefinitions();
 
         //create player
+        //todo double check size
         bodyDef.position.set(map.getStartLocation().x + 0.5f, map.getStartLocation().y + 0.5f);
         bodyDef.fixedRotation = true;
         bodyDef.type = BodyDef.BodyType.DynamicBody;
@@ -88,7 +78,8 @@ public class GameScreen extends AbstractScreen {
         fixtureDef.filter.categoryBits = PLAYER_BIT;
         fixtureDef.filter.maskBits = -1;
         final PolygonShape polygonShape = new PolygonShape();
-        polygonShape.setAsBox(0.5f, 0.5f);
+        //todo double check size
+        polygonShape.setAsBox(0.45f, 0.45f);
         fixtureDef.shape = polygonShape;
         player.createFixture(fixtureDef);
         polygonShape.dispose();
@@ -127,10 +118,6 @@ public class GameScreen extends AbstractScreen {
             room.createFixture(fixtureDef);
             chainShape.dispose();
         }
-    }
-
-    @Override
-    public void show() {
     }
 
     @Override
@@ -176,8 +163,8 @@ public class GameScreen extends AbstractScreen {
         box2DDebugRenderer.render(world, viewport.getCamera().combined);
 
         //showing the number of bindings happening
-        Gdx.app.debug("RenderInfo", "No. of Bindings: " + glProfiler.getTextureBindings());
-        Gdx.app.debug("RenderInfo", "No. of DrawCalls: " + glProfiler.getDrawCalls());
+//        Gdx.app.debug("RenderInfo", "No. of Bindings: " + glProfiler.getTextureBindings());
+//        Gdx.app.debug("RenderInfo", "No. of DrawCalls: " + glProfiler.getDrawCalls());
         glProfiler.reset();
     }
 
@@ -188,11 +175,6 @@ public class GameScreen extends AbstractScreen {
 
     @Override
     public void resume() {
-
-    }
-
-    @Override
-    public void hide() {
 
     }
 

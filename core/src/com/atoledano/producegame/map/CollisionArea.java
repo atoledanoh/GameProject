@@ -1,7 +1,5 @@
 package com.atoledano.producegame.map;
 
-import com.badlogic.gdx.math.Vector2;
-
 import static com.atoledano.producegame.ProduceGame.UNIT_SCALE;
 
 public class CollisionArea {

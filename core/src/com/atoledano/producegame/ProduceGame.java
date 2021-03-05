@@ -1,12 +1,17 @@
 package com.atoledano.producegame;
 
-import com.atoledano.producegame.screens.GameScreen;
-import com.atoledano.producegame.screens.LoadingScreen;
 import com.atoledano.producegame.screens.ScreenType;
-import com.badlogic.gdx.*;
+import com.badlogic.gdx.Application;
+import com.badlogic.gdx.Game;
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.assets.AssetManager;
+import com.badlogic.gdx.assets.loaders.SkinLoader;
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Colors;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
 import com.badlogic.gdx.maps.tiled.TiledMap;
@@ -15,8 +20,11 @@ import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.Box2D;
 import com.badlogic.gdx.physics.box2d.Box2DDebugRenderer;
 import com.badlogic.gdx.physics.box2d.World;
+import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.utils.GdxRuntimeException;
-import com.badlogic.gdx.utils.ScreenUtils;
+import com.badlogic.gdx.utils.I18NBundle;
+import com.badlogic.gdx.utils.ObjectMap;
 import com.badlogic.gdx.utils.reflect.ClassReflection;
 import com.badlogic.gdx.utils.reflect.ReflectionException;
 import com.badlogic.gdx.utils.viewport.FitViewport;
@@ -45,6 +53,9 @@ public class ProduceGame extends Game {
     private float accumulator;
 
     private AssetManager assetManager;
+    private Stage stage;
+    private Skin skin;
+    private I18NBundle i18NBundle;
 
     @Override
     public void create() {
@@ -66,18 +77,55 @@ public class ProduceGame extends Game {
         assetManager.setLoader(TiledMap.class, new TmxMapLoader(assetManager.getFileHandleResolver()));
         initializeSkin();
 
+        stage = new Stage(new FitViewport(1024, 768), spriteBatch);
+
         //set initial screen
         gameCamera = new OrthographicCamera();
-        screenViewport = new FitViewport(9, 16, gameCamera);
+        screenViewport = new FitViewport(42, 28, gameCamera);
         screenCache = new EnumMap<ScreenType, Screen>(ScreenType.class);
         setScreen(ScreenType.LOADING);
     }
 
     private void initializeSkin() {
+        //setup markup colors
+        Colors.put("Red", Color.RED);
+        Colors.put("Blue", Color.BLUE);
+
         //generate ttf bitmap
-        new FreeTypeFontGenerator(Gdx.files.internal("ui/pixelFont.ttf"));
+        final ObjectMap<String, Object> resources = new ObjectMap<String, Object>();
+        final FreeTypeFontGenerator freeTypeFontGenerator = new FreeTypeFontGenerator(Gdx.files.internal("ui/pixelFont.ttf"));
+        final FreeTypeFontGenerator.FreeTypeFontParameter freeTypeFontParameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
+        //texture filter
+        freeTypeFontParameter.minFilter = Texture.TextureFilter.Linear;
+        freeTypeFontParameter.magFilter = Texture.TextureFilter.Linear;
+        final int[] sizesToCreate = {16, 20, 26, 32};
+        for (int size : sizesToCreate) {
+            freeTypeFontParameter.size = size;
+            final BitmapFont bitmapFont = freeTypeFontGenerator.generateFont(freeTypeFontParameter);
+            bitmapFont.getData().markupEnabled = true;
+            resources.put("font_" + size, bitmapFont);
+        }
+        freeTypeFontGenerator.dispose();
 
         //load skin
+        final SkinLoader.SkinParameter skinParameter = new SkinLoader.SkinParameter("ui/hud.atlas", resources);
+        assetManager.load("ui/hud.json", Skin.class, skinParameter);
+        assetManager.load("ui/strings", I18NBundle.class);
+        assetManager.finishLoading();
+        skin = assetManager.get("ui/hud.json", Skin.class);
+        i18NBundle = assetManager.get("ui/strings", I18NBundle.class);
+    }
+
+    public I18NBundle getI18NBundle() {
+        return i18NBundle;
+    }
+
+    public Stage getStage() {
+        return stage;
+    }
+
+    public Skin getSkin() {
+        return skin;
     }
 
     public SpriteBatch getSpriteBatch() {
@@ -135,6 +183,11 @@ public class ProduceGame extends Game {
 
         //preparing interpolation
         //final float alpha = accumulator / FIXED_TIME_STEP;
+
+        //setting up the stage
+        stage.getViewport().apply();
+        stage.act();
+        stage.draw();
     }
 
     @Override
@@ -144,5 +197,6 @@ public class ProduceGame extends Game {
         box2DDebugRenderer.dispose();
         assetManager.dispose();
         spriteBatch.dispose();
+        stage.dispose();
     }
 }
