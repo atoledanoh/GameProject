@@ -27,38 +27,36 @@ import com.badlogic.gdx.utils.ObjectMap;
 import com.badlogic.gdx.utils.reflect.ClassReflection;
 import com.badlogic.gdx.utils.reflect.ReflectionException;
 import com.badlogic.gdx.utils.viewport.FitViewport;
+import entityComponentSystem.ECSEngine;
 
 import java.util.EnumMap;
 
 public class ProduceGame extends Game {
 
     private static final String TAG = ProduceGame.class.getSimpleName();
-
-    private SpriteBatch spriteBatch;
-    private EnumMap<ScreenType, Screen> screenCache;
-    private OrthographicCamera gameCamera;
-    private FitViewport screenViewport;
     public static final float UNIT_SCALE = 1 / 32f;
     public static final Short PLAYER_BIT = 1 << 0;
     public static final Short CART_BIT = 1 << 1;
     public static final Short SAC_BIT = 1 << 2;
     public static final Short ROOM_BIT = 1 << 3;
 
+    private SpriteBatch spriteBatch;
+    private EnumMap<ScreenType, Screen> screenCache;
+    private OrthographicCamera gameCamera;
+    private FitViewport screenViewport;
     private WorldContactListener worldContactListener;
     private World world;
     private Box2DDebugRenderer box2DDebugRenderer;
     //fixing time step to make it more consistent in the simulations
     private static final float FIXED_TIME_STEP = 1 / 60f;
     private float accumulator;
-
     private AssetManager assetManager;
     private AudioManager audioManager;
-
     private Stage stage;
     private Skin skin;
     private I18NBundle i18NBundle;
-
     private InputManager inputManager;
+    private ECSEngine ecsEngine;
 
     @Override
     public void create() {
@@ -74,7 +72,7 @@ public class ProduceGame extends Game {
         world.setContactListener(worldContactListener);
         box2DDebugRenderer = new Box2DDebugRenderer();
 
-        //asset manager
+        //asset manager section
         assetManager = new AssetManager();
         //telling the asset manager how to load the tiled map
         assetManager.setLoader(TiledMap.class, new TmxMapLoader(assetManager.getFileHandleResolver()));
@@ -92,6 +90,9 @@ public class ProduceGame extends Game {
         inputManager = new InputManager();
         //setting up for later input methods
         Gdx.input.setInputProcessor(new InputMultiplexer(inputManager, stage));
+
+        //ecs engine section
+        ecsEngine = new ECSEngine(this);
 
         //set initial screen
         gameCamera = new OrthographicCamera();
@@ -128,6 +129,10 @@ public class ProduceGame extends Game {
         assetManager.finishLoading();
         skin = assetManager.get("ui/hud.json", Skin.class);
         i18NBundle = assetManager.get("ui/strings", I18NBundle.class);
+    }
+
+    public ECSEngine getEcsEngine() {
+        return ecsEngine;
     }
 
     public AudioManager getAudioManager() {
@@ -196,15 +201,13 @@ public class ProduceGame extends Game {
     public void render() {
         super.render();
 
+        ecsEngine.update(Gdx.graphics.getDeltaTime());
         //fixing time step to make it more consistent in the simulations
         accumulator += Math.min(0.25f, Gdx.graphics.getDeltaTime());
         while (accumulator >= FIXED_TIME_STEP) {
             world.step(FIXED_TIME_STEP, 6, 2);
             accumulator -= FIXED_TIME_STEP;
         }
-
-        //preparing interpolation
-        //final float alpha = accumulator / FIXED_TIME_STEP;
 
         //setting up the stage
         stage.getViewport().apply();

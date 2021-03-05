@@ -6,31 +6,22 @@ import com.atoledano.producegame.input.InputManager;
 import com.atoledano.producegame.map.CollisionArea;
 import com.atoledano.producegame.map.Map;
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.profiling.GLProfiler;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
-import com.badlogic.gdx.physics.box2d.*;
-import com.badlogic.gdx.scenes.scene2d.ui.Table;
+import com.badlogic.gdx.physics.box2d.Body;
+import com.badlogic.gdx.physics.box2d.BodyDef;
+import com.badlogic.gdx.physics.box2d.ChainShape;
+import com.badlogic.gdx.physics.box2d.FixtureDef;
 import com.badlogic.gdx.utils.ScreenUtils;
 import ui.GameUI;
 
-import static com.atoledano.producegame.ProduceGame.*;
+import static com.atoledano.producegame.ProduceGame.ROOM_BIT;
+import static com.atoledano.producegame.ProduceGame.UNIT_SCALE;
 
 public class GameScreen extends AbstractScreen {
-
-    private final BodyDef bodyDef;
-    private final FixtureDef fixtureDef;
-    private Body player;
-    private boolean directionChange;
-    private int xFactor;
-    private int yFactor;
-
-//    private final Body cart;
-//    private final Body sac;
-
     private final AssetManager assetManager;
     private final OrthogonalTiledMapRenderer mapRenderer;
     private final OrthographicCamera gameCamera;
@@ -49,66 +40,26 @@ public class GameScreen extends AbstractScreen {
         glProfiler = new GLProfiler(Gdx.graphics);
         glProfiler.disable();
 
-        bodyDef = new BodyDef();
-        fixtureDef = new FixtureDef();
-
         //getting maps ready
         final TiledMap tiledMap = assetManager.get("map/map.tmx", TiledMap.class);
         mapRenderer.setMap(tiledMap);
         map = new Map(tiledMap);
 
         spawnCollisionAreas();
-        spawnPlayer();
+
+        //create player
+        context.getEcsEngine().createPlayer(map.getStartLocation(), 1, 1);
     }
 
     @Override
-    protected Table getScreenUI(final ProduceGame context) {
+    protected GameUI getScreenUI(final ProduceGame context) {
         return new GameUI(context);
     }
 
-    private void spawnPlayer() {
-        resetBodyAndFixtureDefinitions();
-
-        //create player
-        //todo double check size
-        bodyDef.position.set(map.getStartLocation().x + 0.5f, map.getStartLocation().y + 0.5f);
-        bodyDef.fixedRotation = true;
-        bodyDef.type = BodyDef.BodyType.DynamicBody;
-        player = world.createBody(bodyDef);
-        player.setUserData("PLAYER");
-
-        fixtureDef.density = 1;
-        fixtureDef.isSensor = false;
-        fixtureDef.restitution = 0;
-        fixtureDef.friction = 0.2f;
-        fixtureDef.filter.categoryBits = PLAYER_BIT;
-        fixtureDef.filter.maskBits = -1;
-        final PolygonShape polygonShape = new PolygonShape();
-        //todo double check size
-        polygonShape.setAsBox(0.45f, 0.45f);
-        fixtureDef.shape = polygonShape;
-        player.createFixture(fixtureDef);
-        polygonShape.dispose();
-    }
-
-    private void resetBodyAndFixtureDefinitions() {
-        bodyDef.position.set(0, 0);
-        bodyDef.gravityScale = 1;
-        bodyDef.type = BodyDef.BodyType.StaticBody;
-        bodyDef.fixedRotation = false;
-
-        fixtureDef.density = 1;
-        fixtureDef.isSensor = false;
-        fixtureDef.restitution = 0.1f;
-        fixtureDef.friction = 0.2f;
-        fixtureDef.filter.categoryBits = 0x0001;
-        fixtureDef.filter.maskBits = -1;
-        fixtureDef.shape = null;
-    }
-
     private void spawnCollisionAreas() {
+        final BodyDef bodyDef = new BodyDef();
+        final FixtureDef fixtureDef = new FixtureDef();
         for (final CollisionArea collisionArea : map.getCollisionAreas()) {
-            resetBodyAndFixtureDefinitions();
 
             //create room
             bodyDef.position.set(collisionArea.getX(), collisionArea.getY());
@@ -129,35 +80,6 @@ public class GameScreen extends AbstractScreen {
     @Override
     public void render(float delta) {
         ScreenUtils.clear(0, 0, 0, 1);
-
-//        //temporal player movement
-//        final float speedX;
-//        final float speedY;
-//        if (Gdx.input.isKeyPressed(Input.Keys.A)) {
-//            speedX = -4;
-//        } else if (Gdx.input.isKeyPressed(Input.Keys.D)) {
-//            speedX = 4;
-//        } else {
-//            speedX = 0;
-//        }
-//        if (Gdx.input.isKeyPressed(Input.Keys.S)) {
-//            speedY = -4;
-//        } else if (Gdx.input.isKeyPressed(Input.Keys.W)) {
-//            speedY = 4;
-//        } else {
-//            speedY = 0;
-//        }
-
-        if (directionChange) {
-            //apply the force to move
-            player.applyLinearImpulse(
-                    (xFactor * 3 - player.getLinearVelocity().x) * player.getMass(),
-                    (yFactor * 3 - player.getLinearVelocity().y) * player.getMass(),
-                    player.getWorldCenter().x,
-                    player.getWorldCenter().y,
-                    true
-            );
-        }
 
 //        //cart properties
 //        cart.setLinearVelocity(
@@ -195,47 +117,11 @@ public class GameScreen extends AbstractScreen {
 
     @Override
     public void keyPressed(InputManager inputManager, GameKeys key) {
-        switch (key) {
-            case LEFT:
-                directionChange = true;
-                xFactor = -1;
-                break;
-            case RIGHT:
-                directionChange = true;
-                xFactor = 1;
-                break;
-            case UP:
-                directionChange = true;
-                yFactor = 1;
-                break;
-            case DOWN:
-                directionChange = true;
-                yFactor = -1;
-                break;
-            default:
-        }
+
     }
 
     @Override
     public void keyUp(InputManager inputManager, GameKeys key) {
-        switch (key) {
-            case LEFT:
-                directionChange = true;
-                xFactor = inputManager.isKeyPressed(GameKeys.RIGHT) ? 1 : 0;
-                break;
-            case RIGHT:
-                directionChange = true;
-                xFactor = inputManager.isKeyPressed(GameKeys.LEFT) ? -1 : 0;
-                break;
-            case UP:
-                directionChange = true;
-                yFactor = inputManager.isKeyPressed(GameKeys.DOWN) ? -1 : 0;
-                break;
-            case DOWN:
-                directionChange = true;
-                yFactor = inputManager.isKeyPressed(GameKeys.UP) ? 1 : 0;
-                break;
-            default:
-        }
+
     }
 }
