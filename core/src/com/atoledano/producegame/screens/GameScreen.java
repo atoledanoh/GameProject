@@ -1,6 +1,8 @@
 package com.atoledano.producegame.screens;
 
 import com.atoledano.producegame.ProduceGame;
+import com.atoledano.producegame.input.GameKeys;
+import com.atoledano.producegame.input.InputManager;
 import com.atoledano.producegame.map.CollisionArea;
 import com.atoledano.producegame.map.Map;
 import com.badlogic.gdx.Gdx;
@@ -22,6 +24,10 @@ public class GameScreen extends AbstractScreen {
     private final BodyDef bodyDef;
     private final FixtureDef fixtureDef;
     private Body player;
+    private boolean directionChange;
+    private int xFactor;
+    private int yFactor;
+
 //    private final Body cart;
 //    private final Body sac;
 
@@ -41,7 +47,7 @@ public class GameScreen extends AbstractScreen {
 
         //initializing profiler to each for the number of texture bindings happening
         glProfiler = new GLProfiler(Gdx.graphics);
-        glProfiler.enable();
+        glProfiler.disable();
 
         bodyDef = new BodyDef();
         fixtureDef = new FixtureDef();
@@ -124,31 +130,34 @@ public class GameScreen extends AbstractScreen {
     public void render(float delta) {
         ScreenUtils.clear(0, 0, 0, 1);
 
-        //temporal player movement
-        final float speedX;
-        final float speedY;
-        if (Gdx.input.isKeyPressed(Input.Keys.A)) {
-            speedX = -4;
-        } else if (Gdx.input.isKeyPressed(Input.Keys.D)) {
-            speedX = 4;
-        } else {
-            speedX = 0;
+//        //temporal player movement
+//        final float speedX;
+//        final float speedY;
+//        if (Gdx.input.isKeyPressed(Input.Keys.A)) {
+//            speedX = -4;
+//        } else if (Gdx.input.isKeyPressed(Input.Keys.D)) {
+//            speedX = 4;
+//        } else {
+//            speedX = 0;
+//        }
+//        if (Gdx.input.isKeyPressed(Input.Keys.S)) {
+//            speedY = -4;
+//        } else if (Gdx.input.isKeyPressed(Input.Keys.W)) {
+//            speedY = 4;
+//        } else {
+//            speedY = 0;
+//        }
+
+        if (directionChange) {
+            //apply the force to move
+            player.applyLinearImpulse(
+                    (xFactor * 3 - player.getLinearVelocity().x) * player.getMass(),
+                    (yFactor * 3 - player.getLinearVelocity().y) * player.getMass(),
+                    player.getWorldCenter().x,
+                    player.getWorldCenter().y,
+                    true
+            );
         }
-        if (Gdx.input.isKeyPressed(Input.Keys.S)) {
-            speedY = -4;
-        } else if (Gdx.input.isKeyPressed(Input.Keys.W)) {
-            speedY = 4;
-        } else {
-            speedY = 0;
-        }
-        //appy the force to move
-        player.applyLinearImpulse(
-                (speedX - player.getLinearVelocity().x) * player.getMass(),
-                (speedY - player.getLinearVelocity().y) * player.getMass(),
-                player.getWorldCenter().x,
-                player.getWorldCenter().y,
-                true
-        );
 
 //        //cart properties
 //        cart.setLinearVelocity(
@@ -163,9 +172,11 @@ public class GameScreen extends AbstractScreen {
         box2DDebugRenderer.render(world, viewport.getCamera().combined);
 
         //showing the number of bindings happening
-//        Gdx.app.debug("RenderInfo", "No. of Bindings: " + glProfiler.getTextureBindings());
-//        Gdx.app.debug("RenderInfo", "No. of DrawCalls: " + glProfiler.getDrawCalls());
-        glProfiler.reset();
+        if (glProfiler.isEnabled()) {
+            Gdx.app.debug("RenderInfo", "No. of Bindings: " + glProfiler.getTextureBindings());
+            Gdx.app.debug("RenderInfo", "No. of DrawCalls: " + glProfiler.getDrawCalls());
+            glProfiler.reset();
+        }
     }
 
     @Override
@@ -181,5 +192,51 @@ public class GameScreen extends AbstractScreen {
     @Override
     public void dispose() {
         mapRenderer.dispose();
+    }
+
+    @Override
+    public void keyPressed(InputManager inputManager, GameKeys key) {
+        switch (key) {
+            case LEFT:
+                directionChange = true;
+                xFactor = -1;
+                break;
+            case RIGHT:
+                directionChange = true;
+                xFactor = 1;
+                break;
+            case UP:
+                directionChange = true;
+                yFactor = 1;
+                break;
+            case DOWN:
+                directionChange = true;
+                yFactor = -1;
+                break;
+            default:
+        }
+    }
+
+    @Override
+    public void keyUp(InputManager inputManager, GameKeys key) {
+        switch (key) {
+            case LEFT:
+                directionChange = true;
+                xFactor = inputManager.isKeyPressed(GameKeys.RIGHT) ? 1 : 0;
+                break;
+            case RIGHT:
+                directionChange = true;
+                xFactor = inputManager.isKeyPressed(GameKeys.LEFT) ? -1 : 0;
+                break;
+            case UP:
+                directionChange = true;
+                yFactor = inputManager.isKeyPressed(GameKeys.DOWN) ? -1 : 0;
+                break;
+            case DOWN:
+                directionChange = true;
+                yFactor = inputManager.isKeyPressed(GameKeys.UP) ? 1 : 0;
+                break;
+            default:
+        }
     }
 }

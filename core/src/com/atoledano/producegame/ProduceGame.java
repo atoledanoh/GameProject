@@ -1,10 +1,8 @@
 package com.atoledano.producegame;
 
+import com.atoledano.producegame.input.InputManager;
 import com.atoledano.producegame.screens.ScreenType;
-import com.badlogic.gdx.Application;
-import com.badlogic.gdx.Game;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.*;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.assets.loaders.SkinLoader;
 import com.badlogic.gdx.graphics.Color;
@@ -57,6 +55,8 @@ public class ProduceGame extends Game {
     private Skin skin;
     private I18NBundle i18NBundle;
 
+    private InputManager inputManager;
+
     @Override
     public void create() {
         Gdx.app.setLogLevel(Application.LOG_DEBUG);
@@ -77,7 +77,13 @@ public class ProduceGame extends Game {
         assetManager.setLoader(TiledMap.class, new TmxMapLoader(assetManager.getFileHandleResolver()));
         initializeSkin();
 
+        //stage setup
         stage = new Stage(new FitViewport(1024, 768), spriteBatch);
+
+        //input section
+        inputManager = new InputManager();
+        //setting up for later input methods
+        Gdx.input.setInputProcessor(new InputMultiplexer(inputManager, stage));
 
         //set initial screen
         gameCamera = new OrthographicCamera();
@@ -114,6 +120,10 @@ public class ProduceGame extends Game {
         assetManager.finishLoading();
         skin = assetManager.get("ui/hud.json", Skin.class);
         i18NBundle = assetManager.get("ui/strings", I18NBundle.class);
+    }
+
+    public InputManager getInputManager() {
+        return inputManager;
     }
 
     public I18NBundle getI18NBundle() {

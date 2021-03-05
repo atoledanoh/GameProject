@@ -1,8 +1,8 @@
 package com.atoledano.producegame.screens;
 
 import com.atoledano.producegame.ProduceGame;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input;
+import com.atoledano.producegame.input.GameKeys;
+import com.atoledano.producegame.input.InputManager;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.utils.ScreenUtils;
@@ -28,9 +28,7 @@ public class LoadingScreen extends AbstractScreen<LoadingUI> {
         ScreenUtils.clear(0, 0, 0, 1);
 
         //check if the loading of assets was correct, then loads game screen
-        if (assetManager.update() && Gdx.input.isKeyPressed(Input.Keys.ENTER)) {
-            context.setScreen(ScreenType.GAME);
-        }
+        assetManager.update();
         screenUI.setProgress(assetManager.getProgress());
     }
 
@@ -46,6 +44,18 @@ public class LoadingScreen extends AbstractScreen<LoadingUI> {
 
     @Override
     public void dispose() {
+
+    }
+
+    @Override
+    public void keyPressed(InputManager inputManager, GameKeys key) {
+        if (assetManager.getProgress() >= 1) {
+            context.setScreen(ScreenType.GAME);
+        }
+    }
+
+    @Override
+    public void keyUp(InputManager inputManager, GameKeys key) {
 
     }
 }
