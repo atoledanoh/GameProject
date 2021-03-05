@@ -91,12 +91,14 @@ public class ProduceGame extends Game {
         //setting up for later input methods
         Gdx.input.setInputProcessor(new InputMultiplexer(inputManager, stage));
 
+        //viewport setup - view size in tiles
+        gameCamera = new OrthographicCamera();
+        screenViewport = new FitViewport(12, 9, gameCamera);
+
         //ecs engine section
         ecsEngine = new ECSEngine(this);
 
-        //set initial screen
-        gameCamera = new OrthographicCamera();
-        screenViewport = new FitViewport(42, 28, gameCamera);
+        //set first screen
         screenCache = new EnumMap<ScreenType, Screen>(ScreenType.class);
         setScreen(ScreenType.LOADING);
     }

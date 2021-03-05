@@ -1,12 +1,15 @@
 package com.atoledano.producegame.screens;
 
 import com.atoledano.producegame.ProduceGame;
+import com.atoledano.producegame.audio.AudioType;
 import com.atoledano.producegame.input.GameKeys;
 import com.atoledano.producegame.input.InputManager;
 import com.atoledano.producegame.map.CollisionArea;
 import com.atoledano.producegame.map.Map;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.assets.AssetManager;
+import com.badlogic.gdx.audio.Music;
+import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.profiling.GLProfiler;
 import com.badlogic.gdx.maps.tiled.TiledMap;
@@ -27,6 +30,7 @@ public class GameScreen extends AbstractScreen {
     private final OrthographicCamera gameCamera;
     private final GLProfiler glProfiler;
     private Map map;
+    private boolean isMusicLoaded;
 
     public GameScreen(final ProduceGame context) {
         super(context);
@@ -49,6 +53,12 @@ public class GameScreen extends AbstractScreen {
 
         //create player
         context.getEcsEngine().createPlayer(map.getStartLocation(), 1, 1);
+
+        //loading audio
+        isMusicLoaded = false;
+        for (final AudioType audioType : AudioType.values()) {
+            assetManager.load(audioType.getFilePath(), audioType.isMusic() ? Music.class : Sound.class);
+        }
     }
 
     @Override
@@ -87,7 +97,8 @@ public class GameScreen extends AbstractScreen {
 //                (cart.getLinearVelocity().y - cart.getLinearVelocity().y * 0.05f));
 //        cart.setAngularVelocity(0f);
 
-        viewport.apply(true);
+        //using playerCameraSystemNow
+        viewport.apply(false);
         mapRenderer.setView(gameCamera);
         mapRenderer.render();
         box2DDebugRenderer.render(world, viewport.getCamera().combined);
@@ -97,6 +108,11 @@ public class GameScreen extends AbstractScreen {
             Gdx.app.debug("RenderInfo", "No. of Bindings: " + glProfiler.getTextureBindings());
             Gdx.app.debug("RenderInfo", "No. of DrawCalls: " + glProfiler.getDrawCalls());
             glProfiler.reset();
+        }
+
+        if (!isMusicLoaded && assetManager.isLoaded(AudioType.INTRO.getFilePath())) {
+            isMusicLoaded = true;
+            audioManager.playAudio(AudioType.BACKGROUND1);
         }
     }
 

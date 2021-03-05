@@ -12,6 +12,7 @@ import com.badlogic.gdx.physics.box2d.PolygonShape;
 import com.badlogic.gdx.physics.box2d.World;
 import entityComponentSystem.component.B2DComponent;
 import entityComponentSystem.component.PlayerComponent;
+import entityComponentSystem.system.PlayerCameraSystem;
 import entityComponentSystem.system.PlayerMovementSystem;
 
 import static com.atoledano.producegame.ProduceGame.PLAYER_BIT;
@@ -33,6 +34,7 @@ public class ECSEngine extends PooledEngine {
         fixtureDef = new FixtureDef();
 
         this.addSystem(new PlayerMovementSystem(context));
+        this.addSystem(new PlayerCameraSystem(context));
     }
 
     private void resetBodyAndFixtureDefinitions() {

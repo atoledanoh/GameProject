@@ -2,6 +2,7 @@ package com.atoledano.producegame.audio;
 
 public enum AudioType {
     INTRO("audio/Caketown.mp3", true, 0.3f),
+    BACKGROUND1("audio/floor.mp3", true, 0.3f),
     SELECT("audio/bellding.wav", false, 0.5f);
 
     private final String filePath;
