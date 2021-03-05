@@ -1,9 +1,15 @@
 package com.atoledano.producegame.screens;
 
 import com.atoledano.producegame.ProduceGame;
+import com.atoledano.producegame.map.CollisionArea;
+import com.atoledano.producegame.map.Map;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
-import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.assets.AssetManager;
+import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.profiling.GLProfiler;
+import com.badlogic.gdx.maps.tiled.TiledMap;
+import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.badlogic.gdx.physics.box2d.*;
 import com.badlogic.gdx.utils.ScreenUtils;
 
@@ -11,104 +17,125 @@ import static com.atoledano.producegame.ProduceGame.*;
 
 public class GameScreen extends AbstractScreen {
 
-    private final Body player;
-    private final Body cart;
-    private final Body sac;
+    private final BodyDef bodyDef;
+    private final FixtureDef fixtureDef;
+    private Body player;
+//    private final Body cart;
+//    private final Body sac;
 
+    private final AssetManager assetManager;
+    private final OrthogonalTiledMapRenderer mapRenderer;
+    private final OrthographicCamera gameCamera;
+    private final GLProfiler glProfiler;
+    private Map map;
 
     public GameScreen(final ProduceGame context) {
         super(context);
 
-        BodyDef bodyDef = new BodyDef();
-        FixtureDef fixtureDef = new FixtureDef();
+        assetManager = context.getAssetManager();
+        //initializing the map and telling the size of the units to box2d
+        mapRenderer = new OrthogonalTiledMapRenderer(null, UNIT_SCALE, context.getSpriteBatch());
+        this.gameCamera = context.getGameCamera();
+
+        //initializing profiler to each for the number of texture bindings happening
+        glProfiler = new GLProfiler(Gdx.graphics);
+        glProfiler.enable();
+
+        bodyDef = new BodyDef();
+        fixtureDef = new FixtureDef();
+
+//        //create player
+//        bodyDef.position.set(4.5f, 3);
+//        bodyDef.gravityScale = 1;
+//        bodyDef.type = BodyDef.BodyType.DynamicBody;
+//        player = world.createBody(bodyDef);
+//        player.setUserData("PLAYER");
+//
+//        fixtureDef.isSensor = false;
+//        fixtureDef.restitution = 0;
+//        fixtureDef.friction = 0.2f;
+//        fixtureDef.filter.categoryBits = PLAYER_BIT;
+//        fixtureDef.filter.maskBits = -1;
+//        PolygonShape polygonShape = new PolygonShape();
+//        polygonShape.setAsBox(0.5f, 0.5f);
+//        fixtureDef.shape = polygonShape;
+//        player.createFixture(fixtureDef);
+//        polygonShape.dispose();
+
+        //getting maps ready
+        final TiledMap tiledMap = assetManager.get("map/map.tmx", TiledMap.class);
+        mapRenderer.setMap(tiledMap);
+        map = new Map(tiledMap);
+
+        spawnCollisionAreas();
+        spawnPlayer();
+    }
+
+    private void spawnPlayer() {
+        resetBodyAndFixtureDefinitions();
 
         //create player
-        bodyDef.position.set(4.5f, 3);
-        bodyDef.gravityScale = 1;
+        bodyDef.position.set(map.getStartLocation().x + 0.5f, map.getStartLocation().y + 0.5f);
+        bodyDef.fixedRotation = true;
         bodyDef.type = BodyDef.BodyType.DynamicBody;
         player = world.createBody(bodyDef);
-        player.setUserData("Player");
+        player.setUserData("PLAYER");
 
+        fixtureDef.density = 1;
         fixtureDef.isSensor = false;
         fixtureDef.restitution = 0;
         fixtureDef.friction = 0.2f;
         fixtureDef.filter.categoryBits = PLAYER_BIT;
         fixtureDef.filter.maskBits = -1;
-        PolygonShape polygonShape = new PolygonShape();
+        final PolygonShape polygonShape = new PolygonShape();
         polygonShape.setAsBox(0.5f, 0.5f);
         fixtureDef.shape = polygonShape;
         player.createFixture(fixtureDef);
         polygonShape.dispose();
+    }
 
-        //create cart
-        bodyDef.position.set(4.5f, 6);
+    private void resetBodyAndFixtureDefinitions() {
+        bodyDef.position.set(0, 0);
         bodyDef.gravityScale = 1;
-        bodyDef.type = BodyDef.BodyType.DynamicBody;
-        cart = world.createBody(bodyDef);
-        cart.setUserData("Cart");
+        bodyDef.type = BodyDef.BodyType.StaticBody;
+        bodyDef.fixedRotation = false;
 
         fixtureDef.density = 1;
         fixtureDef.isSensor = false;
         fixtureDef.restitution = 0.1f;
-        fixtureDef.friction = 0.5f;
-        fixtureDef.filter.categoryBits = CART_BIT;
-        fixtureDef.filter.maskBits = -1;
-        polygonShape = new PolygonShape();
-        polygonShape.setAsBox(0.5f, 0.5f);
-        fixtureDef.shape = polygonShape;
-        cart.createFixture(fixtureDef);
-        polygonShape.dispose();
-
-        //create sacs
-        bodyDef.position.set(2.5f, 6);
-        bodyDef.gravityScale = 0.1f;
-        bodyDef.type = BodyDef.BodyType.DynamicBody;
-        sac = world.createBody(bodyDef);
-        sac.setUserData("Sac");
-
-        fixtureDef.isSensor = false;
-        fixtureDef.restitution = 0;
-        fixtureDef.filter.categoryBits = SAC_BIT;
-        fixtureDef.filter.maskBits = -1;
-        CircleShape circleShape = new CircleShape();
-        circleShape.setRadius(0.5f);
-        fixtureDef.shape = circleShape;
-        sac.createFixture(fixtureDef);
-        circleShape.dispose();
-
-        //create room
-        bodyDef.position.set(0, 0);
-        bodyDef.gravityScale = 1;
-        bodyDef.type = BodyDef.BodyType.StaticBody;
-        Body room = world.createBody(bodyDef);
-        cart.setUserData("Room");
-
-        fixtureDef.isSensor = false;
-        fixtureDef.restitution = 0;
         fixtureDef.friction = 0.2f;
-        fixtureDef.filter.categoryBits = ROOM_BIT;
+        fixtureDef.filter.categoryBits = 0x0001;
         fixtureDef.filter.maskBits = -1;
-        final ChainShape chainShape = new ChainShape();
-        chainShape.createLoop(new float[]{1, 1, 1, 15, 8, 15, 8, 1});
-        fixtureDef.shape = chainShape;
-        room.createFixture(fixtureDef);
-        chainShape.dispose();
+        fixtureDef.shape = null;
+    }
 
+    private void spawnCollisionAreas() {
+        for (final CollisionArea collisionArea : map.getCollisionAreas()) {
+            resetBodyAndFixtureDefinitions();
+
+            //create room
+            bodyDef.position.set(collisionArea.getX(), collisionArea.getY());
+            bodyDef.fixedRotation = true;
+            final Body room = world.createBody(bodyDef);
+            room.setUserData("ROOM");
+
+            fixtureDef.filter.categoryBits = ROOM_BIT;
+            fixtureDef.filter.maskBits = -1; //collides with everything
+            final ChainShape chainShape = new ChainShape();
+            chainShape.createChain(collisionArea.getVertices());
+            fixtureDef.shape = chainShape;
+            room.createFixture(fixtureDef);
+            chainShape.dispose();
+        }
     }
 
     @Override
     public void show() {
-
     }
 
     @Override
     public void render(float delta) {
         ScreenUtils.clear(0, 0, 0, 1);
-
-        //pause/loading screen
-        if (Gdx.input.isKeyPressed(Input.Keys.P)) {
-            context.setScreen(ScreenType.LOADING);
-        }
 
         //temporal player movement
         final float speedX;
@@ -136,19 +163,22 @@ public class GameScreen extends AbstractScreen {
                 true
         );
 
-        //cart properties
-        cart.setLinearVelocity(
-                (cart.getLinearVelocity().x - cart.getLinearVelocity().x*0.05f),
-                (cart.getLinearVelocity().y - cart.getLinearVelocity().y*0.05f));
-        cart.setAngularVelocity(0f);
-
-        //sac properties
-
-
+//        //cart properties
+//        cart.setLinearVelocity(
+//                (cart.getLinearVelocity().x - cart.getLinearVelocity().x * 0.05f),
+//                (cart.getLinearVelocity().y - cart.getLinearVelocity().y * 0.05f));
+//        cart.setAngularVelocity(0f);
 
 
         viewport.apply(true);
+        mapRenderer.setView(gameCamera);
+        mapRenderer.render();
         box2DDebugRenderer.render(world, viewport.getCamera().combined);
+
+        //showing the number of bindings happening
+        Gdx.app.debug("RenderInfo", "No. of Bindings: " + glProfiler.getTextureBindings());
+        Gdx.app.debug("RenderInfo", "No. of DrawCalls: " + glProfiler.getDrawCalls());
+        glProfiler.reset();
     }
 
     @Override
@@ -168,6 +198,6 @@ public class GameScreen extends AbstractScreen {
 
     @Override
     public void dispose() {
-
+        mapRenderer.dispose();
     }
 }
