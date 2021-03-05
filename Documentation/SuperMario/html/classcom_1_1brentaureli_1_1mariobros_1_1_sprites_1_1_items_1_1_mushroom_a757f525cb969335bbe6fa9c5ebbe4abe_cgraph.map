@@ -1,6 +1,0 @@
-<map id="com.brentaureli.mariobros.Sprites.Items.Mushroom.use" name="com.brentaureli.mariobros.Sprites.Items.Mushroom.use">
-<area shape="rect" id="node1" title=" " alt="" coords="5,39,195,80"/>
-<area shape="rect" id="node2" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item.html#a885238ba7a90eb6fda00a9134115c3e4" title=" " alt="" coords="243,5,419,47"/>
-<area shape="rect" id="node3" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_mario.html#a55659f9aa4e424a297b38738adf7cd93" title=" " alt="" coords="243,71,419,112"/>
-<area shape="rect" id="node4" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_mario.html#a9770e030122995d3fb0949ea8d47660b" title=" " alt="" coords="467,71,643,112"/>
-</map>

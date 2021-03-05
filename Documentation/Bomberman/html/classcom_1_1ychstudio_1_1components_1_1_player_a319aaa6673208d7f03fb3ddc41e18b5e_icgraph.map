@@ -1,5 +1,0 @@
-<map id="com.ychstudio.components.Player.powerUpSpeed" name="com.ychstudio.components.Player.powerUpSpeed">
-<area shape="rect" id="node1" title=" " alt="" coords="260,50,447,91"/>
-<area shape="rect" id="node2" href="$classcom_1_1ychstudio_1_1listeners_1_1_b2_d_world_contact_listener.html#ae244af3acda42ccd10b8dd1e4531e5c2" title=" " alt="" coords="5,5,212,61"/>
-<area shape="rect" id="node3" href="$classcom_1_1ychstudio_1_1systems_1_1_player_system.html#ab8767c9a47504770a68ad5e2f9ba56b9" title=" " alt="" coords="7,86,210,127"/>
-</map>

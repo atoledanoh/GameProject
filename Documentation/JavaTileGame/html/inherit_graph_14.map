@@ -1,9 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classdev_1_1shou_1_1tilegame_1_1tiles_1_1_tile.html" title=" " alt="" coords="5,177,184,203"/>
-<area shape="rect" id="node2" href="$classdev_1_1shou_1_1tilegame_1_1tiles_1_1_apple_tile.html" title=" " alt="" coords="232,5,391,47"/>
-<area shape="rect" id="node3" href="$classdev_1_1shou_1_1tilegame_1_1tiles_1_1_banana_tile.html" title=" " alt="" coords="232,71,391,112"/>
-<area shape="rect" id="node4" href="$classdev_1_1shou_1_1tilegame_1_1tiles_1_1_crate_tile.html" title=" " alt="" coords="232,136,391,177"/>
-<area shape="rect" id="node5" href="$classdev_1_1shou_1_1tilegame_1_1tiles_1_1_door_tile.html" title=" " alt="" coords="232,201,391,243"/>
-<area shape="rect" id="node6" href="$classdev_1_1shou_1_1tilegame_1_1tiles_1_1_floor_tile.html" title=" " alt="" coords="232,267,391,308"/>
-<area shape="rect" id="node7" href="$classdev_1_1shou_1_1tilegame_1_1tiles_1_1_wall_tile.html" title=" " alt="" coords="232,332,391,373"/>
-</map>

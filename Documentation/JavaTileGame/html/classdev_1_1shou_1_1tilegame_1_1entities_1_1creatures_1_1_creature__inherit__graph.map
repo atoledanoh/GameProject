@@ -1,5 +1,0 @@
-<map id="dev.shou.tilegame.entities.creatures.Creature" name="dev.shou.tilegame.entities.creatures.Creature">
-<area shape="rect" id="node1" title=" " alt="" coords="5,95,240,136"/>
-<area shape="rect" id="node3" href="$classdev_1_1shou_1_1tilegame_1_1entities_1_1creatures_1_1_player.html" title=" " alt="" coords="5,184,240,225"/>
-<area shape="rect" id="node2" href="$classdev_1_1shou_1_1tilegame_1_1entities_1_1_entity.html" title=" " alt="" coords="35,5,211,47"/>
-</map>

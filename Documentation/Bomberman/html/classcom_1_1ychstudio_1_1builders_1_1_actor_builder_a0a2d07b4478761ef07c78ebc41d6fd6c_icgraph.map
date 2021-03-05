@@ -1,9 +1,0 @@
-<map id="com.ychstudio.builders.ActorBuilder.init" name="com.ychstudio.builders.ActorBuilder.init">
-<area shape="rect" id="node1" title=" " alt="" coords="749,104,940,145"/>
-<area shape="rect" id="node2" href="$classcom_1_1ychstudio_1_1builders_1_1_map_loader.html#a616c635dc9329d1d9890593a3a0844ce" title=" " alt="" coords="497,5,683,47"/>
-<area shape="rect" id="node5" href="$classcom_1_1ychstudio_1_1systems_1_1_bomb_system.html#a65621174dcd5f9af13c451b97c5809f0" title=" " alt="" coords="491,71,689,112"/>
-<area shape="rect" id="node6" href="$classcom_1_1ychstudio_1_1systems_1_1_breakable_system.html#a8e122dc923c099e664f716f68a368801" title=" " alt="" coords="479,136,701,177"/>
-<area shape="rect" id="node7" href="$classcom_1_1ychstudio_1_1systems_1_1_player_system.html#ab8767c9a47504770a68ad5e2f9ba56b9" title=" " alt="" coords="489,201,691,243"/>
-<area shape="rect" id="node3" href="$classcom_1_1ychstudio_1_1builders_1_1_world_builder.html#ae4c77596aa662afe602451b0e28097ec" title=" " alt="" coords="236,5,431,47"/>
-<area shape="rect" id="node4" href="$classcom_1_1ychstudio_1_1scenes_1_1_play_screen.html#ac1d3dacb81727ad1b4a9b8be4268fe19" title=" " alt="" coords="5,5,188,47"/>
-</map>

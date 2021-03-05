@@ -1,6 +1,0 @@
-<map id="com.brentaureli.mariobros.Sprites.Enemies.Enemy" name="com.brentaureli.mariobros.Sprites.Enemies.Enemy">
-<area shape="rect" id="node1" title=" " alt="" coords="109,39,285,80"/>
-<area shape="rect" id="node3" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_enemies_1_1_goomba.html" title=" " alt="" coords="333,5,509,47"/>
-<area shape="rect" id="node4" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_enemies_1_1_turtle.html" title=" " alt="" coords="333,71,509,112"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,46,61,73"/>
-</map>

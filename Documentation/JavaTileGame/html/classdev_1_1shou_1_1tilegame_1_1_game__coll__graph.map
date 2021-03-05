@@ -1,6 +1,0 @@
-<map id="dev.shou.tilegame.Game" name="dev.shou.tilegame.Game">
-<area shape="rect" id="node1" title=" " alt="" coords="5,199,171,225"/>
-<area shape="rect" id="node2" title=" " alt="" coords="29,102,105,129"/>
-<area shape="rect" id="node3" href="$classdev_1_1shou_1_1tilegame_1_1states_1_1_state.html" title=" " alt="" coords="129,95,300,136"/>
-<area shape="rect" id="node4" href="$classdev_1_1shou_1_1tilegame_1_1_handler.html" title=" " alt="" coords="127,5,302,32"/>
-</map>

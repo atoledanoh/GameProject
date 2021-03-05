@@ -1,7 +1,0 @@
-<map id="com.ychstudio.Bomberman.getSpriteBatch" name="com.ychstudio.Bomberman.getSpriteBatch">
-<area shape="rect" id="node1" title=" " alt="" coords="253,104,456,145"/>
-<area shape="rect" id="node2" href="$classcom_1_1ychstudio_1_1scenes_1_1_ending_screen.html#a8513e9b1a1ba8d91a733dcbf32bb30b7" title=" " alt="" coords="7,5,204,47"/>
-<area shape="rect" id="node3" href="$classcom_1_1ychstudio_1_1scenes_1_1_game_over_screen.html#afaa8f3a3d90402db2d6210327d1cf0ff" title=" " alt="" coords="8,71,203,112"/>
-<area shape="rect" id="node4" href="$classcom_1_1ychstudio_1_1scenes_1_1_main_menu_screen.html#a81c082976ed66af8492f8fce573e2a70" title=" " alt="" coords="5,136,205,177"/>
-<area shape="rect" id="node5" href="$classcom_1_1ychstudio_1_1scenes_1_1_play_screen.html#aa058cade907bcdc645cea4d9c177887d" title=" " alt="" coords="14,201,197,243"/>
-</map>

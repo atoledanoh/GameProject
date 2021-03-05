@@ -1,8 +1,0 @@
-<map id="com.quillraven.game.core.ecs.component.ParticleEffectComponent" name="com.quillraven.game.core.ecs.component.ParticleEffectComponent">
-<area shape="rect" id="node1" title=" " alt="" coords="377,107,644,149"/>
-<area shape="rect" id="node2" title=" " alt="" coords="91,5,194,32"/>
-<area shape="rect" id="node3" title=" " alt="" coords="99,56,187,83"/>
-<area shape="rect" id="node4" href="$enumcom_1_1quillraven_1_1game_1_1core_1_1ecs_1_1component_1_1_particle_effect_component_1_1_particle_effect_type.html" title=" " alt="" coords="5,107,280,149"/>
-<area shape="rect" id="node5" title=" " alt="" coords="109,173,176,200"/>
-<area shape="rect" id="node6" title=" " alt="" coords="80,224,205,251"/>
-</map>

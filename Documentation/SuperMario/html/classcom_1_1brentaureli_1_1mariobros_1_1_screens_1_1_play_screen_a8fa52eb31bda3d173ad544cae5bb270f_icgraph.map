@@ -1,9 +1,0 @@
-<map id="com.brentaureli.mariobros.Screens.PlayScreen.getWorld" name="com.brentaureli.mariobros.Screens.PlayScreen.getWorld">
-<area shape="rect" id="node1" title=" " alt="" coords="299,173,496,215"/>
-<area shape="rect" id="node2" href="$classcom_1_1brentaureli_1_1mariobros_1_1_tools_1_1_b2_world_creator.html#a086fecdea37b9856279bd4416940bd34" title=" " alt="" coords="5,5,251,47"/>
-<area shape="rect" id="node3" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_enemies_1_1_enemy.html#a47bfe5520a1854a67070d688449e99f4" title=" " alt="" coords="24,71,232,112"/>
-<area shape="rect" id="node4" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_other_1_1_fire_ball.html#af927610369992206990d9b9bc192d6e5" title=" " alt="" coords="31,136,225,177"/>
-<area shape="rect" id="node5" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_tile_objects_1_1_interactive_tile_object.html#a55ca06ec273e758d0adcf2317b28734a" title=" " alt="" coords="28,202,228,258"/>
-<area shape="rect" id="node6" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_item.html#a116ebc6271dd0e854e6c328c42560820" title=" " alt="" coords="40,283,216,324"/>
-<area shape="rect" id="node7" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_mario.html#ab1fc1dd7e5c4db3457df2cb777dbbad0" title=" " alt="" coords="40,348,216,389"/>
-</map>

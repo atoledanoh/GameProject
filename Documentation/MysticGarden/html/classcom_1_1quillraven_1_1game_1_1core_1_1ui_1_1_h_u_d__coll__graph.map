@@ -1,6 +1,0 @@
-<map id="com.quillraven.game.core.ui.HUD" name="com.quillraven.game.core.ui.HUD">
-<area shape="rect" id="node1" title=" " alt="" coords="62,95,277,121"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,13,101,39"/>
-<area shape="rect" id="node3" title=" " alt="" coords="126,13,213,39"/>
-<area shape="rect" id="node4" href="$interfacecom_1_1quillraven_1_1game_1_1core_1_1input_1_1_key_input_listener.html" title=" " alt="" coords="237,5,443,47"/>
-</map>

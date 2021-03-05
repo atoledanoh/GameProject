@@ -1,8 +1,0 @@
-<map id="com.quillraven.game.core.ui.HUD.resize" name="com.quillraven.game.core.ui.HUD.resize">
-<area shape="rect" id="node1" title=" " alt="" coords="744,39,931,80"/>
-<area shape="rect" id="node2" href="$classcom_1_1quillraven_1_1game_1_1core_1_1gamestate_1_1_game_state.html#a0557402c87ca82ec00a380a3ff24d779" title=" " alt="" coords="457,39,696,80"/>
-<area shape="rect" id="node3" href="$classcom_1_1quillraven_1_1game_1_1core_1_1_game.html#a99aeb3caa30f684fb1de4f7b679384c7" title=" " alt="" coords="236,5,409,47"/>
-<area shape="rect" id="node5" href="$classcom_1_1quillraven_1_1game_1_1core_1_1_game.html#a282467af0abc2ff85256a4c4e3f6c40a" title=" " alt="" coords="236,71,409,112"/>
-<area shape="rect" id="node4" href="$classcom_1_1quillraven_1_1game_1_1_mystic_garden.html#a5640d198386129ca6196308c7006d8f4" title=" " alt="" coords="5,5,188,47"/>
-<area shape="rect" id="node6" href="$classcom_1_1quillraven_1_1game_1_1core_1_1_game.html#adc1d3e22005ac52517ed1e20c869c50e" title=" " alt="" coords="10,71,183,112"/>
-</map>

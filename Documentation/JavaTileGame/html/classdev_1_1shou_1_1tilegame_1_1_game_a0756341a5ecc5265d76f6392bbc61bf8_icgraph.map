@@ -1,9 +1,0 @@
-<map id="dev.shou.tilegame.Game.getGameCamera" name="dev.shou.tilegame.Game.getGameCamera">
-<area shape="rect" id="node1" title=" " alt="" coords="751,100,937,141"/>
-<area shape="rect" id="node2" href="$classdev_1_1shou_1_1tilegame_1_1_handler.html#a0b3ab6cdbdc60d06c2acbfd27b03b1e1" title=" " alt="" coords="507,100,703,141"/>
-<area shape="rect" id="node3" href="$classdev_1_1shou_1_1tilegame_1_1entities_1_1creatures_1_1_player.html#a1041efaf66051bb625741d6e7852ac56" title=" " alt="" coords="224,5,459,47"/>
-<area shape="rect" id="node4" href="$classdev_1_1shou_1_1tilegame_1_1entities_1_1statics_1_1_tree.html#a84beb45072ed9deb90c59b1c936632ee" title=" " alt="" coords="232,71,451,112"/>
-<area shape="rect" id="node5" href="$classdev_1_1shou_1_1tilegame_1_1maps_1_1_map.html#a662719cce02965a156506c7e9fc20ec2" title=" " alt="" coords="226,137,457,163"/>
-<area shape="rect" id="node7" href="$classdev_1_1shou_1_1tilegame_1_1entities_1_1creatures_1_1_player.html#a4a7d4d46a157a1e2dbe409b1eab2b02c" title=" " alt="" coords="224,188,459,229"/>
-<area shape="rect" id="node6" href="$classdev_1_1shou_1_1tilegame_1_1states_1_1_game_state.html#a5a9cb7568f82247f88f5a9b80e1da018" title=" " alt="" coords="5,129,176,171"/>
-</map>

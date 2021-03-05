@@ -1,4 +1,0 @@
-<map id="com.brentaureli.mariobros.Screens.PlayScreen.spawnItem" name="com.brentaureli.mariobros.Screens.PlayScreen.spawnItem">
-<area shape="rect" id="node1" title=" " alt="" coords="280,5,487,47"/>
-<area shape="rect" id="node2" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_tile_objects_1_1_coin.html#ad2f15fa33bfe7b0dd568804512fc9954" title=" " alt="" coords="5,5,232,47"/>
-</map>

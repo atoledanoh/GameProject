@@ -1,9 +1,0 @@
-<map id="com.brentaureli.mariobros.Screens.PlayScreen.getAtlas" name="com.brentaureli.mariobros.Screens.PlayScreen.getAtlas">
-<area shape="rect" id="node1" title=" " alt="" coords="283,169,476,211"/>
-<area shape="rect" id="node2" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_other_1_1_fire_ball.html#af927610369992206990d9b9bc192d6e5" title=" " alt="" coords="23,5,217,47"/>
-<area shape="rect" id="node3" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_enemies_1_1_goomba.html#aebf2fdf6ecc9323a1aca2fe2d8c4b63a" title=" " alt="" coords="8,71,232,112"/>
-<area shape="rect" id="node4" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_mario.html#ab1fc1dd7e5c4db3457df2cb777dbbad0" title=" " alt="" coords="32,136,208,177"/>
-<area shape="rect" id="node5" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_items_1_1_mushroom.html#a58ca3cef47d2cb7fab0e2ef312617a3b" title=" " alt="" coords="5,201,235,243"/>
-<area shape="rect" id="node6" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_enemies_1_1_turtle.html#a83ba23843729947c5526bddfe607fc8c" title=" " alt="" coords="25,267,215,308"/>
-<area shape="rect" id="node7" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_enemies_1_1_goomba.html#af4ca8c2e228687ee42120a23cdea1bec" title=" " alt="" coords="13,332,227,373"/>
-</map>

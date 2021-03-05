@@ -1,6 +1,0 @@
-<map id="com.ychstudio.scenes.EndingScreen.EndingScreen" name="com.ychstudio.scenes.EndingScreen.EndingScreen">
-<area shape="rect" id="node1" title=" " alt="" coords="5,71,203,112"/>
-<area shape="rect" id="node2" href="$classcom_1_1ychstudio_1_1gamesys_1_1_game_manager.html#ab0038c62e1507b4a9e7d419c4d56cbe1" title=" " alt="" coords="251,5,453,47"/>
-<area shape="rect" id="node3" href="$classcom_1_1ychstudio_1_1gamesys_1_1_game_manager.html#af849443c40ab595eebc79c3896ffaa43" title=" " alt="" coords="251,71,453,112"/>
-<area shape="rect" id="node4" href="$classcom_1_1ychstudio_1_1_bomberman.html#afe55813ff4000fea8489a6936f243816" title=" " alt="" coords="251,136,453,177"/>
-</map>

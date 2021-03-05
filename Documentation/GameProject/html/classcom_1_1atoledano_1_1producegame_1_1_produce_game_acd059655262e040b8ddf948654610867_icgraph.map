@@ -1,6 +1,0 @@
-<map id="com.atoledano.producegame.ProduceGame.setScreen" name="com.atoledano.producegame.ProduceGame.setScreen">
-<area shape="rect" id="node1" title=" " alt="" coords="296,71,489,112"/>
-<area shape="rect" id="node2" href="$classcom_1_1atoledano_1_1producegame_1_1_produce_game.html#a46e000839150f938fae37e560c33b263" title=" " alt="" coords="30,5,223,47"/>
-<area shape="rect" id="node3" href="$classcom_1_1atoledano_1_1producegame_1_1screens_1_1_game_screen.html#a4d6c1ad8482513fa8296646593b1a452" title=" " alt="" coords="5,71,248,112"/>
-<area shape="rect" id="node4" href="$classcom_1_1atoledano_1_1producegame_1_1screens_1_1_loading_screen.html#a445b5d4f04ad6d6a81318930a52f2654" title=" " alt="" coords="5,136,248,177"/>
-</map>

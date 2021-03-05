@@ -1,5 +1,0 @@
-<map id="dev.shou.tilegame.maps.Map.tick" name="dev.shou.tilegame.maps.Map.tick">
-<area shape="rect" id="node1" title=" " alt="" coords="5,13,221,39"/>
-<area shape="rect" id="node2" href="$classdev_1_1shou_1_1tilegame_1_1entities_1_1_entity_manager.html#abf608f3cea21b6faced1b7d47d2e324d" title=" " alt="" coords="269,5,445,47"/>
-<area shape="rect" id="node3" href="$classdev_1_1shou_1_1tilegame_1_1entities_1_1_entity.html#a4fa70005b2f8d04b26227e9a58570f83" title=" " alt="" coords="493,5,669,47"/>
-</map>

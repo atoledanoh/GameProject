@@ -1,5 +1,0 @@
-<map id="com.quillraven.game.core.ui.HUD.touchUp" name="com.quillraven.game.core.ui.HUD.touchUp">
-<area shape="rect" id="node1" title=" " alt="" coords="5,39,192,80"/>
-<area shape="rect" id="node2" href="$classcom_1_1quillraven_1_1game_1_1core_1_1_utils.html#a58eabe12ff934d6360821362c7c2f678" title=" " alt="" coords="256,5,429,47"/>
-<area shape="rect" id="node3" href="$classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager.html#a0cface2397a3b44e4091bf641d147933" title=" " alt="" coords="240,71,445,112"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="com.brentaureli.mariobros.Sprites.TileObjects.InteractiveTileObject.setCategoryFilter" name="com.brentaureli.mariobros.Sprites.TileObjects.InteractiveTileObject.setCategoryFilter">
-<area shape="rect" id="node1" title=" " alt="" coords="284,63,479,119"/>
-<area shape="rect" id="node2" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_tile_objects_1_1_brick.html#afe1f7bd88fbde81a91cce9e63966ab7c" title=" " alt="" coords="21,5,221,47"/>
-<area shape="rect" id="node3" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_tile_objects_1_1_coin.html#a719b0969c6a1c613863ed1598e25cb0c" title=" " alt="" coords="25,71,217,112"/>
-<area shape="rect" id="node4" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_tile_objects_1_1_brick.html#a663d68fe9c627b674ea9f5db34acc143" title=" " alt="" coords="5,136,236,177"/>
-</map>

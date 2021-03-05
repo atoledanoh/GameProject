@@ -1,5 +1,0 @@
-<map id="com.quillraven.game.core.gamestate.GameState.activate" name="com.quillraven.game.core.gamestate.GameState.activate">
-<area shape="rect" id="node1" title=" " alt="" coords="5,39,244,80"/>
-<area shape="rect" id="node2" href="$classcom_1_1quillraven_1_1game_1_1core_1_1input_1_1_input_manager.html#ac74dc974ae654e2f12cacb105a1d8f42" title=" " alt="" coords="292,5,515,47"/>
-<area shape="rect" id="node3" href="$classcom_1_1quillraven_1_1game_1_1core_1_1_utils.html#a58eabe12ff934d6360821362c7c2f678" title=" " alt="" coords="317,71,490,112"/>
-</map>

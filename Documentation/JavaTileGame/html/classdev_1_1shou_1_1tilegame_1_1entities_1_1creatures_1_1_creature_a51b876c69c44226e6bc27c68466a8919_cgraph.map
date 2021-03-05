@@ -1,7 +1,0 @@
-<map id="dev.shou.tilegame.entities.creatures.Creature.moveX" name="dev.shou.tilegame.entities.creatures.Creature.moveX">
-<area shape="rect" id="node1" title=" " alt="" coords="5,49,240,90"/>
-<area shape="rect" id="node2" href="$classdev_1_1shou_1_1tilegame_1_1entities_1_1creatures_1_1_creature.html#a645bc047e79c0255d6d5012db7e409da" title=" " alt="" coords="288,49,523,90"/>
-<area shape="rect" id="node3" href="$classdev_1_1shou_1_1tilegame_1_1_handler.html#ae703fe1b8c8355e522d42753936161a5" title=" " alt="" coords="577,5,798,32"/>
-<area shape="rect" id="node4" href="$classdev_1_1shou_1_1tilegame_1_1maps_1_1_map.html#a5f01acf45adac8dddea2cf582b00bc64" title=" " alt="" coords="571,56,804,83"/>
-<area shape="rect" id="node5" href="$classdev_1_1shou_1_1tilegame_1_1tiles_1_1_tile.html#a19ca8c28e38476656a81f3ac4bdb8496" title=" " alt="" coords="608,107,767,149"/>
-</map>

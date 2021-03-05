@@ -1,7 +1,0 @@
-<map id="com.ychstudio.systems.AnimationSystem.process" name="com.ychstudio.systems.AnimationSystem.process">
-<area shape="rect" id="node1" title=" " alt="" coords="5,104,228,145"/>
-<area shape="rect" id="node2" href="$classcom_1_1ychstudio_1_1components_1_1_state.html#a9bb036828690444f9c68d3fb2f33240f" title=" " alt="" coords="276,5,463,47"/>
-<area shape="rect" id="node3" href="$classcom_1_1ychstudio_1_1components_1_1_state.html#ae35c17776317019abd4500edae9ed10d" title=" " alt="" coords="276,71,463,112"/>
-<area shape="rect" id="node4" href="$classcom_1_1ychstudio_1_1components_1_1_anim.html#af89b967830d903d81347fed53434dc48" title=" " alt="" coords="276,136,463,177"/>
-<area shape="rect" id="node5" href="$classcom_1_1ychstudio_1_1components_1_1_renderer.html#ad4465b7a9ca361bec93e00ce7b7fffcb" title=" " alt="" coords="276,201,463,243"/>
-</map>

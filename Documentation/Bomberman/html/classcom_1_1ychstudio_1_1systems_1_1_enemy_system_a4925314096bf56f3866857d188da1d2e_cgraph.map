@@ -1,4 +1,0 @@
-<map id="com.ychstudio.systems.EnemySystem.changeWalkingState" name="com.ychstudio.systems.EnemySystem.changeWalkingState">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,212,47"/>
-<area shape="rect" id="node2" href="$enumcom_1_1ychstudio_1_1components_1_1_enemy_1_1_state.html#a29baa52473d61bd5dcab1f94f3c4ae17" title=" " alt="" coords="260,5,507,47"/>
-</map>

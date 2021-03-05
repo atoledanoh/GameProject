@@ -1,0 +1,4 @@
+<map id="com.atoledano.producegame.screens.LoadingScreen.hide" name="com.atoledano.producegame.screens.LoadingScreen.hide">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,248,47"/>
+<area shape="rect" id="node2" href="$classcom_1_1atoledano_1_1producegame_1_1audio_1_1_audio_manager.html#a91409bdfafd9fab8b9c109d72de8a724" title=" " alt="" coords="296,5,524,47"/>
+</map>

@@ -1,5 +1,0 @@
-<map id="dev.shou.tilegame.entities.EntityManager.render" name="dev.shou.tilegame.entities.EntityManager.render">
-<area shape="rect" id="node1" title=" " alt="" coords="503,5,679,47"/>
-<area shape="rect" id="node2" href="$classdev_1_1shou_1_1tilegame_1_1maps_1_1_map.html#a662719cce02965a156506c7e9fc20ec2" title=" " alt="" coords="224,13,455,39"/>
-<area shape="rect" id="node3" href="$classdev_1_1shou_1_1tilegame_1_1states_1_1_game_state.html#a5a9cb7568f82247f88f5a9b80e1da018" title=" " alt="" coords="5,5,176,47"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="com.quillraven.game.core.Utils.getResourceManager" name="com.quillraven.game.core.Utils.getResourceManager">
-<area shape="rect" id="node1" title=" " alt="" coords="360,169,535,211"/>
-<area shape="rect" id="node2" href="$classcom_1_1quillraven_1_1game_1_1core_1_1_audio_manager.html#a0b02a57a1b43488e6edf2da891da0bb8" title=" " alt="" coords="63,5,255,47"/>
-<area shape="rect" id="node3" href="$classcom_1_1quillraven_1_1game_1_1gamestate_1_1_g_s_loading.html#a5b3396738b7c95d968f26c3e926deb6d" title=" " alt="" coords="54,71,263,112"/>
-<area shape="rect" id="node4" href="$classcom_1_1quillraven_1_1game_1_1core_1_1ui_1_1_h_u_d.html#a07ee555014f34df360638cf5b282ddd3" title=" " alt="" coords="65,136,252,177"/>
-<area shape="rect" id="node5" href="$classcom_1_1quillraven_1_1game_1_1map_1_1_map_manager.html#abfa06ff2089781929d66e28c9ca792c1" title=" " alt="" coords="71,201,247,243"/>
-<area shape="rect" id="node6" href="$classcom_1_1quillraven_1_1game_1_1ecs_1_1system_1_1_player_animation_system.html#a1731e6637c8ee6db1b3fb56f7615232f" title=" " alt="" coords="5,267,312,308"/>
-<area shape="rect" id="node7" href="$classcom_1_1quillraven_1_1game_1_1core_1_1ecs_1_1system_1_1_particle_system.html#ac9139162a29294c64ce99f6f146a1efd" title=" " alt="" coords="36,332,281,373"/>
-</map>

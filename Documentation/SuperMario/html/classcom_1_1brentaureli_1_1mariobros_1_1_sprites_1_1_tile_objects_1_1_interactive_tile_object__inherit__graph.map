@@ -1,5 +1,0 @@
-<map id="com.brentaureli.mariobros.Sprites.TileObjects.InteractiveTileObject" name="com.brentaureli.mariobros.Sprites.TileObjects.InteractiveTileObject">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,200,87"/>
-<area shape="rect" id="node2" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_tile_objects_1_1_brick.html" title=" " alt="" coords="248,5,424,47"/>
-<area shape="rect" id="node3" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_tile_objects_1_1_coin.html" title=" " alt="" coords="248,71,424,112"/>
-</map>

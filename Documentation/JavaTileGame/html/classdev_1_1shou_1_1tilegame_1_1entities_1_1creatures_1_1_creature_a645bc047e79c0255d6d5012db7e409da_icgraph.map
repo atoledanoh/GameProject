@@ -1,7 +1,0 @@
-<map id="dev.shou.tilegame.entities.creatures.Creature.collisionWithTile" name="dev.shou.tilegame.entities.creatures.Creature.collisionWithTile">
-<area shape="rect" id="node1" title=" " alt="" coords="853,39,1088,80"/>
-<area shape="rect" id="node2" href="$classdev_1_1shou_1_1tilegame_1_1entities_1_1creatures_1_1_creature.html#a51b876c69c44226e6bc27c68466a8919" title=" " alt="" coords="571,5,805,47"/>
-<area shape="rect" id="node5" href="$classdev_1_1shou_1_1tilegame_1_1entities_1_1creatures_1_1_creature.html#acd6f0480bc1fdaac07bb232f54e71b14" title=" " alt="" coords="571,71,805,112"/>
-<area shape="rect" id="node3" href="$classdev_1_1shou_1_1tilegame_1_1entities_1_1creatures_1_1_creature.html#aae38a613b8f90286a19bfd15377d5faf" title=" " alt="" coords="288,39,523,80"/>
-<area shape="rect" id="node4" href="$classdev_1_1shou_1_1tilegame_1_1entities_1_1creatures_1_1_player.html#a4a7d4d46a157a1e2dbe409b1eab2b02c" title=" " alt="" coords="5,39,240,80"/>
-</map>

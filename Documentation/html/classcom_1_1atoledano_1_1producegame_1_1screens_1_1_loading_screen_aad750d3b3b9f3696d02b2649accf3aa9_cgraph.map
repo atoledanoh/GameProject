@@ -1,0 +1,8 @@
+<map id="com.atoledano.producegame.screens.LoadingScreen.keyPressed" name="com.atoledano.producegame.screens.LoadingScreen.keyPressed">
+<area shape="rect" id="node1" title=" " alt="" coords="5,104,248,145"/>
+<area shape="rect" id="node2" href="$classcom_1_1atoledano_1_1producegame_1_1audio_1_1_audio_manager.html#a525e2651bb76aba0df4fea34e65f07a0" title=" " alt="" coords="296,71,524,112"/>
+<area shape="rect" id="node5" href="$classcom_1_1atoledano_1_1producegame_1_1_produce_game.html#acd059655262e040b8ddf948654610867" title=" " alt="" coords="313,136,507,177"/>
+<area shape="rect" id="node3" href="$enumcom_1_1atoledano_1_1producegame_1_1audio_1_1_audio_type.html#ad1ef26efdd928c69be5e9fe4650ec6f6" title=" " alt="" coords="579,5,807,47"/>
+<area shape="rect" id="node4" href="$enumcom_1_1atoledano_1_1producegame_1_1audio_1_1_audio_type.html#a1b4d848d4ac25705fb5a334f4879b016" title=" " alt="" coords="579,71,807,112"/>
+<area shape="rect" id="node6" href="$enumcom_1_1atoledano_1_1producegame_1_1screens_1_1_screen_type.html#a7e038f1625cdf6102615399afd0c65d4" title=" " alt="" coords="572,136,815,177"/>
+</map>

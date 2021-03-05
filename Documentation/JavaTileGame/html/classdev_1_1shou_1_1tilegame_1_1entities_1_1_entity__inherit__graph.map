@@ -1,7 +1,0 @@
-<map id="dev.shou.tilegame.entities.Entity" name="dev.shou.tilegame.entities.Entity">
-<area shape="rect" id="node1" title=" " alt="" coords="5,39,181,80"/>
-<area shape="rect" id="node2" href="$classdev_1_1shou_1_1tilegame_1_1entities_1_1creatures_1_1_creature.html" title=" " alt="" coords="229,5,464,47"/>
-<area shape="rect" id="node4" href="$classdev_1_1shou_1_1tilegame_1_1entities_1_1statics_1_1_static_entity.html" title=" " alt="" coords="237,71,456,112"/>
-<area shape="rect" id="node3" href="$classdev_1_1shou_1_1tilegame_1_1entities_1_1creatures_1_1_player.html" title=" " alt="" coords="517,5,751,47"/>
-<area shape="rect" id="node5" href="$classdev_1_1shou_1_1tilegame_1_1entities_1_1statics_1_1_tree.html" title=" " alt="" coords="512,78,756,105"/>
-</map>

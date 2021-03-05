@@ -1,0 +1,5 @@
+<map id="com.atoledano.producegame.input.InputManager.addInputListener" name="com.atoledano.producegame.input.InputManager.addInputListener">
+<area shape="rect" id="node1" title=" " alt="" coords="316,50,541,91"/>
+<area shape="rect" id="node2" href="$classentity_component_system_1_1system_1_1_player_movement_system.html#a07325f1c829477631f478c13fde374e4" title=" " alt="" coords="5,5,268,61"/>
+<area shape="rect" id="node3" href="$classcom_1_1atoledano_1_1producegame_1_1screens_1_1_abstract_screen.html#abaa645147da67df1d90aa612c9bace74" title=" " alt="" coords="15,86,258,127"/>
+</map>

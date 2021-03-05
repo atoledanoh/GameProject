@@ -1,0 +1,6 @@
+<map id="com.atoledano.producegame.screens.AbstractScreen&lt; T extends Table &gt;" name="com.atoledano.producegame.screens.AbstractScreen&lt; T extends Table &gt;">
+<area shape="rect" id="node1" title=" " alt="" coords="5,95,248,136"/>
+<area shape="rect" id="node4" href="$classcom_1_1atoledano_1_1producegame_1_1screens_1_1_game_screen.html" title=" " alt="" coords="5,184,248,225"/>
+<area shape="rect" id="node2" title=" " alt="" coords="11,13,74,39"/>
+<area shape="rect" id="node3" href="$interfacecom_1_1atoledano_1_1producegame_1_1input_1_1_game_key_input_listener.html" title=" " alt="" coords="98,5,323,47"/>
+</map>

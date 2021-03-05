@@ -1,5 +1,0 @@
-<map id="com.quillraven.game.gamestate.GSMenu.createHUD" name="com.quillraven.game.gamestate.GSMenu.createHUD">
-<area shape="rect" id="node1" title=" " alt="" coords="5,39,215,80"/>
-<area shape="rect" id="node2" href="$classcom_1_1quillraven_1_1game_1_1core_1_1_utils.html#affa88b816fa1d7d4da926f273232c589" title=" " alt="" coords="263,5,436,47"/>
-<area shape="rect" id="node3" href="$classcom_1_1quillraven_1_1game_1_1core_1_1_audio_manager.html#a6aa8eb742f46b3c2ee0e710cbd97733e" title=" " alt="" coords="263,71,436,112"/>
-</map>

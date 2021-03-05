@@ -1,9 +1,0 @@
-<map id="com.quillraven.game.core.Utils.getMapManager" name="com.quillraven.game.core.Utils.getMapManager">
-<area shape="rect" id="node1" title=" " alt="" coords="591,136,764,177"/>
-<area shape="rect" id="node2" href="$classcom_1_1quillraven_1_1game_1_1ecs_1_1system_1_1_player_contact_system.html#a9a3b5a93567b8f03842f5fa1b1fbca32" title=" " alt="" coords="288,5,517,47"/>
-<area shape="rect" id="node3" href="$classcom_1_1quillraven_1_1game_1_1ecs_1_1system_1_1_game_render_system.html#a478efea03b534ccb8eb6bda5020c3f12" title=" " alt="" coords="269,71,537,112"/>
-<area shape="rect" id="node4" href="$classcom_1_1quillraven_1_1game_1_1gamestate_1_1_g_s_game.html#a3ea3ad00eaa62866dbf2cbcc63315f26" title=" " alt="" coords="298,136,507,177"/>
-<area shape="rect" id="node5" href="$classcom_1_1quillraven_1_1game_1_1_save_state.html#a000cc8e330e7da40e46d73a86f474fd3" title=" " alt="" coords="317,201,489,243"/>
-<area shape="rect" id="node7" href="$classcom_1_1quillraven_1_1game_1_1ecs_1_1system_1_1_player_camera_system.html#a513081d5e5f5c790b649a3cdc3fb1f2f" title=" " alt="" coords="263,267,543,308"/>
-<area shape="rect" id="node6" href="$classcom_1_1quillraven_1_1game_1_1gamestate_1_1_g_s_game.html#a4696e2f382747628489ee8f1bbabf7d9" title=" " alt="" coords="5,201,215,243"/>
-</map>

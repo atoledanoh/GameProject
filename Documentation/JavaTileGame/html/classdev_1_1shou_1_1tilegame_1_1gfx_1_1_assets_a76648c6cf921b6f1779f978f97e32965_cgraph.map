@@ -1,5 +1,0 @@
-<map id="dev.shou.tilegame.gfx.Assets.init" name="dev.shou.tilegame.gfx.Assets.init">
-<area shape="rect" id="node1" title=" " alt="" coords="5,46,219,73"/>
-<area shape="rect" id="node2" href="$classdev_1_1shou_1_1tilegame_1_1gfx_1_1_sprite_sheet.html#a4975e95fbfafb42d3bcdc8af000a4d1d" title=" " alt="" coords="267,5,453,47"/>
-<area shape="rect" id="node3" href="$classdev_1_1shou_1_1tilegame_1_1gfx_1_1_image_loader.html#a8d71dc76dba313daaeecbb6786483da6" title=" " alt="" coords="267,71,453,112"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="com.brentaureli.mariobros.Sprites.TileObjects.Brick.onHeadHit" name="com.brentaureli.mariobros.Sprites.TileObjects.Brick.onHeadHit">
-<area shape="rect" id="node1" title=" " alt="" coords="5,116,236,157"/>
-<area shape="rect" id="node2" href="$classcom_1_1brentaureli_1_1mariobros_1_1_scenes_1_1_hud.html#a0c035672248908b0d092a391c5b28c9f" title=" " alt="" coords="293,5,469,47"/>
-<area shape="rect" id="node3" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_tile_objects_1_1_interactive_tile_object.html#a26882b9399f594770a71ef3f066788db" title=" " alt="" coords="284,71,479,127"/>
-<area shape="rect" id="node4" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_mario.html#a9770e030122995d3fb0949ea8d47660b" title=" " alt="" coords="293,152,469,193"/>
-<area shape="rect" id="node5" href="$classcom_1_1brentaureli_1_1mariobros_1_1_sprites_1_1_tile_objects_1_1_interactive_tile_object.html#a511eeaad863956e7d698fcc4574095ea" title=" " alt="" coords="284,218,479,274"/>
-</map>

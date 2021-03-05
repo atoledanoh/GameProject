@@ -1,0 +1,6 @@
+<map id="com.atoledano.producegame.ProduceGame.getAssetManager" name="com.atoledano.producegame.ProduceGame.getAssetManager">
+<area shape="rect" id="node1" title=" " alt="" coords="296,71,507,112"/>
+<area shape="rect" id="node2" href="$classcom_1_1atoledano_1_1producegame_1_1audio_1_1_audio_manager.html#a314e89e6ba98e7b34390b4c8e4ef6104" title=" " alt="" coords="13,5,241,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1atoledano_1_1producegame_1_1screens_1_1_game_screen.html#acf87a1565d7fcf844bdc6dd55809d932" title=" " alt="" coords="5,71,248,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1atoledano_1_1producegame_1_1screens_1_1_loading_screen.html#af3eb063c05a4d9bec7f6af3abd2c7a99" title=" " alt="" coords="5,136,248,177"/>
+</map>

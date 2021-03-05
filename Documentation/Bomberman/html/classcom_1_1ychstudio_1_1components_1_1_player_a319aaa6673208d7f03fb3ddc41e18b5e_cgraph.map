@@ -1,6 +1,0 @@
-<map id="com.ychstudio.components.Player.powerUpSpeed" name="com.ychstudio.components.Player.powerUpSpeed">
-<area shape="rect" id="node1" title=" " alt="" coords="5,71,192,112"/>
-<area shape="rect" id="node2" href="$classcom_1_1ychstudio_1_1components_1_1_player.html#a731b4cdf382bb1a6ca727eb9d414349d" title=" " alt="" coords="240,5,495,47"/>
-<area shape="rect" id="node3" href="$classcom_1_1ychstudio_1_1gamesys_1_1_game_manager.html#af849443c40ab595eebc79c3896ffaa43" title=" " alt="" coords="266,71,469,112"/>
-<area shape="rect" id="node4" href="$classcom_1_1ychstudio_1_1gamesys_1_1_game_manager.html#a6a6867adc24a87a004e4289fed6d0e07" title=" " alt="" coords="266,136,469,177"/>
-</map>

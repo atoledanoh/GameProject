@@ -1,0 +1,9 @@
+<map id="com.atoledano.producegame.screens.GameScreen.GameScreen" name="com.atoledano.producegame.screens.GameScreen.GameScreen">
+<area shape="rect" id="node1" title=" " alt="" coords="5,169,248,211"/>
+<area shape="rect" id="node2" href="$classentity_component_system_1_1_e_c_s_engine.html#acb927b41f4e83f16aa9939a2478f79cf" title=" " alt="" coords="296,5,572,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1atoledano_1_1producegame_1_1_produce_game.html#a2c0d8e7afc7b09741dc7d6c4aa5e9946" title=" " alt="" coords="329,71,539,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1atoledano_1_1producegame_1_1_produce_game.html#a4541760741f9634d0039ce73905222d8" title=" " alt="" coords="337,136,531,177"/>
+<area shape="rect" id="node5" href="$classcom_1_1atoledano_1_1producegame_1_1_produce_game.html#a22d8a66b42c16ba14a4a92c3c3edf79a" title=" " alt="" coords="331,201,537,243"/>
+<area shape="rect" id="node6" href="$classcom_1_1atoledano_1_1producegame_1_1_produce_game.html#a2ab88bcacf06fd40e30fa19561d8470e" title=" " alt="" coords="337,267,531,308"/>
+<area shape="rect" id="node7" href="$classcom_1_1atoledano_1_1producegame_1_1map_1_1_map.html#a9121fb02e9176bf1410ce1ba1999a1e1" title=" " alt="" coords="323,332,545,373"/>
+</map>
