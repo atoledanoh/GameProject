@@ -165,7 +165,6 @@ public class GameScreen extends AbstractScreen {
 //                (cart.getLinearVelocity().y - cart.getLinearVelocity().y * 0.05f));
 //        cart.setAngularVelocity(0f);
 
-
         viewport.apply(true);
         mapRenderer.setView(gameCamera);
         mapRenderer.render();

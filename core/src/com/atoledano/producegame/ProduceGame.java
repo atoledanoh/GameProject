@@ -1,5 +1,6 @@
 package com.atoledano.producegame;
 
+import com.atoledano.producegame.audio.AudioManager;
 import com.atoledano.producegame.input.InputManager;
 import com.atoledano.producegame.screens.ScreenType;
 import com.badlogic.gdx.*;
@@ -51,6 +52,8 @@ public class ProduceGame extends Game {
     private float accumulator;
 
     private AssetManager assetManager;
+    private AudioManager audioManager;
+
     private Stage stage;
     private Skin skin;
     private I18NBundle i18NBundle;
@@ -71,14 +74,19 @@ public class ProduceGame extends Game {
         world.setContactListener(worldContactListener);
         box2DDebugRenderer = new Box2DDebugRenderer();
 
-        //initialize asset manager, should not be static if used on phones?
+        //asset manager
         assetManager = new AssetManager();
         //telling the asset manager how to load the tiled map
         assetManager.setLoader(TiledMap.class, new TmxMapLoader(assetManager.getFileHandleResolver()));
+
+        //skin section
         initializeSkin();
 
-        //stage setup
+        //stage section
         stage = new Stage(new FitViewport(1024, 768), spriteBatch);
+
+        //audio section
+        audioManager = new AudioManager(this);
 
         //input section
         inputManager = new InputManager();
@@ -120,6 +128,10 @@ public class ProduceGame extends Game {
         assetManager.finishLoading();
         skin = assetManager.get("ui/hud.json", Skin.class);
         i18NBundle = assetManager.get("ui/strings", I18NBundle.class);
+    }
+
+    public AudioManager getAudioManager() {
+        return audioManager;
     }
 
     public InputManager getInputManager() {

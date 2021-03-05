@@ -1,6 +1,7 @@
 package com.atoledano.producegame.screens;
 
 import com.atoledano.producegame.ProduceGame;
+import com.atoledano.producegame.audio.AudioManager;
 import com.atoledano.producegame.input.GameKeyInputListener;
 import com.atoledano.producegame.input.InputManager;
 import com.badlogic.gdx.Screen;
@@ -18,6 +19,7 @@ public abstract class AbstractScreen<T extends Table> implements Screen, GameKey
     protected final Stage stage;
     protected final T screenUI;
     protected final InputManager inputManager;
+    protected final AudioManager audioManager;
 
     public AbstractScreen(final ProduceGame context) {
         this.context = context;
@@ -28,6 +30,7 @@ public abstract class AbstractScreen<T extends Table> implements Screen, GameKey
 
         stage = context.getStage();
         screenUI = getScreenUI(context);
+        audioManager = context.getAudioManager();
     }
 
     protected abstract T getScreenUI(final ProduceGame context);
