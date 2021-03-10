@@ -19,6 +19,7 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.profiling.GLProfiler;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
+import com.badlogic.gdx.maps.tiled.tiles.AnimatedTiledMapTile;
 import com.badlogic.gdx.physics.box2d.Box2DDebugRenderer;
 import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.utils.Array;
@@ -74,6 +75,7 @@ public class GameRenderer implements Disposable, MapListener {
         spriteBatch.begin();
 
         if (mapRenderer.getMap() != null) {
+            AnimatedTiledMapTile.updateAnimationBaseTime();
             mapRenderer.setView(gameCamera);
             for (final TiledMapTileLayer tiledMapTileLayer : tiledMapTileLayers) {
                 mapRenderer.renderTileLayer(tiledMapTileLayer);
