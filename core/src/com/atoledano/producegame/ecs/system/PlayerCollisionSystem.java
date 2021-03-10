@@ -26,9 +26,19 @@ public class PlayerCollisionSystem extends IteratingSystem implements WorldConta
     public void playerCollision(Entity player, Entity gameObject) {
         final GameObjectComponent gameObjectComponent = ECSEngine.gameObjectComponentMapper.get(gameObject);
 
-        if (gameObjectComponent.gameObjectType == GameObjectType.CRYSTAL) {
-            gameObject.add(getEngine().createComponent(RemoveComponent.class));
+        switch (gameObjectComponent.gameObjectType) {
+            case CRYSTAL:
+                gameObject.add(getEngine().createComponent(RemoveComponent.class));
+                break;
+            case AXE:
+                ECSEngine.playerComponentMapper.get(player).hasAxe = true;
+                gameObject.add(getEngine().createComponent(RemoveComponent.class));
+                break;
+            case TREE:
+                if (ECSEngine.playerComponentMapper.get(player).hasAxe) {
+                    gameObject.add(getEngine().createComponent(RemoveComponent.class));
+                }
+                break;
         }
-
     }
 }
