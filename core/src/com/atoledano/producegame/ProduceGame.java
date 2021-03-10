@@ -253,6 +253,7 @@ public class ProduceGame extends Game {
     @Override
     public void dispose() {
         super.dispose();
+        gameRenderer.dispose();
         box2DDebugRenderer.dispose();
         world.dispose();
         assetManager.dispose();

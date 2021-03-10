@@ -2,6 +2,9 @@ package com.atoledano.producegame.ecs;
 
 import com.atoledano.producegame.ProduceGame;
 import com.atoledano.producegame.ecs.component.AnimationComponent;
+import com.atoledano.producegame.ecs.system.AnimationSystem;
+import com.atoledano.producegame.ecs.system.PlayerAnimationSystem;
+import com.atoledano.producegame.view.AnimationType;
 import com.badlogic.ashley.core.ComponentMapper;
 import com.badlogic.ashley.core.Entity;
 import com.badlogic.ashley.core.PooledEngine;
@@ -16,11 +19,13 @@ import com.atoledano.producegame.ecs.system.PlayerCameraSystem;
 import com.atoledano.producegame.ecs.system.PlayerMovementSystem;
 
 import static com.atoledano.producegame.ProduceGame.PLAYER_BIT;
+import static com.atoledano.producegame.ProduceGame.UNIT_SCALE;
 
 public class ECSEngine extends PooledEngine {
 
     public static final ComponentMapper<PlayerComponent> playerComponentMapper = ComponentMapper.getFor(PlayerComponent.class);
     public static final ComponentMapper<B2DComponent> b2DComponentMapper = ComponentMapper.getFor(B2DComponent.class);
+    public static final ComponentMapper<AnimationComponent> animationComponentMapper = ComponentMapper.getFor(AnimationComponent.class);
 
     private final World world;
     private final BodyDef bodyDef;
@@ -35,6 +40,8 @@ public class ECSEngine extends PooledEngine {
 
         this.addSystem(new PlayerMovementSystem(context));
         this.addSystem(new PlayerCameraSystem(context));
+        this.addSystem(new AnimationSystem(context));
+        this.addSystem(new PlayerAnimationSystem(context));
     }
 
     private void resetBodyAndFixtureDefinitions() {
@@ -84,6 +91,10 @@ public class ECSEngine extends PooledEngine {
 
         //animation component
         final AnimationComponent animationComponent = this.createComponent(AnimationComponent.class);
+        animationComponent.animationType = AnimationType.PLAYER_MOVE_DOWN;
+        animationComponent.width = 64 * UNIT_SCALE * 0.75f;
+        animationComponent.height = 64 * UNIT_SCALE * 0.75f;
+
         player.add(animationComponent);
 
         this.addEntity(player);

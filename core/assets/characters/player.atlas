@@ -1,69 +1,13 @@
 
 player.png
-size: 1024, 64
+size: 832, 1344
 format: RGBA8888
 filter: Nearest, Nearest
 repeat: none
-104
+player
   rotate: false
-  xy: 192, 0
-  size: 64, 64
-  orig: 64, 64
-  offset: 0, 0
-  index: -1
-105
-  rotate: false
-  xy: 512, 0
-  size: 64, 64
-  orig: 64, 64
-  offset: 0, 0
-  index: -1
-106
-  rotate: false
-  xy: 320, 0
-  size: 64, 64
-  orig: 64, 64
-  offset: 0, 0
-  index: -1
-107
-  rotate: false
-  xy: 64, 0
-  size: 64, 64
-  orig: 64, 64
-  offset: 0, 0
-  index: -1
-108
-  rotate: false
-  xy: 448, 0
-  size: 64, 64
-  orig: 64, 64
-  offset: 0, 0
-  index: -1
-109
-  rotate: false
-  xy: 256, 0
-  size: 64, 64
-  orig: 64, 64
-  offset: 0, 0
-  index: -1
-110
-  rotate: false
-  xy: 0, 0
-  size: 64, 64
-  orig: 64, 64
-  offset: 0, 0
-  index: -1
-111
-  rotate: false
-  xy: 384, 0
-  size: 64, 64
-  orig: 64, 64
-  offset: 0, 0
-  index: -1
-112
-  rotate: false
-  xy: 128, 0
-  size: 64, 64
-  orig: 64, 64
+  xy: 0, 512
+  size: 576, 256
+  orig: 576, 256
   offset: 0, 0
   index: -1

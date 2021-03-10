@@ -45,9 +45,8 @@ public class LoadingScreen extends AbstractScreen<LoadingUI> {
 
     @Override
     public void render(float delta) {
-//        ScreenUtils.clear(0, 0, 0, 1);
-        Gdx.gl.glClearColor(0, 0, 0, 1);
-        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+//        Gdx.gl.glClearColor(0, 0, 0, 1);
+//        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
         //check if the loading of assets was correct, then loads game screen
         assetManager.update();
