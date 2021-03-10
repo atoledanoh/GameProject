@@ -28,7 +28,7 @@ import com.badlogic.gdx.utils.ObjectMap;
 import com.badlogic.gdx.utils.reflect.ClassReflection;
 import com.badlogic.gdx.utils.reflect.ReflectionException;
 import com.badlogic.gdx.utils.viewport.FitViewport;
-import com.atoledano.producegame.entityComponentSystem.ECSEngine;
+import com.atoledano.producegame.ecs.ECSEngine;
 
 import java.util.EnumMap;
 

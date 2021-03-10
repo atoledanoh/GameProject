@@ -1,4 +1,4 @@
-<map id="com.atoledano.producegame.entityComponentSystem.system.PlayerMovementSystem.PlayerMovementSystem" name="com.atoledano.producegame.entityComponentSystem.system.PlayerMovementSystem.PlayerMovementSystem">
+<map id="com.atoledano.producegame.ecs.system.PlayerMovementSystem.PlayerMovementSystem" name="com.atoledano.producegame.ecs.system.PlayerMovementSystem.PlayerMovementSystem">
 <area shape="rect" id="node1" title=" " alt="" coords="5,31,268,87"/>
 <area shape="rect" id="node2" href="$classcom_1_1atoledano_1_1producegame_1_1input_1_1_input_manager.html#aca9bd137cc2c48fcabc881ba1a0648f3" title=" " alt="" coords="316,5,541,47"/>
 <area shape="rect" id="node3" href="$classcom_1_1atoledano_1_1producegame_1_1_produce_game.html#a5240fbac778648449fc479e63639a0e8" title=" " alt="" coords="326,71,531,112"/>

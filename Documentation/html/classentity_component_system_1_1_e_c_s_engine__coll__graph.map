@@ -1,4 +1,4 @@
-<map id="com.atoledano.producegame.entityComponentSystem.ECSEngine" name="com.atoledano.producegame.entityComponentSystem.ECSEngine">
+<map id="com.atoledano.producegame.ecs.ECSEngine" name="com.atoledano.producegame.ecs.ECSEngine">
 <area shape="rect" id="node1" title=" " alt="" coords="457,64,693,91"/>
 <area shape="rect" id="node2" title=" " alt="" coords="81,5,184,32"/>
 <area shape="rect" id="node3" title=" " alt="" coords="11,57,254,98"/>

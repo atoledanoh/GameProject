@@ -1,4 +1,4 @@
-package com.atoledano.producegame.entityComponentSystem.component;
+package com.atoledano.producegame.ecs.component;
 
 import com.badlogic.ashley.core.Component;
 import com.badlogic.gdx.math.Vector2;

@@ -1,6 +1,7 @@
-package com.atoledano.producegame.entityComponentSystem;
+package com.atoledano.producegame.ecs;
 
 import com.atoledano.producegame.ProduceGame;
+import com.atoledano.producegame.ecs.component.AnimationComponent;
 import com.badlogic.ashley.core.ComponentMapper;
 import com.badlogic.ashley.core.Entity;
 import com.badlogic.ashley.core.PooledEngine;
@@ -9,10 +10,10 @@ import com.badlogic.gdx.physics.box2d.BodyDef;
 import com.badlogic.gdx.physics.box2d.FixtureDef;
 import com.badlogic.gdx.physics.box2d.PolygonShape;
 import com.badlogic.gdx.physics.box2d.World;
-import com.atoledano.producegame.entityComponentSystem.component.B2DComponent;
-import com.atoledano.producegame.entityComponentSystem.component.PlayerComponent;
-import com.atoledano.producegame.entityComponentSystem.system.PlayerCameraSystem;
-import com.atoledano.producegame.entityComponentSystem.system.PlayerMovementSystem;
+import com.atoledano.producegame.ecs.component.B2DComponent;
+import com.atoledano.producegame.ecs.component.PlayerComponent;
+import com.atoledano.producegame.ecs.system.PlayerCameraSystem;
+import com.atoledano.producegame.ecs.system.PlayerMovementSystem;
 
 import static com.atoledano.producegame.ProduceGame.PLAYER_BIT;
 
@@ -69,6 +70,8 @@ public class ECSEngine extends PooledEngine {
         b2DComponent.body.setUserData("PLAYER");
         b2DComponent.width = width;
         b2DComponent.height = height;
+        b2DComponent.renderPosition.set(b2DComponent.body.getPosition());
+
         fixtureDef.filter.categoryBits = PLAYER_BIT;
         fixtureDef.filter.maskBits = -1;
         final PolygonShape polygonShape = new PolygonShape();
@@ -77,8 +80,12 @@ public class ECSEngine extends PooledEngine {
         fixtureDef.shape = polygonShape;
         b2DComponent.body.createFixture(fixtureDef);
         polygonShape.dispose();
-
         player.add(b2DComponent);
+
+        //animation component
+        final AnimationComponent animationComponent = this.createComponent(AnimationComponent.class);
+        player.add(animationComponent);
+
         this.addEntity(player);
     }
 }

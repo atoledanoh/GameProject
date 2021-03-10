@@ -1,13 +1,13 @@
-package com.atoledano.producegame.entityComponentSystem.system;
+package com.atoledano.producegame.ecs.system;
 
 import com.atoledano.producegame.ProduceGame;
 import com.badlogic.ashley.core.Entity;
 import com.badlogic.ashley.core.Family;
 import com.badlogic.ashley.systems.IteratingSystem;
 import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.atoledano.producegame.entityComponentSystem.ECSEngine;
-import com.atoledano.producegame.entityComponentSystem.component.B2DComponent;
-import com.atoledano.producegame.entityComponentSystem.component.PlayerComponent;
+import com.atoledano.producegame.ecs.ECSEngine;
+import com.atoledano.producegame.ecs.component.B2DComponent;
+import com.atoledano.producegame.ecs.component.PlayerComponent;
 
 public class PlayerCameraSystem extends IteratingSystem {
     private final OrthographicCamera gameCamera;
@@ -19,7 +19,7 @@ public class PlayerCameraSystem extends IteratingSystem {
 
     @Override
     protected void processEntity(Entity entity, float deltaTime) {
-        gameCamera.position.set(ECSEngine.b2DComponentMapper.get(entity).body.getPosition(), 0);
+        gameCamera.position.set(ECSEngine.b2DComponentMapper.get(entity).renderPosition, 0);
         gameCamera.update();
     }
 }

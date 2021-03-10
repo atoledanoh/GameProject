@@ -1,4 +1,4 @@
-<map id="com.atoledano.producegame.entityComponentSystem.component.B2DComponent" name="com.atoledano.producegame.entityComponentSystem.component.B2DComponent">
+<map id="com.atoledano.producegame.ecs.component.B2DComponent" name="com.atoledano.producegame.ecs.component.B2DComponent">
 <area shape="rect" id="node1" title=" " alt="" coords="52,95,289,136"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,5,93,32"/>
 <area shape="rect" id="node3" title=" " alt="" coords="117,5,224,32"/>
