@@ -20,6 +20,5 @@ public class PlayerCameraSystem extends IteratingSystem {
     @Override
     protected void processEntity(Entity entity, float deltaTime) {
         gameCamera.position.set(ECSEngine.b2DComponentMapper.get(entity).renderPosition, 0);
-        gameCamera.update();
     }
 }

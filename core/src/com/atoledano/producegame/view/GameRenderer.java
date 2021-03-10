@@ -46,7 +46,7 @@ public class GameRenderer implements Disposable, MapListener {
     private final OrthogonalTiledMapRenderer mapRenderer;
     private final Array<TiledMapTileLayer> tiledMapTileLayers;
     private final GLProfiler glProfiler;
-    private final Box2DDebugRenderer box2DDebugRenderer;
+    //    private final Box2DDebugRenderer box2DDebugRenderer;
     private final World world;
 
     private IntMap<Animation<Sprite>> animationIntMap;
@@ -71,10 +71,10 @@ public class GameRenderer implements Disposable, MapListener {
         glProfiler = new GLProfiler(Gdx.graphics);
         glProfiler.enable();
         if (glProfiler.isEnabled()) {
-            box2DDebugRenderer = new Box2DDebugRenderer();
+//            box2DDebugRenderer = new Box2DDebugRenderer();
             world = context.getWorld();
         } else {
-            box2DDebugRenderer = null;
+//            box2DDebugRenderer = null;
             world = null;
         }
     }
@@ -106,7 +106,7 @@ public class GameRenderer implements Disposable, MapListener {
 //            Gdx.app.debug(TAG, "Bindings: " + glProfiler.getTextureBindings());
 //            Gdx.app.debug(TAG, "Drawcalls: " + glProfiler.getDrawCalls());
             glProfiler.reset();
-            box2DDebugRenderer.render(world, gameCamera.combined);
+//            box2DDebugRenderer.render(world, gameCamera.combined);
         }
     }
 
@@ -172,9 +172,9 @@ public class GameRenderer implements Disposable, MapListener {
 
     @Override
     public void dispose() {
-        if (box2DDebugRenderer != null) {
-            box2DDebugRenderer.dispose();
-        }
+//        if (box2DDebugRenderer != null) {
+//            box2DDebugRenderer.dispose();
+//        }
         mapRenderer.dispose();
     }
 

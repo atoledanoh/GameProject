@@ -54,7 +54,6 @@ public class ProduceGame extends Game {
     private FitViewport screenViewport;
     private WorldContactListener worldContactListener;
     private World world;
-    private Box2DDebugRenderer box2DDebugRenderer;
     private AssetManager assetManager;
     private AudioManager audioManager;
     private Stage stage;
@@ -77,7 +76,6 @@ public class ProduceGame extends Game {
         world = new World(Vector2.Zero, true);
         worldContactListener = new WorldContactListener();
         world.setContactListener(worldContactListener);
-        box2DDebugRenderer = new Box2DDebugRenderer();
 
         //asset manager section
         assetManager = new AssetManager();
@@ -122,6 +120,9 @@ public class ProduceGame extends Game {
         BODY_DEF.gravityScale = 1;
         BODY_DEF.type = BodyDef.BodyType.StaticBody;
         BODY_DEF.fixedRotation = false;
+        BODY_DEF.angle = 0;
+        BODY_DEF.angularVelocity = 0;
+
         FIXTURE_DEF.density = 0;
         FIXTURE_DEF.isSensor = false;
         FIXTURE_DEF.restitution = 0;
@@ -213,10 +214,6 @@ public class ProduceGame extends Game {
         return world;
     }
 
-    public Box2DDebugRenderer getBox2DDebugRenderer() {
-        return box2DDebugRenderer;
-    }
-
     public void setScreen(final ScreenType screenType) {
         final Screen screen = screenCache.get(screenType);
         if (screen == null) {
@@ -260,7 +257,6 @@ public class ProduceGame extends Game {
     public void dispose() {
         super.dispose();
         gameRenderer.dispose();
-        box2DDebugRenderer.dispose();
         world.dispose();
         assetManager.dispose();
         spriteBatch.dispose();
