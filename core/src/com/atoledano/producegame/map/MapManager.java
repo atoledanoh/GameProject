@@ -1,6 +1,8 @@
 package com.atoledano.producegame.map;
 
 import com.atoledano.producegame.ProduceGame;
+import com.atoledano.producegame.ecs.ECSEngine;
+import com.badlogic.ashley.core.Entity;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.maps.tiled.TiledMap;
@@ -19,6 +21,8 @@ public class MapManager {
     private final World world;
     private final Array<Body> bodies;
     private final AssetManager assetManager;
+    private final ECSEngine ecsEngine;
+    private final Array<Entity> gameObjectsToRemove;
     private MapType currentMapType;
     private Map currentMap;
     private final EnumMap<MapType, Map> mapCache;
@@ -29,7 +33,9 @@ public class MapManager {
         currentMapType = null;
         currentMap = null;
         world = context.getWorld();
+        ecsEngine = context.getEcsEngine();
         assetManager = context.getAssetManager();
+        gameObjectsToRemove = new Array<Entity>();
         bodies = new Array<Body>();
         mapCache = new EnumMap<MapType, Map>(MapType.class);
         listeners = new Array<MapListener>();
@@ -48,6 +54,7 @@ public class MapManager {
         if (currentMap != null) {
             world.getBodies(bodies);
             destroyCollisionAreas();
+            destroyGameObjects();
         }
         //set new map
         Gdx.app.debug(TAG, "Loading map type: " + mapType);
@@ -60,11 +67,31 @@ public class MapManager {
         }
         //create bodies/entities
         spawnCollisionAreas();
+        spawnGameObjects();
 
         for (final MapListener listener : listeners) {
             listener.mapChange(currentMap);
         }
     }
+
+    private void spawnGameObjects() {
+        for (final GameObject gameObject : currentMap.getGameObjects()) {
+            ecsEngine.createGameObject(gameObject);
+        }
+    }
+
+    private void destroyGameObjects() {
+        for (final Entity entity : ecsEngine.getEntities()) {
+            if (ECSEngine.gameObjectComponentMapper.get(entity) != null) {
+                gameObjectsToRemove.add(entity);
+            }
+        }
+        for (final Entity entity : gameObjectsToRemove) {
+            ecsEngine.removeEntity(entity);
+        }
+        gameObjectsToRemove.clear();
+    }
+
 
     private void destroyCollisionAreas() {
         for (final Body body : bodies) {

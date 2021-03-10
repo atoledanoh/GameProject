@@ -41,7 +41,8 @@ public class ProduceGame extends Game {
     public static final Short PLAYER_BIT = 1 << 0;
     public static final Short CART_BIT = 1 << 1;
     public static final Short SAC_BIT = 1 << 2;
-    public static final Short ROOM_BIT = 1 << 3;
+    public static final Short GAME_OBJECT_BIT = 1 << 3;
+    public static final Short ROOM_BIT = 1 << 4;
 
     //fixing time step to make it more consistent in the simulations
     private static final float FIXED_TIME_STEP = 1 / 60f;
@@ -60,8 +61,8 @@ public class ProduceGame extends Game {
     private Skin skin;
     private I18NBundle i18NBundle;
     private InputManager inputManager;
-    private MapManager mapManager;
     private ECSEngine ecsEngine;
+    private MapManager mapManager;
     private GameRenderer gameRenderer;
 
     @Override
@@ -101,11 +102,12 @@ public class ProduceGame extends Game {
         gameCamera = new OrthographicCamera();
         screenViewport = new FitViewport(12, 9, gameCamera);
 
-        //map manager section
-        mapManager = new MapManager(this);
 
         //ecs engine section
         ecsEngine = new ECSEngine(this);
+
+        //map manager section
+        mapManager = new MapManager(this);
 
         //game renderer section
         gameRenderer = new GameRenderer(this);
