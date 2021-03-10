@@ -102,8 +102,9 @@ public class GameRenderer implements Disposable, MapListener {
         spriteBatch.end();
 
         if (glProfiler.isEnabled()) {
-            Gdx.app.debug(TAG, "Bindings: " + glProfiler.getTextureBindings());
-            Gdx.app.debug(TAG, "Drawcalls: " + glProfiler.getDrawCalls());
+            //TODO here i check the bindings and drawcalls
+//            Gdx.app.debug(TAG, "Bindings: " + glProfiler.getTextureBindings());
+//            Gdx.app.debug(TAG, "Drawcalls: " + glProfiler.getDrawCalls());
             glProfiler.reset();
             box2DDebugRenderer.render(world, gameCamera.combined);
         }

@@ -205,6 +205,10 @@ public class ProduceGame extends Game {
         return screenViewport;
     }
 
+    public WorldContactListener getWorldContactListener() {
+        return worldContactListener;
+    }
+
     public World getWorld() {
         return world;
     }
