@@ -1,7 +1,6 @@
-package entityComponentSystem;
+package com.atoledano.producegame.entityComponentSystem;
 
 import com.atoledano.producegame.ProduceGame;
-import com.badlogic.ashley.core.Component;
 import com.badlogic.ashley.core.ComponentMapper;
 import com.badlogic.ashley.core.Entity;
 import com.badlogic.ashley.core.PooledEngine;
@@ -10,10 +9,10 @@ import com.badlogic.gdx.physics.box2d.BodyDef;
 import com.badlogic.gdx.physics.box2d.FixtureDef;
 import com.badlogic.gdx.physics.box2d.PolygonShape;
 import com.badlogic.gdx.physics.box2d.World;
-import entityComponentSystem.component.B2DComponent;
-import entityComponentSystem.component.PlayerComponent;
-import entityComponentSystem.system.PlayerCameraSystem;
-import entityComponentSystem.system.PlayerMovementSystem;
+import com.atoledano.producegame.entityComponentSystem.component.B2DComponent;
+import com.atoledano.producegame.entityComponentSystem.component.PlayerComponent;
+import com.atoledano.producegame.entityComponentSystem.system.PlayerCameraSystem;
+import com.atoledano.producegame.entityComponentSystem.system.PlayerMovementSystem;
 
 import static com.atoledano.producegame.ProduceGame.PLAYER_BIT;
 

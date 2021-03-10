@@ -4,12 +4,16 @@ import com.atoledano.producegame.ProduceGame;
 import com.atoledano.producegame.audio.AudioType;
 import com.atoledano.producegame.input.GameKeys;
 import com.atoledano.producegame.input.InputManager;
+import com.atoledano.producegame.map.MapType;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
+import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.utils.ScreenUtils;
-import ui.LoadingUI;
+import com.atoledano.producegame.view.LoadingUI;
 
 public class LoadingScreen extends AbstractScreen<LoadingUI> {
     private final AssetManager assetManager;
@@ -18,10 +22,16 @@ public class LoadingScreen extends AbstractScreen<LoadingUI> {
     public LoadingScreen(final ProduceGame context) {
         super(context);
         this.assetManager = context.getAssetManager();
-        //loading map async
-        assetManager.load("map/map.tmx", TiledMap.class);
 
-        //loading audio
+        //load characters and effects
+//        assetManager.load("", TextureAtlas.class);
+
+        //load maps
+        for (final MapType mapType:MapType.values()){
+            assetManager.load(mapType.getFilePath(),TiledMap.class);
+        }
+
+        //load audio
         isMusicLoaded = false;
         for (final AudioType audioType : AudioType.values()) {
             assetManager.load(audioType.getFilePath(), audioType.isMusic() ? Music.class : Sound.class);
@@ -35,7 +45,9 @@ public class LoadingScreen extends AbstractScreen<LoadingUI> {
 
     @Override
     public void render(float delta) {
-        ScreenUtils.clear(0, 0, 0, 1);
+//        ScreenUtils.clear(0, 0, 0, 1);
+        Gdx.gl.glClearColor(0, 0, 0, 1);
+        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
         //check if the loading of assets was correct, then loads game screen
         assetManager.update();
@@ -74,8 +86,8 @@ public class LoadingScreen extends AbstractScreen<LoadingUI> {
 
     @Override
     public void keyPressed(InputManager inputManager, GameKeys key) {
-        audioManager.playAudio(AudioType.SELECT);
         if (assetManager.getProgress() >= 1) {
+            audioManager.playAudio(AudioType.SELECT);
             context.setScreen(ScreenType.GAME);
         }
     }

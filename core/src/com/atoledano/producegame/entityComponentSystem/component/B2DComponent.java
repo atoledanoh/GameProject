@@ -1,4 +1,4 @@
-package entityComponentSystem.component;
+package com.atoledano.producegame.entityComponentSystem.component;
 
 import com.badlogic.ashley.core.Component;
 import com.badlogic.gdx.physics.box2d.Body;

@@ -4,60 +4,38 @@ import com.atoledano.producegame.ProduceGame;
 import com.atoledano.producegame.audio.AudioType;
 import com.atoledano.producegame.input.GameKeys;
 import com.atoledano.producegame.input.InputManager;
-import com.atoledano.producegame.map.CollisionArea;
 import com.atoledano.producegame.map.Map;
+import com.atoledano.producegame.map.MapListener;
+import com.atoledano.producegame.map.MapManager;
+import com.atoledano.producegame.map.MapType;
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.assets.AssetManager;
+import com.badlogic.gdx.Input;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
+import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.profiling.GLProfiler;
-import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
-import com.badlogic.gdx.physics.box2d.Body;
-import com.badlogic.gdx.physics.box2d.BodyDef;
-import com.badlogic.gdx.physics.box2d.ChainShape;
-import com.badlogic.gdx.physics.box2d.FixtureDef;
-import com.badlogic.gdx.utils.ScreenUtils;
-import ui.GameUI;
+import com.atoledano.producegame.view.GameUI;
 
-import static com.atoledano.producegame.ProduceGame.ROOM_BIT;
-import static com.atoledano.producegame.ProduceGame.UNIT_SCALE;
-
-public class GameScreen extends AbstractScreen {
-    private final AssetManager assetManager;
-    private final OrthogonalTiledMapRenderer mapRenderer;
-    private final OrthographicCamera gameCamera;
-    private final GLProfiler glProfiler;
-    private Map map;
+public class GameScreen extends AbstractScreen<GameUI> implements MapListener {
+    private final MapManager mapManager;
     private boolean isMusicLoaded;
 
     public GameScreen(final ProduceGame context) {
         super(context);
 
-        assetManager = context.getAssetManager();
-        //initializing the map and telling the size of the units to box2d
-        mapRenderer = new OrthogonalTiledMapRenderer(null, UNIT_SCALE, context.getSpriteBatch());
-        this.gameCamera = context.getGameCamera();
-
-        //initializing profiler to each for the number of texture bindings happening
-        glProfiler = new GLProfiler(Gdx.graphics);
-        glProfiler.disable();
-
-        //getting maps ready
-        final TiledMap tiledMap = assetManager.get("map/map.tmx", TiledMap.class);
-        mapRenderer.setMap(tiledMap);
-        map = new Map(tiledMap);
-
-        spawnCollisionAreas();
+        mapManager = context.getMapManager();
+        mapManager.addMapListener(this);
+        mapManager.setMap(MapType.MAP_1);
 
         //create player
-        context.getEcsEngine().createPlayer(map.getStartLocation(), 1, 1);
+        context.getEcsEngine().createPlayer(mapManager.getCurrentMap().getStartLocation(), 1, 1);
 
         //loading audio
         isMusicLoaded = false;
         for (final AudioType audioType : AudioType.values()) {
-            assetManager.load(audioType.getFilePath(), audioType.isMusic() ? Music.class : Sound.class);
+            context.getAssetManager().load(audioType.getFilePath(), audioType.isMusic() ? Music.class : Sound.class);
         }
     }
 
@@ -66,30 +44,8 @@ public class GameScreen extends AbstractScreen {
         return new GameUI(context);
     }
 
-    private void spawnCollisionAreas() {
-        final BodyDef bodyDef = new BodyDef();
-        final FixtureDef fixtureDef = new FixtureDef();
-        for (final CollisionArea collisionArea : map.getCollisionAreas()) {
-
-            //create room
-            bodyDef.position.set(collisionArea.getX(), collisionArea.getY());
-            bodyDef.fixedRotation = true;
-            final Body room = world.createBody(bodyDef);
-            room.setUserData("ROOM");
-
-            fixtureDef.filter.categoryBits = ROOM_BIT;
-            fixtureDef.filter.maskBits = -1; //collides with everything
-            final ChainShape chainShape = new ChainShape();
-            chainShape.createChain(collisionArea.getVertices());
-            fixtureDef.shape = chainShape;
-            room.createFixture(fixtureDef);
-            chainShape.dispose();
-        }
-    }
-
     @Override
-    public void render(float delta) {
-        ScreenUtils.clear(0, 0, 0, 1);
+    public void render(final float delta) {
 
 //        //cart properties
 //        cart.setLinearVelocity(
@@ -97,47 +53,35 @@ public class GameScreen extends AbstractScreen {
 //                (cart.getLinearVelocity().y - cart.getLinearVelocity().y * 0.05f));
 //        cart.setAngularVelocity(0f);
 
-        //using playerCameraSystemNow
-        viewport.apply(false);
-        mapRenderer.setView(gameCamera);
-        mapRenderer.render();
-        box2DDebugRenderer.render(world, viewport.getCamera().combined);
-
-        //showing the number of bindings happening
-        if (glProfiler.isEnabled()) {
-            Gdx.app.debug("RenderInfo", "No. of Bindings: " + glProfiler.getTextureBindings());
-            Gdx.app.debug("RenderInfo", "No. of DrawCalls: " + glProfiler.getDrawCalls());
-            glProfiler.reset();
-        }
-
-        if (!isMusicLoaded && assetManager.isLoaded(AudioType.INTRO.getFilePath())) {
-            isMusicLoaded = true;
-            audioManager.playAudio(AudioType.BACKGROUND1);
+        //todo remove map change test stuff
+        if (Gdx.input.isKeyJustPressed(Input.Keys.NUM_1)) {
+            mapManager.setMap(MapType.MAP_1);
+        } else if (Gdx.input.isKeyJustPressed(Input.Keys.NUM_2)) {
+            mapManager.setMap(MapType.MAP_2);
         }
     }
 
     @Override
     public void pause() {
-
     }
 
     @Override
     public void resume() {
-
     }
 
     @Override
     public void dispose() {
-        mapRenderer.dispose();
     }
 
     @Override
     public void keyPressed(InputManager inputManager, GameKeys key) {
-
     }
 
     @Override
     public void keyUp(InputManager inputManager, GameKeys key) {
+    }
 
+    @Override
+    public void mapChange(Map map) {
     }
 }

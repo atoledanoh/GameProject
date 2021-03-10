@@ -1,4 +1,4 @@
-<map id="ui.GameUI.GameUI" name="ui.GameUI.GameUI">
+<map id="com.atoledano.producegame.view.GameUI.GameUI" name="com.atoledano.producegame.view.GameUI.GameUI">
 <area shape="rect" id="node1" title=" " alt="" coords="5,13,140,39"/>
 <area shape="rect" id="node2" href="$classcom_1_1atoledano_1_1producegame_1_1_produce_game.html#aa909d0cf1f6119e8711a6d65272f4cab" title=" " alt="" coords="188,5,381,47"/>
 </map>

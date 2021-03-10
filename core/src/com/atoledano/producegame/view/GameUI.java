@@ -1,4 +1,4 @@
-package ui;
+package com.atoledano.producegame.view;
 
 import com.atoledano.producegame.ProduceGame;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;

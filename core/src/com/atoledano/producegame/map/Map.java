@@ -18,6 +18,11 @@ public class Map {
     public static final String TAG = Map.class.getSimpleName();
     private final TiledMap tiledMap;
     private final Array<CollisionArea> collisionAreas;
+
+    public TiledMap getTiledMap() {
+        return tiledMap;
+    }
+
     private final Vector2 startLocation;
 
     public Map(final TiledMap tiledMap) {

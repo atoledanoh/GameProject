@@ -2,7 +2,10 @@ package com.atoledano.producegame;
 
 import com.atoledano.producegame.audio.AudioManager;
 import com.atoledano.producegame.input.InputManager;
+import com.atoledano.producegame.map.MapManager;
+import com.atoledano.producegame.screens.AbstractScreen;
 import com.atoledano.producegame.screens.ScreenType;
+import com.atoledano.producegame.view.GameRenderer;
 import com.badlogic.gdx.*;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.assets.loaders.SkinLoader;
@@ -16,9 +19,7 @@ import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.math.Vector2;
-import com.badlogic.gdx.physics.box2d.Box2D;
-import com.badlogic.gdx.physics.box2d.Box2DDebugRenderer;
-import com.badlogic.gdx.physics.box2d.World;
+import com.badlogic.gdx.physics.box2d.*;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.utils.GdxRuntimeException;
@@ -27,36 +28,41 @@ import com.badlogic.gdx.utils.ObjectMap;
 import com.badlogic.gdx.utils.reflect.ClassReflection;
 import com.badlogic.gdx.utils.reflect.ReflectionException;
 import com.badlogic.gdx.utils.viewport.FitViewport;
-import entityComponentSystem.ECSEngine;
+import com.atoledano.producegame.entityComponentSystem.ECSEngine;
 
 import java.util.EnumMap;
 
 public class ProduceGame extends Game {
 
     private static final String TAG = ProduceGame.class.getSimpleName();
+    public static final BodyDef BODY_DEF = new BodyDef();
+    public static final FixtureDef FIXTURE_DEF = new FixtureDef();
     public static final float UNIT_SCALE = 1 / 32f;
     public static final Short PLAYER_BIT = 1 << 0;
     public static final Short CART_BIT = 1 << 1;
     public static final Short SAC_BIT = 1 << 2;
     public static final Short ROOM_BIT = 1 << 3;
 
+    //fixing time step to make it more consistent in the simulations
+    private static final float FIXED_TIME_STEP = 1 / 60f;
+    private float accumulator;
+
     private SpriteBatch spriteBatch;
-    private EnumMap<ScreenType, Screen> screenCache;
+    private EnumMap<ScreenType, AbstractScreen> screenCache;
     private OrthographicCamera gameCamera;
     private FitViewport screenViewport;
     private WorldContactListener worldContactListener;
     private World world;
     private Box2DDebugRenderer box2DDebugRenderer;
-    //fixing time step to make it more consistent in the simulations
-    private static final float FIXED_TIME_STEP = 1 / 60f;
-    private float accumulator;
     private AssetManager assetManager;
     private AudioManager audioManager;
     private Stage stage;
     private Skin skin;
     private I18NBundle i18NBundle;
     private InputManager inputManager;
+    private MapManager mapManager;
     private ECSEngine ecsEngine;
+    private GameRenderer gameRenderer;
 
     @Override
     public void create() {
@@ -67,7 +73,7 @@ public class ProduceGame extends Game {
         accumulator = 0;
         Box2D.init();
         //vector2 contains gravity values
-        world = new World(new Vector2(0, 0), true);
+        world = new World(Vector2.Zero, true);
         worldContactListener = new WorldContactListener();
         world.setContactListener(worldContactListener);
         box2DDebugRenderer = new Box2DDebugRenderer();
@@ -91,16 +97,36 @@ public class ProduceGame extends Game {
         //setting up for later input methods
         Gdx.input.setInputProcessor(new InputMultiplexer(inputManager, stage));
 
-        //viewport setup - view size in tiles
+        //viewport setup - com.atoledano.producegame.view size in tiles
         gameCamera = new OrthographicCamera();
         screenViewport = new FitViewport(12, 9, gameCamera);
+
+        //map manager section
+        mapManager = new MapManager(this);
 
         //ecs engine section
         ecsEngine = new ECSEngine(this);
 
+        //game renderer section
+        gameRenderer = new GameRenderer(this);
+
         //set first screen
-        screenCache = new EnumMap<ScreenType, Screen>(ScreenType.class);
+        screenCache = new EnumMap<ScreenType, AbstractScreen>(ScreenType.class);
         setScreen(ScreenType.LOADING);
+    }
+
+    public static void resetBodyAndFixtureDefinition() {
+        BODY_DEF.position.set(0, 0);
+        BODY_DEF.gravityScale = 1;
+        BODY_DEF.type = BodyDef.BodyType.StaticBody;
+        BODY_DEF.fixedRotation = false;
+        FIXTURE_DEF.density = 0;
+        FIXTURE_DEF.isSensor = false;
+        FIXTURE_DEF.restitution = 0;
+        FIXTURE_DEF.friction = 0.2f;
+        FIXTURE_DEF.filter.categoryBits = 0x0001;
+        FIXTURE_DEF.filter.maskBits = -1;
+        FIXTURE_DEF.shape = null;
     }
 
     private void initializeSkin() {
@@ -110,7 +136,7 @@ public class ProduceGame extends Game {
 
         //generate ttf bitmap
         final ObjectMap<String, Object> resources = new ObjectMap<String, Object>();
-        final FreeTypeFontGenerator freeTypeFontGenerator = new FreeTypeFontGenerator(Gdx.files.internal("ui/pixelFont.ttf"));
+        final FreeTypeFontGenerator freeTypeFontGenerator = new FreeTypeFontGenerator(Gdx.files.internal("com/atoledano/producegame/view/pixelFont.ttf"));
         final FreeTypeFontGenerator.FreeTypeFontParameter freeTypeFontParameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
         //texture filter
         freeTypeFontParameter.minFilter = Texture.TextureFilter.Linear;
@@ -125,12 +151,16 @@ public class ProduceGame extends Game {
         freeTypeFontGenerator.dispose();
 
         //load skin
-        final SkinLoader.SkinParameter skinParameter = new SkinLoader.SkinParameter("ui/hud.atlas", resources);
-        assetManager.load("ui/hud.json", Skin.class, skinParameter);
-        assetManager.load("ui/strings", I18NBundle.class);
+        final SkinLoader.SkinParameter skinParameter = new SkinLoader.SkinParameter("com/atoledano/producegame/view/hud.atlas", resources);
+        assetManager.load("com/atoledano/producegame/view/hud.json", Skin.class, skinParameter);
+        assetManager.load("com/atoledano/producegame/view/strings", I18NBundle.class);
         assetManager.finishLoading();
-        skin = assetManager.get("ui/hud.json", Skin.class);
-        i18NBundle = assetManager.get("ui/strings", I18NBundle.class);
+        skin = assetManager.get("com/atoledano/producegame/view/hud.json", Skin.class);
+        i18NBundle = assetManager.get("com/atoledano/producegame/view/strings", I18NBundle.class);
+    }
+
+    public MapManager getMapManager() {
+        return mapManager;
     }
 
     public ECSEngine getEcsEngine() {
@@ -187,9 +217,9 @@ public class ProduceGame extends Game {
             //screen has to be created
             try {
                 Gdx.app.debug(TAG, "Creating new screen: " + screenType);
-                final Object newScreen = ClassReflection.getConstructor(screenType.getScreenClass(), ProduceGame.class).newInstance(this);
-                screenCache.put(screenType, (Screen) newScreen);
-                setScreen((Screen) newScreen);
+                final AbstractScreen newScreen = (AbstractScreen) ClassReflection.getConstructor(screenType.getScreenClass(), ProduceGame.class).newInstance(this);
+                screenCache.put(screenType, newScreen);
+                setScreen(newScreen);
             } catch (ReflectionException e) {
                 throw new GdxRuntimeException("Screen type " + screenType + " could not be created.", e);
             }
@@ -203,25 +233,28 @@ public class ProduceGame extends Game {
     public void render() {
         super.render();
 
-        ecsEngine.update(Gdx.graphics.getDeltaTime());
-        //fixing time step to make it more consistent in the simulations
-        accumulator += Math.min(0.25f, Gdx.graphics.getDeltaTime());
+        final float deltaTime = Math.min(0.25f, Gdx.graphics.getDeltaTime());
+        ecsEngine.update(deltaTime);
+        accumulator += deltaTime;
         while (accumulator >= FIXED_TIME_STEP) {
             world.step(FIXED_TIME_STEP, 6, 2);
             accumulator -= FIXED_TIME_STEP;
         }
 
+        //interpolation setup
+        gameRenderer.render(accumulator / FIXED_TIME_STEP);
+
         //setting up the stage
         stage.getViewport().apply();
-        stage.act();
+        stage.act(deltaTime);
         stage.draw();
     }
 
     @Override
     public void dispose() {
         super.dispose();
-        world.dispose();
         box2DDebugRenderer.dispose();
+        world.dispose();
         assetManager.dispose();
         spriteBatch.dispose();
         stage.dispose();
